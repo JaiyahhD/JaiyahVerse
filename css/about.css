@@ -1,0 +1,672 @@
+/* =========================================
+   ABOUT PAGE
+========================================= */
+
+
+/* =========================================
+   ABOUT HERO
+========================================= */
+
+#about-hero {
+    min-height: 62vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 8rem 8%;
+
+    position: relative;
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 20% 25%,
+            rgba(200, 141, 158, 0.2),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 80% 40%,
+            rgba(126, 107, 245, 0.15),
+            transparent 40%
+        ),
+        linear-gradient(
+            180deg,
+            #0d0d0d,
+            #141116,
+            #0d0d0d
+        );
+}
+
+#about-hero::before,
+#about-hero::after {
+    content: "";
+    position: absolute;
+
+    width: 300px;
+    height: 300px;
+
+    border-radius: 50%;
+    filter: blur(85px);
+    opacity: 0.25;
+
+    pointer-events: none;
+}
+
+#about-hero::before {
+    left: -100px;
+    bottom: -100px;
+    background-color: var(--rose);
+}
+
+#about-hero::after {
+    right: -100px;
+    top: -100px;
+    background-color: var(--purple);
+}
+
+.about-hero-content {
+    width: min(850px, 100%);
+    position: relative;
+    z-index: 1;
+}
+
+.about-hero-content h1 {
+    margin-bottom: 1.5rem;
+}
+
+.about-hero-description {
+    max-width: 680px;
+    margin: 0 auto;
+
+    font-size: 1.1rem;
+    line-height: 1.9;
+}
+
+
+/* =========================================
+   SECTION LABELS
+========================================= */
+
+.section-label {
+    color: var(--rose);
+
+    font-size: 0.85rem;
+    font-weight: bold;
+
+    text-transform: uppercase;
+    letter-spacing: 0.28em;
+
+    margin-bottom: 1rem;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+
+/* =========================================
+   AUTHOR INTRODUCTION
+========================================= */
+
+#author-introduction {
+    background:
+        radial-gradient(
+            circle at left center,
+            rgba(200, 141, 158, 0.12),
+            transparent 45%
+        ),
+        #0d0d0d;
+}
+
+.about-layout {
+    width: min(1200px, 100%);
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    align-items: center;
+    gap: 4rem;
+}
+
+.author-photo-placeholder {
+    min-height: 540px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 2rem;
+
+    color: var(--muted-gray);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(200, 141, 158, 0.22),
+            transparent 52%
+        ),
+        linear-gradient(
+            145deg,
+            rgba(255, 255, 255, 0.05),
+            rgba(169, 109, 129, 0.1)
+        );
+
+    border: 1px solid rgba(200, 141, 158, 0.38);
+    border-radius: 32px;
+
+    box-shadow:
+        0 30px 70px rgba(0, 0, 0, 0.45),
+        0 0 45px rgba(200, 141, 158, 0.1);
+
+    position: relative;
+    overflow: hidden;
+}
+
+.author-photo-placeholder::before {
+    content: "";
+    position: absolute;
+    inset: 22px;
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 24px;
+
+    pointer-events: none;
+}
+
+.author-photo-placeholder::after {
+    content: "";
+    position: absolute;
+
+    width: 220px;
+    height: 220px;
+
+    border-radius: 50%;
+    background-color: rgba(200, 141, 158, 0.14);
+    filter: blur(55px);
+}
+
+.author-photo-placeholder span {
+    position: relative;
+    z-index: 1;
+}
+
+.author-intro-content h2 {
+    margin-bottom: 1.5rem;
+}
+
+.author-intro-content p {
+    margin-bottom: 1.25rem;
+    line-height: 1.9;
+}
+
+.author-intro-content .primary-btn {
+    margin-top: 1rem;
+}
+
+
+/* =========================================
+   MY STORY
+========================================= */
+
+#my-story {
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(126, 107, 245, 0.1),
+            transparent 52%
+        ),
+        linear-gradient(
+            180deg,
+            #0d0d0d,
+            #100f17
+        );
+}
+
+.story-content {
+    width: min(850px, 100%);
+    margin: 0 auto;
+}
+
+.story-content h2 {
+    margin-bottom: 2rem;
+}
+
+.story-content p {
+    margin-bottom: 1.3rem;
+    line-height: 1.95;
+}
+
+
+/* =========================================
+   WHAT I WRITE
+========================================= */
+
+#what-i-write {
+    background:
+        linear-gradient(
+            180deg,
+            #100f17,
+            #0d0d0d
+        );
+}
+
+.writing-grid {
+    width: min(1200px, 100%);
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem;
+}
+
+.writing-card {
+    min-height: 320px;
+    padding: 2.4rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    background: var(--glass-background);
+    border: 1px solid var(--glass-border);
+    border-radius: 28px;
+
+    position: relative;
+    overflow: hidden;
+
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    transition:
+        transform 0.35s ease,
+        border-color 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.writing-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background:
+        radial-gradient(
+            circle at top right,
+            rgba(200, 141, 158, 0.18),
+            transparent 45%
+        );
+
+    pointer-events: none;
+}
+
+.writing-card:nth-child(2)::before {
+    background:
+        radial-gradient(
+            circle at top right,
+            rgba(123, 30, 43, 0.2),
+            transparent 45%
+        );
+}
+
+.writing-card:nth-child(3)::before {
+    background:
+        radial-gradient(
+            circle at top right,
+            rgba(126, 107, 245, 0.22),
+            transparent 45%
+        );
+}
+
+.writing-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(200, 141, 158, 0.55);
+    box-shadow: 0 25px 55px rgba(0, 0, 0, 0.3);
+}
+
+.writing-card h3,
+.writing-card p {
+    position: relative;
+    z-index: 1;
+}
+
+.card-number {
+    color: var(--rose);
+    font-size: 0.9rem;
+    letter-spacing: 0.25em;
+    margin-bottom: 1rem;
+}
+
+.writing-card h3 {
+    margin-bottom: 1rem;
+}
+
+.writing-card p:last-child {
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   AUTHOR VALUES
+========================================= */
+
+#author-values {
+    background:
+        radial-gradient(
+            circle at right center,
+            rgba(200, 141, 158, 0.12),
+            transparent 45%
+        ),
+        #0d0d0d;
+}
+
+.values-layout {
+    width: min(1200px, 100%);
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+.values-introduction {
+    position: sticky;
+    top: 130px;
+}
+
+.values-introduction h2 {
+    margin-bottom: 1.3rem;
+}
+
+.values-introduction p:last-child {
+    font-size: 1.08rem;
+    line-height: 1.9;
+}
+
+.values-list {
+    display: grid;
+    gap: 1.2rem;
+}
+
+.value-item {
+    padding: 2rem;
+
+    background: var(--glass-background);
+    border: 1px solid var(--glass-border);
+    border-left: 3px solid var(--rose);
+    border-radius: 22px;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.value-item:nth-child(2) {
+    border-left-color: var(--gold);
+}
+
+.value-item:nth-child(3) {
+    border-left-color: var(--purple);
+}
+
+.value-item:nth-child(4) {
+    border-left-color: var(--deep-rose);
+}
+
+.value-item:hover {
+    transform: translateX(8px);
+    border-color: rgba(200, 141, 158, 0.5);
+}
+
+.value-item h3 {
+    margin-bottom: 0.8rem;
+}
+
+.value-item p {
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   QUICK FACTS
+========================================= */
+
+#quick-facts {
+    background:
+        linear-gradient(
+            180deg,
+            #0d0d0d,
+            #111014
+        );
+}
+
+.facts-grid {
+    width: min(1150px, 100%);
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+.fact-card {
+    padding: 2.2rem;
+
+    background: var(--glass-background);
+    border: 1px solid var(--glass-border);
+    border-radius: 24px;
+
+    position: relative;
+    overflow: hidden;
+
+    transition:
+        transform 0.35s ease,
+        border-color 0.35s ease;
+}
+
+.fact-card::before {
+    content: "";
+    position: absolute;
+
+    width: 160px;
+    height: 160px;
+
+    top: -70px;
+    right: -70px;
+
+    border-radius: 50%;
+    background-color: rgba(200, 141, 158, 0.12);
+    filter: blur(25px);
+}
+
+.fact-card:nth-child(even)::before {
+    background-color: rgba(126, 107, 245, 0.14);
+}
+
+.fact-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(200, 141, 158, 0.5);
+}
+
+.fact-card h3,
+.fact-card p {
+    position: relative;
+    z-index: 1;
+}
+
+.fact-card h3 {
+    color: var(--light-rose);
+    margin-bottom: 0.8rem;
+}
+
+.fact-card p {
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   AUTHOR QUOTE
+========================================= */
+
+#author-quote {
+    min-height: 380px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(123, 30, 43, 0.15),
+            rgba(13, 13, 13, 0.92),
+            rgba(126, 107, 245, 0.15)
+        );
+}
+
+#author-quote blockquote {
+    width: min(850px, 100%);
+
+    color: var(--blush);
+    font-size: clamp(1.8rem, 4vw, 3.2rem);
+    font-style: italic;
+    line-height: 1.45;
+
+    margin-bottom: 1.5rem;
+}
+
+#author-quote > p {
+    color: var(--rose);
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+
+/* =========================================
+   ABOUT CALL TO ACTION
+========================================= */
+
+#about-call-to-action {
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(200, 141, 158, 0.16),
+            transparent 50%
+        ),
+        #0d0d0d;
+}
+
+.about-cta-content {
+    width: min(760px, 100%);
+    margin: 0 auto;
+}
+
+.about-cta-content h2 {
+    margin-bottom: 1.2rem;
+}
+
+.about-cta-content > p:not(.section-label) {
+    max-width: 650px;
+    margin: 0 auto 2rem;
+    line-height: 1.9;
+}
+
+.about-cta-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media screen and (max-width: 950px) {
+    .about-layout,
+    .values-layout {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .author-photo-placeholder {
+        min-height: 450px;
+    }
+
+    .writing-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .writing-card {
+        min-height: 260px;
+    }
+
+    .values-introduction {
+        position: static;
+        text-align: center;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media screen and (max-width: 700px) {
+    #about-hero {
+        min-height: 52vh;
+        padding: 6rem 6%;
+    }
+
+    .about-hero-description {
+        font-size: 1rem;
+    }
+
+    .author-photo-placeholder {
+        min-height: 350px;
+        border-radius: 24px;
+    }
+
+    .author-intro-content {
+        text-align: center;
+    }
+
+    .story-content {
+        text-align: left;
+    }
+
+    .writing-card {
+        min-height: 240px;
+        padding: 2rem;
+    }
+
+    .facts-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .value-item:hover {
+        transform: translateY(-5px);
+    }
+
+    .about-cta-buttons {
+        flex-direction: column;
+    }
+
+    .about-cta-buttons a {
+        width: 100%;
+    }
+}
