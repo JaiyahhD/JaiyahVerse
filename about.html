@@ -5,89 +5,174 @@
 
     <meta charset="UTF-8">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <meta
         name="description"
-        content="Learn more about author Jaiyah Symone, the stories she writes, and the worlds behind the JaiyahVerse."
+        content="Meet author Jaiyah Symone, creator of the JaiyahVerse, Shadow District, and Enchanted Realm."
     >
 
-    <title>About | Jaiyah Symone</title>
+    <title>
+        About | Jaiyah Symone
+    </title>
 
+    <!-- Global CSS -->
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- About Page CSS -->
     <link rel="stylesheet" href="css/about.css">
 
 </head>
 
-<body>
+
+<body class="about-page">
+
 
     <!-- ========================= -->
-    <!-- Navigation -->
+    <!-- HEADER -->
     <!-- ========================= -->
 
-    <header>
+    <header class="site-header">
 
-        <nav>
+        <nav class="main-nav">
 
-            <div class="logo">
+            <a
+                href="index.html"
+                class="site-logo"
+                aria-label="Jaiyah Symone homepage"
+            >
 
-                <a href="index.html">
-                    Jaiyah Symone
+                <span class="logo-main">
+                    Jaiyah
+                </span>
+
+                <span class="logo-bottom">
+                    Symone
+                </span>
+
+                <span
+                    class="logo-butterfly"
+                    aria-hidden="true"
+                >
+                    🦋
+                </span>
+
+            </a>
+
+
+            <button
+                class="mobile-menu-button"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="main-navigation-links"
+            >
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+
+            <div
+                class="nav-menu"
+                id="main-navigation-links"
+            >
+
+                <ul class="nav-links">
+
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="books.html">
+                            Books
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="worlds.html">
+                            Worlds
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="about.html"
+                            class="active"
+                        >
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="blog.html">
+                            Blog
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="shop.html">
+                            Shop
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+
+                <div class="nav-socials">
+
+                    <a
+                        href="https://www.tiktok.com/@jaiyahsymone"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Jaiyah Symone on TikTok"
+                    >
+                        TT
+                    </a>
+
+                    <a
+                        href="https://www.instagram.com/jaiyahsymone"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Jaiyah Symone on Instagram"
+                    >
+                        IG
+                    </a>
+
+                    <a
+                        href="https://discord.gg/2CKyCH4xKm"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Join the JaiyahVerse Discord"
+                    >
+                        DC
+                    </a>
+
+                </div>
+
+
+                <a
+                    href="#newsletter"
+                    class="nav-join-button"
+                >
+                    Join the JaiyahVerse
                 </a>
 
             </div>
-
-            <ul>
-
-                <li>
-                    <a href="index.html">
-                        Home
-                    </a>
-                </li>
-
-                <li>
-                    <a href="books.html">
-                        Books
-                    </a>
-                </li>
-
-                <li>
-                    <a href="worlds.html">
-                        Worlds
-                    </a>
-                </li>
-
-                <li>
-                    <a href="about.html" class="active">
-                        About
-                    </a>
-                </li>
-
-                <li>
-                    <a href="blog.html">
-                        Blog
-                    </a>
-                </li>
-
-                <li>
-                    <a href="shop.html">
-                        Shop
-                    </a>
-                </li>
-
-                <li>
-                    <a href="contact.html">
-                        Contact
-                    </a>
-                </li>
-
-            </ul>
-
-            <a href="contact.html" class="btn">
-                Join the Jaiyahverse
-            </a>
 
         </nav>
 
@@ -96,26 +181,110 @@
 
     <main>
 
+
         <!-- ========================= -->
-        <!-- About Hero -->
+        <!-- ABOUT HERO -->
         <!-- ========================= -->
 
         <section id="about-hero">
 
-            <div class="about-hero-content">
+            <div class="about-hero-glow"></div>
 
-                <p class="section-label">
-                    Meet the Author
-                </p>
+            <div class="about-hero-inner">
 
-                <h1>
-                    Behind the Stories
-                </h1>
 
-                <p class="about-hero-description">
-                    The woman behind the secrets, shadows,
-                    magic, and unforgettable worlds of the JaiyahVerse.
-                </p>
+                <!-- Hero Copy -->
+
+                <div class="about-hero-copy">
+
+                    <p class="hero-script">
+                        Behind the stories
+                    </p>
+
+                    <p class="hero-eyebrow">
+                        Meet the Author
+                    </p>
+
+                    <h1>
+                        Jaiyah<br>
+                        Symone
+                    </h1>
+
+                    <p class="about-hero-tagline">
+                        Author. Dreamer. World Builder.
+                    </p>
+
+                    <p class="about-hero-description">
+                        The woman behind the secrets, shadows,
+                        dangerous love, unforgettable characters,
+                        and magical worlds of the JaiyahVerse.
+                    </p>
+
+                    <div class="about-hero-buttons">
+
+                        <a
+                            href="#meet-jaiyah"
+                            class="primary-about-button"
+                        >
+                            Meet Jaiyah
+                        </a>
+
+                        <a
+                            href="books.html"
+                            class="secondary-about-button"
+                        >
+                            Explore the Books
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Author Portrait -->
+
+                <div class="about-hero-art">
+
+                    <div class="author-portrait-frame">
+
+                        <div class="portrait-glow"></div>
+
+                        <img
+                            src="assets/JaiyahAuthorPortrait.png"
+                            alt="Author Jaiyah Symone"
+                        >
+
+                    </div>
+
+                    <span
+                        class="portrait-butterfly butterfly-one"
+                        aria-hidden="true"
+                    >
+                        🦋
+                    </span>
+
+                    <span
+                        class="portrait-butterfly butterfly-two"
+                        aria-hidden="true"
+                    >
+                        🦋
+                    </span>
+
+                    <span
+                        class="portrait-sparkle sparkle-one"
+                        aria-hidden="true"
+                    >
+                        ✦
+                    </span>
+
+                    <span
+                        class="portrait-sparkle sparkle-two"
+                        aria-hidden="true"
+                    >
+                        ✧
+                    </span>
+
+                </div>
 
             </div>
 
@@ -123,22 +292,45 @@
 
 
         <!-- ========================= -->
-        <!-- Author Introduction -->
+        <!-- INTRODUCTION -->
         <!-- ========================= -->
 
-        <section id="author-introduction">
+        <section id="meet-jaiyah">
 
-            <div class="about-layout">
+            <div
+                class="about-ornament"
+                aria-hidden="true"
+            >
 
-                <div class="author-photo-placeholder">
+                <span class="ornament-line"></span>
 
-                    <span>
-                        Author Photo Coming Soon
-                    </span>
+                <span class="ornament-center">
+                    ♕
+                </span>
+
+                <span class="ornament-line"></span>
+
+            </div>
+
+
+            <div class="meet-jaiyah-layout">
+
+
+                <!-- Small Portrait -->
+
+                <div class="meet-jaiyah-photo">
+
+                    <img
+                        src="assets/JaiyahAuthorPortrait.png"
+                        alt="Jaiyah Symone, author and creator of the JaiyahVerse"
+                    >
 
                 </div>
 
-                <div class="author-intro-content">
+
+                <!-- Introduction Copy -->
+
+                <div class="meet-jaiyah-content">
 
                     <p class="section-label">
                         Hello, Reader
@@ -148,28 +340,44 @@
                         I’m Jaiyah Symone
                     </h2>
 
-                    <p>
-                        I am an author who loves creating stories filled
-                        with secrets, complicated relationships,
-                        unexpected twists, dangerous choices, and characters
-                        who are not always what they seem.
+                    <p class="intro-lead">
+                        I write stories filled with secrets,
+                        complicated relationships, dangerous choices,
+                        unexpected twists, and characters who are
+                        never exactly what they seem.
                     </p>
 
                     <p>
-                        My stories move between psychological thrillers,
-                        gritty fiction, suspense, and fantasy. Some take
-                        readers into dark spaces where trust can get you hurt.
-                        Others open the door to magical worlds shaped by
-                        legacy, power, and destiny.
+                        My books move between psychological thrillers,
+                        gritty fiction, suspense, and fantasy. Some stories
+                        pull readers into dark spaces where trust can get
+                        you hurt. Others open the door to magical worlds
+                        shaped by ancestry, legacy, power, and destiny.
                     </p>
 
                     <p>
-                        No matter the genre, I want every story to pull readers
-                        in, keep them questioning everything, and leave them
-                        thinking about the characters long after the final page.
+                        No matter the genre, I want every book to pull
+                        readers in, keep them questioning everything,
+                        and leave them thinking about the characters
+                        long after the final page.
                     </p>
 
-                    <a href="books.html" class="primary-btn">
+                    <div class="author-signature">
+
+                        <span>
+                            Jaiyah Symone
+                        </span>
+
+                        <p>
+                            Author and Creator of the JaiyahVerse
+                        </p>
+
+                    </div>
+
+                    <a
+                        href="books.html"
+                        class="primary-about-button"
+                    >
                         Explore My Books
                     </a>
 
@@ -181,48 +389,70 @@
 
 
         <!-- ========================= -->
-        <!-- My Story -->
+        <!-- MY STORY -->
         <!-- ========================= -->
 
         <section id="my-story">
 
-            <div class="story-content">
+            <div class="my-story-inner">
 
-                <p class="section-label">
-                    My Story
-                </p>
 
-                <h2>
-                    Where Imagination Became a World
-                </h2>
+                <div class="story-heading">
 
-                <p>
-                    Writing has always given me a place to turn ideas,
-                    emotions, questions, and real-life inspiration
-                    into something bigger.
-                </p>
+                    <p class="section-label">
+                        My Story
+                    </p>
 
-                <p>
-                    I created the JaiyahVerse as a home for every type
-                    of story I want to tell. It is where dark thrillers
-                    can live beside magical adventures without either
-                    world losing what makes it special.
-                </p>
+                    <h2>
+                        Where Imagination Became a World
+                    </h2>
 
-                <p>
-                    In the Shadow District, readers will find betrayal,
-                    crime, suspense, hidden motives, and truths that refuse
-                    to stay buried. In the Enchanted Realm, readers will
-                    discover ancient legacies, magical bloodlines,
-                    powerful destinies, and worlds that remember what
-                    history tried to forget.
-                </p>
+                </div>
 
-                <p>
-                    The genres may be different, but every story is connected
-                    by one thing: characters who must face who they are,
+
+                <div class="story-columns">
+
+                    <div>
+
+                        <p>
+                            Writing has always given me a place to turn
+                            ideas, emotions, questions, and real-life
+                            inspiration into something bigger.
+                        </p>
+
+                        <p>
+                            I created the JaiyahVerse as one home for every
+                            type of story I want to tell. It is where dark
+                            thrillers can live beside magical adventures
+                            without either world losing what makes it special.
+                        </p>
+
+                    </div>
+
+                    <div>
+
+                        <p>
+                            Shadow District holds betrayal, crime,
+                            suspense, hidden motives, dangerous love,
+                            and truths that refuse to stay buried.
+                        </p>
+
+                        <p>
+                            The Enchanted Realm carries ancient legacies,
+                            magical bloodlines, hidden academies, powerful
+                            destinies, and histories the world tried to forget.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <blockquote>
+                    The genres may be different, but every story is
+                    connected by characters who must face who they are,
                     what they have done, and what they are willing to risk.
-                </p>
+                </blockquote>
 
             </div>
 
@@ -230,12 +460,12 @@
 
 
         <!-- ========================= -->
-        <!-- What I Write -->
+        <!-- WHAT I WRITE -->
         <!-- ========================= -->
 
         <section id="what-i-write">
 
-            <div class="section-heading">
+            <div class="about-section-heading">
 
                 <p class="section-label">
                     Inside My Stories
@@ -245,14 +475,27 @@
                     What I Love to Write
                 </h2>
 
+                <p>
+                    Different genres. Different worlds.
+                    The same love for unforgettable stories.
+                </p>
+
             </div>
+
 
             <div class="writing-grid">
 
-                <article class="writing-card">
 
-                    <p class="card-number">
+                <!-- Thrillers -->
+
+                <article class="writing-card shadow-writing-card">
+
+                    <span class="card-number">
                         01
+                    </span>
+
+                    <p class="writing-category">
+                        Shadow District
                     </p>
 
                     <h3>
@@ -260,17 +503,28 @@
                     </h3>
 
                     <p>
-                        Twisted secrets, unreliable truths,
-                        buried trauma, and characters forced
-                        to face what they tried to escape.
+                        Twisted secrets, unreliable truths, buried trauma,
+                        hidden motives, and characters forced to face
+                        what they tried to escape.
                     </p>
+
+                    <a href="shadow-district.html">
+                        Enter the Shadows →
+                    </a>
 
                 </article>
 
-                <article class="writing-card">
 
-                    <p class="card-number">
+                <!-- Gritty Stories -->
+
+                <article class="writing-card gritty-writing-card">
+
+                    <span class="card-number">
                         02
+                    </span>
+
+                    <p class="writing-category">
+                        Shadow District
                     </p>
 
                     <h3>
@@ -278,17 +532,28 @@
                     </h3>
 
                     <p>
-                        Dangerous love, crime, loyalty,
-                        revenge, survival, and choices
-                        that come with a heavy price.
+                        Dangerous love, crime, loyalty, revenge,
+                        survival, betrayal, and choices that come
+                        with a heavy price.
                     </p>
+
+                    <a href="books.html#diamond-body-count">
+                        Explore the Stories →
+                    </a>
 
                 </article>
 
-                <article class="writing-card">
 
-                    <p class="card-number">
+                <!-- Fantasy -->
+
+                <article class="writing-card fantasy-writing-card">
+
+                    <span class="card-number">
                         03
+                    </span>
+
+                    <p class="writing-category">
+                        Enchanted Realm
                     </p>
 
                     <h3>
@@ -296,10 +561,14 @@
                     </h3>
 
                     <p>
-                        Magical legacies, hidden academies,
-                        forgotten histories, powerful bonds,
+                        Magical legacies, hidden academies, forgotten
+                        histories, powerful bonds, ancestral magic,
                         and heroes learning who they were born to become.
                     </p>
+
+                    <a href="enchanted-realm.html">
+                        Enter the Magic →
+                    </a>
 
                 </article>
 
@@ -309,12 +578,13 @@
 
 
         <!-- ========================= -->
-        <!-- Author Values -->
+        <!-- AUTHOR VALUES -->
         <!-- ========================= -->
 
         <section id="author-values">
 
             <div class="values-layout">
+
 
                 <div class="values-introduction">
 
@@ -327,64 +597,117 @@
                     </h2>
 
                     <p>
-                        Even when the world is magical or the plot becomes
-                        dangerous, I want the emotions to feel honest.
+                        Even when the world is magical or the plot
+                        becomes dangerous, I want the emotions,
+                        relationships, and consequences to feel honest.
                     </p>
+
+                    <div class="values-decoration">
+
+                        <span>
+                            ✦
+                        </span>
+
+                        <p>
+                            Emotion. Identity. Legacy. Truth.
+                        </p>
+
+                    </div>
 
                 </div>
 
+
                 <div class="values-list">
 
+
                     <article class="value-item">
 
-                        <h3>
-                            Complex Characters
-                        </h3>
+                        <span class="value-number">
+                            01
+                        </span>
 
-                        <p>
-                            My characters make mistakes, hide things,
-                            love deeply, and sometimes choose the wrong path.
-                        </p>
+                        <div>
+
+                            <h3>
+                                Complex Characters
+                            </h3>
+
+                            <p>
+                                My characters make mistakes, hide things,
+                                love deeply, carry trauma, and sometimes
+                                choose the wrong path.
+                            </p>
+
+                        </div>
 
                     </article>
 
+
                     <article class="value-item">
 
-                        <h3>
-                            Unforgettable Twists
-                        </h3>
+                        <span class="value-number">
+                            02
+                        </span>
 
-                        <p>
-                            I love giving readers enough clues to question
-                            the truth without revealing everything too soon.
-                        </p>
+                        <div>
+
+                            <h3>
+                                Unforgettable Twists
+                            </h3>
+
+                            <p>
+                                I love giving readers enough clues to
+                                question the truth without revealing
+                                everything too soon.
+                            </p>
+
+                        </div>
 
                     </article>
 
+
                     <article class="value-item">
 
-                        <h3>
-                            Representation
-                        </h3>
+                        <span class="value-number">
+                            03
+                        </span>
 
-                        <p>
-                            I want Black characters, cultures, families,
-                            and experiences to have space across every genre.
-                        </p>
+                        <div>
+
+                            <h3>
+                                Black Representation
+                            </h3>
+
+                            <p>
+                                I want Black characters, cultures,
+                                families, histories, and experiences
+                                to have space across every genre.
+                            </p>
+
+                        </div>
 
                     </article>
 
+
                     <article class="value-item">
 
-                        <h3>
-                            Emotional Impact
-                        </h3>
+                        <span class="value-number">
+                            04
+                        </span>
 
-                        <p>
-                            A good story should make readers feel something,
-                            whether that is fear, anger, hope, heartbreak,
-                            or the need to read one more chapter.
-                        </p>
+                        <div>
+
+                            <h3>
+                                Emotional Impact
+                            </h3>
+
+                            <p>
+                                A good story should make readers feel
+                                fear, anger, hope, heartbreak, joy,
+                                or the need to read one more chapter.
+                            </p>
+
+                        </div>
 
                     </article>
 
@@ -396,26 +719,32 @@
 
 
         <!-- ========================= -->
-        <!-- Quick Facts -->
+        <!-- QUICK FACTS -->
         <!-- ========================= -->
 
         <section id="quick-facts">
 
-            <div class="section-heading">
+            <div class="about-section-heading">
 
                 <p class="section-label">
-                    A Little More About Me
+                    Beyond the Books
                 </p>
 
                 <h2>
-                    Beyond the Books
+                    A Little More About Me
                 </h2>
 
             </div>
 
+
             <div class="facts-grid">
 
+
                 <article class="fact-card">
+
+                    <span class="fact-icon">
+                        ✦
+                    </span>
 
                     <h3>
                         Favorite Genres
@@ -428,7 +757,12 @@
 
                 </article>
 
+
                 <article class="fact-card">
+
+                    <span class="fact-icon">
+                        ❦
+                    </span>
 
                     <h3>
                         Writing Style
@@ -436,25 +770,35 @@
 
                     <p>
                         Character-driven, emotional, suspenseful,
-                        layered, and filled with secrets.
+                        layered, dramatic, and filled with secrets.
                     </p>
 
                 </article>
 
+
                 <article class="fact-card">
+
+                    <span class="fact-icon">
+                        ☾
+                    </span>
 
                     <h3>
                         Reader Experience
                     </h3>
 
                     <p>
-                        I want readers to feel like they stepped
-                        inside the world instead of only reading about it.
+                        I want readers to feel like they stepped inside
+                        the world instead of only reading about it.
                     </p>
 
                 </article>
 
+
                 <article class="fact-card">
+
+                    <span class="fact-icon">
+                        ♕
+                    </span>
 
                     <h3>
                         The JaiyahVerse
@@ -473,25 +817,135 @@
 
 
         <!-- ========================= -->
-        <!-- Author Quote -->
+        <!-- WORLD BUILDER -->
         <!-- ========================= -->
 
-        <section id="author-quote">
+        <section id="world-builder">
 
-            <blockquote>
-                I do not just want to write books.
-                I want to create worlds readers never forget.
-            </blockquote>
+            <div class="world-builder-inner">
 
-            <p>
-                — Jaiyah Symone
-            </p>
+
+                <div class="world-builder-copy">
+
+                    <p class="section-label">
+                        More Than Books
+                    </p>
+
+                    <h2>
+                        Building the JaiyahVerse
+                    </h2>
+
+                    <p>
+                        The JaiyahVerse is not only a collection of books.
+                        It is a growing universe where readers can explore
+                        different worlds, meet unforgettable characters,
+                        join a community, and experience each story beyond
+                        the final page.
+                    </p>
+
+                    <div class="world-builder-buttons">
+
+                        <a
+                            href="worlds.html"
+                            class="primary-about-button"
+                        >
+                            Explore the Worlds
+                        </a>
+
+                        <a
+                            href="https://discord.gg/2CKyCH4xKm"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="secondary-about-button"
+                        >
+                            Join the Discord
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="world-builder-cards">
+
+
+                    <a
+                        href="shadow-district.html"
+                        class="mini-world-card shadow-mini-card"
+                    >
+
+                        <p>
+                            Dark Fiction
+                        </p>
+
+                        <h3>
+                            Shadow District
+                        </h3>
+
+                        <span>
+                            Secrets live here →
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="enchanted-realm.html"
+                        class="mini-world-card enchanted-mini-card"
+                    >
+
+                        <p>
+                            Fantasy
+                        </p>
+
+                        <h3>
+                            Enchanted Realm
+                        </h3>
+
+                        <span>
+                            Magic remembers →
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </div>
 
         </section>
 
 
         <!-- ========================= -->
-        <!-- Call to Action -->
+        <!-- AUTHOR QUOTE -->
+        <!-- ========================= -->
+
+        <section id="author-quote">
+
+            <div class="author-quote-content">
+
+                <span
+                    class="quote-symbol"
+                    aria-hidden="true"
+                >
+                    ✦
+                </span>
+
+                <blockquote>
+                    “I do not just want to write books.<br>
+                    I want to create worlds readers never forget.”
+                </blockquote>
+
+                <p>
+                    Jaiyah Symone
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================= -->
+        <!-- CALL TO ACTION -->
         <!-- ========================= -->
 
         <section id="about-call-to-action">
@@ -507,18 +961,23 @@
                 </h2>
 
                 <p>
-                    Step into the Shadow District,
-                    enter the Enchanted Realm,
-                    and discover where your next obsession begins.
+                    Step into Shadow District, enter the Enchanted
+                    Realm, and discover where your next obsession begins.
                 </p>
 
                 <div class="about-cta-buttons">
 
-                    <a href="books.html" class="primary-btn">
+                    <a
+                        href="books.html"
+                        class="primary-about-button"
+                    >
                         Browse the Books
                     </a>
 
-                    <a href="worlds.html" class="secondary-btn">
+                    <a
+                        href="worlds.html"
+                        class="secondary-about-button"
+                    >
                         Explore the Worlds
                     </a>
 
@@ -530,44 +989,53 @@
 
 
         <!-- ========================= -->
-        <!-- Newsletter -->
+        <!-- NEWSLETTER -->
         <!-- ========================= -->
 
         <section id="newsletter">
 
-            <h2>
-                Become Part of the Story
-            </h2>
+            <div class="newsletter-content">
 
-            <p>
-                Join the JaiyahVerse for release updates,
-                behind-the-scenes content, cover reveals,
-                giveaways, and exclusive reader news.
-            </p>
+                <p class="section-label">
+                    Become Part of the Story
+                </p>
 
-            <form>
+                <h2>
+                    Join the JaiyahVerse
+                </h2>
 
-                <input
-                    type="email"
-                    name="email"
-                    placeholder="Enter your email"
-                    aria-label="Email address"
-                    required
-                >
+                <p>
+                    Receive release updates, behind-the-scenes content,
+                    cover reveals, giveaways, exclusive previews,
+                    and reader news.
+                </p>
 
-                <button type="submit">
-                    Join the Jaiyahverse
-                </button>
+                <form class="newsletter-form">
 
-            </form>
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Enter your email address"
+                        aria-label="Email address"
+                        required
+                    >
+
+                    <button type="submit">
+                        Join Now
+                    </button>
+
+                </form>
+
+            </div>
 
         </section>
+
 
     </main>
 
 
     <!-- ========================= -->
-    <!-- Footer -->
+    <!-- FOOTER -->
     <!-- ========================= -->
 
     <footer>
@@ -594,8 +1062,24 @@
                 Worlds
             </a>
 
+            <a href="shadow-district.html">
+                Shadow District
+            </a>
+
+            <a href="enchanted-realm.html">
+                Enchanted Realm
+            </a>
+
             <a href="about.html">
                 About
+            </a>
+
+            <a href="blog.html">
+                Blog
+            </a>
+
+            <a href="shop.html">
+                Shop
             </a>
 
             <a href="contact.html">
@@ -604,11 +1088,41 @@
 
         </nav>
 
-        <p>
+
+        <div class="footer-socials">
+
+            <a
+                href="https://www.instagram.com/jaiyahsymone"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Instagram
+            </a>
+
+            <a
+                href="https://www.tiktok.com/@jaiyahsymone"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                TikTok
+            </a>
+
+            <a
+                href="https://discord.gg/2CKyCH4xKm"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Discord
+            </a>
+
+        </div>
+
+        <p class="copyright">
             © 2026 Jaiyah Symone. All Rights Reserved.
         </p>
 
     </footer>
+
 
     <script src="js/main.js"></script>
 
