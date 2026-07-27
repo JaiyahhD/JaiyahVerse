@@ -12,7 +12,7 @@
 
     <meta
         name="description"
-        content="Welcome to the official website of author Jaiyah Symone. Explore psychological thrillers, urban fiction, fantasy worlds, books, updates, and the JaiyahVerse reader community."
+        content="Welcome to the official website of author Jaiyah Symone. Explore dark thrillers, unforgettable characters, magical worlds, books, updates, and the JaiyahVerse reader community."
     >
 
     <title>
@@ -25,15 +25,6 @@
     <!-- Homepage CSS -->
     <link rel="stylesheet" href="css/home.css">
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-
-    <link
-        rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin
-    >
-
 </head>
 
 
@@ -41,76 +32,147 @@
 
 
     <!-- ========================= -->
-    <!-- NAVIGATION -->
+    <!-- HEADER -->
     <!-- ========================= -->
 
-    <header>
+    <header class="site-header">
 
-        <nav>
+        <nav class="main-nav">
 
-            <div class="logo">
+            <a
+                href="index.html"
+                class="site-logo"
+                aria-label="Jaiyah Symone homepage"
+            >
 
-                <a href="index.html">
-                    Jaiyah Symone
+                <span class="logo-main">
+                    Jaiyah
+                </span>
+
+                <span class="logo-bottom">
+                    Symone
+                </span>
+
+                <span
+                    class="logo-butterfly"
+                    aria-hidden="true"
+                >
+                    🦋
+                </span>
+
+            </a>
+
+
+            <button
+                class="mobile-menu-button"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="main-navigation-links"
+            >
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+
+            <div
+                class="nav-menu"
+                id="main-navigation-links"
+            >
+
+                <ul class="nav-links">
+
+                    <li>
+                        <a
+                            href="index.html"
+                            class="active"
+                        >
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="books.html">
+                            Books
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#world-portals">
+                            Worlds
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="blog.html">
+                            Blog
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="shop.html">
+                            Shop
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+
+                <div class="nav-socials">
+
+                    <a
+                        href="https://www.tiktok.com/@jaiyahsymone"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Jaiyah Symone on TikTok"
+                    >
+                        TT
+                    </a>
+
+                    <a
+                        href="https://www.instagram.com/jaiyahsymone"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Jaiyah Symone on Instagram"
+                    >
+                        IG
+                    </a>
+
+                    <a
+                        href="https://discord.gg/2CKyCH4xKm"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Join the JaiyahVerse Discord"
+                    >
+                        DC
+                    </a>
+
+                </div>
+
+
+                <a
+                    href="#newsletter"
+                    class="nav-join-button"
+                >
+                    Join the JaiyahVerse
                 </a>
 
             </div>
-
-            <ul>
-
-                <li>
-                    <a
-                        href="index.html"
-                        class="active"
-                    >
-                        Home
-                    </a>
-                </li>
-
-                <li>
-                    <a href="books.html">
-                        Books
-                    </a>
-                </li>
-
-                <li>
-                    <a href="worlds.html">
-                        Worlds
-                    </a>
-                </li>
-
-                <li>
-                    <a href="about.html">
-                        About
-                    </a>
-                </li>
-
-                <li>
-                    <a href="blog.html">
-                        Blog
-                    </a>
-                </li>
-
-                <li>
-                    <a href="shop.html">
-                        Shop
-                    </a>
-                </li>
-
-                <li>
-                    <a href="contact.html">
-                        Contact
-                    </a>
-                </li>
-
-            </ul>
-
-            <a
-                href="contact.html"
-                class="btn"
-            >
-                Join the JaiyahVerse
-            </a>
 
         </nav>
 
@@ -121,69 +183,153 @@
 
 
         <!-- ========================= -->
-        <!-- HERO BANNER -->
+        <!-- CODED HOMEPAGE HERO -->
         <!-- ========================= -->
 
-        <section id="hero">
+        <section id="home-hero">
 
-            <img
-                src="assets/JVWelcomeBanner.png"
-                alt="Welcome to the JaiyahVerse banner with butterflies, books, a crescent moon, candles, a quill, and purple and gold magical artwork"
-                class="hero-banner"
-            >
+            <div class="hero-background-glow"></div>
+
+            <div class="hero-inner">
+
+
+                <!-- Hero Text -->
+
+                <div class="hero-copy">
+
+                    <p class="hero-script">
+                        Welcome to
+                    </p>
+
+                    <div class="hero-title-group">
+
+                        <span class="hero-small-title">
+                            The
+                        </span>
+
+                        <h1>
+                            JaiyahVerse
+                        </h1>
+
+                        <span
+                            class="hero-crown"
+                            aria-hidden="true"
+                        >
+                            ♕
+                        </span>
+
+                    </div>
+
+                    <p class="hero-tagline">
+                        Dark dreams. Dangerous secrets.<br>
+                        Magic that remembers.
+                    </p>
+
+                    <p class="hero-description">
+                        Step into the worlds of Jaiyah Symone—where
+                        thrillers grip your soul and fantasy sets
+                        you free.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a
+                            href="worlds.html"
+                            class="hero-primary-button"
+                        >
+                            Explore My Worlds
+
+                            <span aria-hidden="true">
+                                🦋
+                            </span>
+                        </a>
+
+                        <a
+                            href="books.html"
+                            class="hero-secondary-button"
+                        >
+                            Browse Books
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Hero Woman -->
+
+                <div class="hero-art">
+
+                    <div
+                        class="hero-butterfly butterfly-one"
+                        aria-hidden="true"
+                    >
+                        🦋
+                    </div>
+
+                    <div
+                        class="hero-butterfly butterfly-two"
+                        aria-hidden="true"
+                    >
+                        🦋
+                    </div>
+
+                    <div
+                        class="hero-butterfly butterfly-three"
+                        aria-hidden="true"
+                    >
+                        🦋
+                    </div>
+
+                    <img
+                        src="/assets/Icons/JaiyahHeroWoman.png"
+                        alt="A glamorous Black woman holding a black book surrounded by pink butterflies"
+                    >
+
+                </div>
+
+            </div>
 
         </section>
 
 
         <!-- ========================= -->
-        <!-- WELCOME -->
+        <!-- INTRODUCTION -->
         <!-- ========================= -->
 
-        <section id="welcome-section">
+        <section id="hero-intro">
 
-            <div class="welcome-content">
+            <div
+                class="intro-ornament"
+                aria-hidden="true"
+            >
 
-                <p class="section-label">
-                    Welcome, Reader
-                </p>
+                <span class="ornament-line"></span>
 
-                <h2>
-                    Every Story Opens Another World
-                </h2>
+                <span class="ornament-crown">
+                    ♕
+                </span>
 
-                <p>
-                    Step into the worlds of Jaiyah Symone,
-                    where dark secrets, dangerous choices,
-                    unforgettable characters, and powerful magic
-                    live between the pages.
-                </p>
-
-                <p>
-                    Whether you are drawn to psychological thrillers,
-                    gritty stories, or enchanting fantasy adventures,
-                    there is a place waiting for you inside the
-                    JaiyahVerse.
-                </p>
-
-                <div class="welcome-buttons">
-
-                    <a
-                        href="worlds.html"
-                        class="primary-btn"
-                    >
-                        Explore My Worlds
-                    </a>
-
-                    <a
-                        href="books.html"
-                        class="secondary-btn"
-                    >
-                        Browse Books
-                    </a>
-
-                </div>
+                <span class="ornament-line"></span>
 
             </div>
+
+            <h2>
+                Enter a World Unlike Any Other
+            </h2>
+
+            <p>
+                From the shadows of crime-ridden streets to realms
+                of magic, power, and forgotten destinies—every story
+                leaves a mark. Every world changes you.
+            </p>
+
+            <span
+                class="intro-star"
+                aria-hidden="true"
+            >
+                ✦
+            </span>
 
         </section>
 
@@ -192,81 +338,55 @@
         <!-- WORLD PORTALS -->
         <!-- ========================= -->
 
-        <section id="worlds">
+        <section id="world-portals">
 
-            <div class="section-heading">
-
-                <p class="section-label">
-                    Choose Your Path
-                </p>
-
-                <h2>
-                    Enter the JaiyahVerse
-                </h2>
-
-            </div>
-
-            <div class="world-container">
+            <div class="portal-grid">
 
 
                 <!-- Shadow District -->
 
-                <article class="world-card shadow-world">
+                <a
+                    href="shadow-district.html"
+                    class="portal-card shadow-portal"
+                >
 
-                    <div class="world-card-content">
+                    <img
+                        src="assets/Icons/ShadownDistrict.png"
+                        alt="Enter the Shadow District, where power corrupts and secrets kill"
+                    >
 
-                        <p class="world-type">
-                            Thrillers and Dark Fiction
-                        </p>
+                    <div class="portal-overlay">
 
-                        <h3>
-                            Shadow District
-                        </h3>
-
-                        <p>
-                            Crime. Secrets. Betrayal.
-                            Dangerous love, buried truths,
-                            and psychological thrillers
-                            where trust can get you killed.
-                        </p>
-
-                        <a href="shadow-district.html">
-                            Enter Shadow District →
-                        </a>
+                        <span>
+                            Enter Shadow District
+                        </span>
 
                     </div>
 
-                </article>
+                </a>
 
 
                 <!-- Enchanted Realm -->
 
-                <article class="world-card enchanted-world">
+                <a
+                    href="enchanted-realm.html"
+                    class="portal-card enchanted-portal"
+                >
 
-                    <div class="world-card-content">
+                    <img
+                        src="assets/Icons/EnchantedRealmDistrict.png"
+                        alt="Enter the Enchanted Realm, where magic awakens and destinies collide"
+                    >
 
-                        <p class="world-type">
-                            Fantasy and Magic
-                        </p>
+                    <div class="portal-overlay">
 
-                        <h3>
-                            Enchanted Realm
-                        </h3>
-
-                        <p>
-                            Magic. Legacy. Destiny.
-                            Forgotten histories, powerful bloodlines,
-                            and fantasy adventures where every gift
-                            carries a price.
-                        </p>
-
-                        <a href="enchanted-realm.html">
-                            Enter Enchanted Realm →
-                        </a>
+                        <span>
+                            Enter Enchanted Realm
+                        </span>
 
                     </div>
 
-                </article>
+                </a>
 
             </div>
 
@@ -274,175 +394,255 @@
 
 
         <!-- ========================= -->
-        <!-- FEATURED BOOKS -->
+        <!-- FEATURED BOOKS CAROUSEL -->
         <!-- ========================= -->
 
         <section id="featured-books">
 
-            <div class="section-heading">
+            <div class="featured-heading">
 
-                <p class="section-label">
-                    From the Bookshelf
-                </p>
+                <span class="featured-line"></span>
 
                 <h2>
                     Featured Books
                 </h2>
 
+                <span class="featured-line"></span>
+
+                <a href="books.html">
+                    View All Books →
+                </a>
+
             </div>
 
-            <div class="book-grid">
+
+            <div class="carousel-wrapper">
+
+                <button
+                    class="carousel-arrow carousel-prev"
+                    type="button"
+                    aria-label="View previous books"
+                >
+                    ‹
+                </button>
 
 
-                <!-- Black Ivy Circle -->
+                <div
+                    class="book-carousel"
+                    id="featured-book-carousel"
+                >
 
-                <article class="book-card">
 
-                    <div class="book-cover-placeholder">
+                    <!-- Black Ivy Circle -->
 
-                        <span>
-                            Black Ivy Circle Cover
-                        </span>
+                    <article class="carousel-book">
 
-                    </div>
+                        <a href="books.html#black-ivy-circle">
 
-                    <div class="book-card-content">
+                            <div class="book-image-wrapper">
 
-                        <p class="book-series">
-                            The Ivy Chronicles — Book One
-                        </p>
+                                <img
+                                    src="assets/Bookcovers/BlackIvyCircleCover.png"
+                                    alt="Black Ivy Circle by Jaiyah Symone"
+                                >
 
-                        <h3>
-                            Black Ivy Circle
-                        </h3>
+                            </div>
 
-                        <p>
-                            Psychological Thriller
-                        </p>
+                            <div class="carousel-book-info">
 
-                        <a href="books.html">
-                            View Book →
+                                <p>
+                                    The Ivy Chronicles
+                                </p>
+
+                                <h3>
+                                    Black Ivy Circle
+                                </h3>
+
+                                <span class="available-now">
+                                    Available Now
+                                </span>
+
+                            </div>
+
                         </a>
 
-                    </div>
-
-                </article>
+                    </article>
 
 
-                <!-- Behind Closed Doors -->
+                    <!-- Behind Closed Doors -->
 
-                <article class="book-card">
+                    <article class="carousel-book">
 
-                    <div class="book-cover-placeholder">
+                        <a href="books.html#behind-closed-doors">
 
-                        <span>
-                            Cover Coming Soon
-                        </span>
+                            <div class="book-image-wrapper">
 
-                    </div>
+                                <img
+                                    src="assets/bookcovers/BehindClosedDoorsCover.png"
+                                    alt="Behind Closed Doors by Jaiyah Symone"
+                                >
 
-                    <div class="book-card-content">
+                            </div>
 
-                        <p class="book-series">
-                            The Ivy Chronicles — Book Two
-                        </p>
+                            <div class="carousel-book-info">
 
-                        <h3>
-                            Behind Closed Doors
-                        </h3>
+                                <p>
+                                    The Ivy Chronicles
+                                </p>
 
-                        <p>
-                            Psychological Thriller
-                        </p>
+                                <h3>
+                                    Behind Closed Doors
+                                </h3>
 
-                        <span class="book-status">
-                            Coming Soon
-                        </span>
+                                <span>
+                                    Coming Soon
+                                </span>
 
-                    </div>
+                            </div>
 
-                </article>
+                        </a>
 
-
-                <!-- Diamond Blood Count -->
-
-                <article class="book-card">
-
-                    <div class="book-cover-placeholder">
-
-                        <span>
-                            Cover Coming Soon
-                        </span>
-
-                    </div>
-
-                    <div class="book-card-content">
-
-                        <p class="book-series">
-                            Married to the Streets — Book One
-                        </p>
-
-                        <h3>
-                            Diamond Blood Count
-                        </h3>
-
-                        <p>
-                            Gritty Thriller
-                        </p>
-
-                        <span class="book-status">
-                            Coming Soon
-                        </span>
-
-                    </div>
-
-                </article>
+                    </article>
 
 
-                <!-- Echoes of Sankora -->
+                    <!-- Diamond Body Count -->
 
-                <article class="book-card">
+                    <article class="carousel-book">
 
-                    <div class="book-cover-placeholder fantasy-cover">
+                        <a href="books.html#diamond-body-count">
 
-                        <span>
-                            Cover Coming Soon
-                        </span>
+                            <div class="book-image-wrapper">
 
-                    </div>
+                                <img
+                                    src="assets/bookcovers/DiamondBodyCountCover.png"
+                                    alt="The Diamond Body Count by Jaiyah Symone"
+                                >
 
-                    <div class="book-card-content">
+                            </div>
 
-                        <p class="book-series">
-                            A JaiyahVerse Fantasy
-                        </p>
+                            <div class="carousel-book-info">
 
-                        <h3>
-                            Echoes of Sankora
-                        </h3>
+                                <p>
+                                    Married to the Streets
+                                </p>
 
-                        <p>
-                            Fantasy
-                        </p>
+                                <h3>
+                                    The Diamond Body Count
+                                </h3>
 
-                        <span class="book-status fantasy-status">
-                            Coming Soon
-                        </span>
+                                <span>
+                                    Coming Soon
+                                </span>
 
-                    </div>
+                            </div>
 
-                </article>
+                        </a>
 
-            </div>
+                    </article>
 
-            <div class="section-button">
 
-                <a
-                    href="books.html"
-                    class="primary-btn"
+                    <!-- Echoes of Sankora: The First Pulse -->
+
+                    <article class="carousel-book">
+
+                        <a href="books.html#echoes-of-sankora">
+
+                            <div class="book-image-wrapper">
+
+                                <img
+                                    src="assets/bookcovers/TheFirstPulseCover.png"
+                                    alt="The First Pulse by Jaiyah Symone"
+                                >
+
+                            </div>
+
+                            <div class="carousel-book-info">
+
+                                <p>
+                                    A JaiyahVerse Fantasy
+                                </p>
+
+                                <h3>
+                                    The First Pulse
+                                </h3>
+
+                                <span>
+                                    Coming Soon
+                                </span>
+
+                            </div>
+
+                        </a>
+
+                    </article>
+
+
+                    <!-- Future Release -->
+
+                    <article class="carousel-book">
+
+                        <a href="books.html">
+
+                            <div class="future-cover">
+
+                                <span
+                                    class="future-rose"
+                                    aria-hidden="true"
+                                >
+                                    ❦
+                                </span>
+
+                                <p>
+                                    The Next
+                                </p>
+
+                                <h3>
+                                    Chapter
+                                </h3>
+
+                                <p>
+                                    Is Coming
+                                </p>
+
+                                <span
+                                    class="future-crown"
+                                    aria-hidden="true"
+                                >
+                                    ♕
+                                </span>
+
+                            </div>
+
+                            <div class="carousel-book-info">
+
+                                <p>
+                                    Future Release
+                                </p>
+
+                                <h3>
+                                    To Be Revealed
+                                </h3>
+
+                                <span>
+                                    Stay Tuned
+                                </span>
+
+                            </div>
+
+                        </a>
+
+                    </article>
+
+                </div>
+
+
+                <button
+                    class="carousel-arrow carousel-next"
+                    type="button"
+                    aria-label="View more books"
                 >
-                    View All Books
-                </a>
+                    ›
+                </button>
 
             </div>
 
@@ -450,125 +650,34 @@
 
 
         <!-- ========================= -->
-        <!-- EXPLORE -->
+        <!-- ABOUT PREVIEW -->
         <!-- ========================= -->
 
-        <section id="explore">
+        <section id="about-preview">
 
-            <div class="section-heading">
+            <div class="about-preview-content">
 
                 <p class="section-label">
-                    Discover More
+                    Meet the Author
                 </p>
 
                 <h2>
-                    Explore the JaiyahVerse
+                    Stories That Leave a Mark
                 </h2>
 
-            </div>
+                <p>
+                    Jaiyah Symone writes psychological thrillers,
+                    urban suspense, dark romance, and fantasy stories
+                    filled with unforgettable characters, dangerous
+                    secrets, powerful legacies, and twists that keep
+                    readers turning pages.
+                </p>
 
-            <div class="explore-grid">
-
-                <a href="books.html">
-
-                    <span class="explore-number">
-                        01
-                    </span>
-
-                    <h3>
-                        Books
-                    </h3>
-
-                    <p>
-                        Browse published stories
-                        and upcoming releases.
-                    </p>
-
-                </a>
-
-                <a href="worlds.html">
-
-                    <span class="explore-number">
-                        02
-                    </span>
-
-                    <h3>
-                        Story Worlds
-                    </h3>
-
-                    <p>
-                        Enter Shadow District
-                        or Enchanted Realm.
-                    </p>
-
-                </a>
-
-                <a href="about.html">
-
-                    <span class="explore-number">
-                        03
-                    </span>
-
-                    <h3>
-                        About Me
-                    </h3>
-
-                    <p>
-                        Meet the author behind
-                        the JaiyahVerse.
-                    </p>
-
-                </a>
-
-                <a href="blog.html">
-
-                    <span class="explore-number">
-                        04
-                    </span>
-
-                    <h3>
-                        Blog
-                    </h3>
-
-                    <p>
-                        Read writing updates,
-                        book news, and behind the scenes.
-                    </p>
-
-                </a>
-
-                <a href="shop.html">
-
-                    <span class="explore-number">
-                        05
-                    </span>
-
-                    <h3>
-                        Shop
-                    </h3>
-
-                    <p>
-                        Discover books,
-                        reader gifts, and merchandise.
-                    </p>
-
-                </a>
-
-                <a href="contact.html">
-
-                    <span class="explore-number">
-                        06
-                    </span>
-
-                    <h3>
-                        Contact
-                    </h3>
-
-                    <p>
-                        Send reader mail,
-                        business inquiries, or book club requests.
-                    </p>
-
+                <a
+                    href="about.html"
+                    class="section-button"
+                >
+                    About Jaiyah
                 </a>
 
             </div>
@@ -577,40 +686,35 @@
 
 
         <!-- ========================= -->
-        <!-- DISCORD COMMUNITY -->
+        <!-- DISCORD -->
         <!-- ========================= -->
 
         <section id="discord-community">
 
-            <div class="discord-community-card">
+            <div class="discord-card">
 
-                <div class="discord-community-content">
+                <p class="section-label">
+                    Join the Community
+                </p>
 
-                    <p class="section-label">
-                        Join the Community
-                    </p>
+                <h2>
+                    Enter the JaiyahVerse Discord
+                </h2>
 
-                    <h2>
-                        Enter the JaiyahVerse Discord
-                    </h2>
+                <p>
+                    Connect with readers, discuss the books,
+                    receive exclusive sneak peeks, follow writing
+                    updates, and explore the JaiyahVerse together.
+                </p>
 
-                    <p>
-                        Connect with readers, discuss the books,
-                        receive exclusive sneak peeks,
-                        follow writing updates,
-                        and explore the JaiyahVerse together.
-                    </p>
-
-                    <a
-                        href="https://discord.gg/2CKyCH4xKm"
-                        class="primary-btn"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Join the Discord
-                    </a>
-
-                </div>
+                <a
+                    href="https://discord.gg/2CKyCH4xKm"
+                    class="section-button"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Join the Discord
+                </a>
 
             </div>
 
@@ -623,31 +727,39 @@
 
         <section id="newsletter">
 
-            <h2>
-                Become Part of the Story
-            </h2>
+            <div class="newsletter-content">
 
-            <p>
-                Join my newsletter for exclusive updates,
-                giveaways, behind-the-scenes content,
-                and early access to upcoming releases.
-            </p>
+                <p class="section-label">
+                    Become Part of the Story
+                </p>
 
-            <form>
-
-                <input
-                    type="email"
-                    name="email"
-                    placeholder="Enter your email"
-                    aria-label="Email address"
-                    required
-                >
-
-                <button type="submit">
+                <h2>
                     Join the JaiyahVerse
-                </button>
+                </h2>
 
-            </form>
+                <p>
+                    Receive exclusive updates, giveaways,
+                    behind-the-scenes content, and early access
+                    to upcoming releases.
+                </p>
+
+                <form class="newsletter-form">
+
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Enter your email address"
+                        aria-label="Email address"
+                        required
+                    >
+
+                    <button type="submit">
+                        Join Now
+                    </button>
+
+                </form>
+
+            </div>
 
         </section>
 
@@ -678,8 +790,12 @@
                 Books
             </a>
 
-            <a href="worlds.html">
-                Worlds
+            <a href="shadow-district.html">
+                Shadow District
+            </a>
+
+            <a href="enchanted-realm.html">
+                Enchanted Realm
             </a>
 
             <a href="about.html">
@@ -700,10 +816,11 @@
 
         </nav>
 
+
         <div class="footer-socials">
 
             <a
-                href="Yhttps://www.instagram.com/jaiyahsymone?utm_source=qr"
+                href="https://www.instagram.com/jaiyahsymone"
                 target="_blank"
                 rel="noopener noreferrer"
             >
@@ -711,7 +828,7 @@
             </a>
 
             <a
-                href="https://www.tiktok.com/@jaiyahsymone?_r=1&_t=ZP-98ONoTuiiWk"
+                href="https://www.tiktok.com/@jaiyahsymone"
                 target="_blank"
                 rel="noopener noreferrer"
             >
@@ -728,14 +845,12 @@
 
         </div>
 
-        <p>
+        <p class="copyright">
             © 2026 Jaiyah Symone. All Rights Reserved.
         </p>
 
     </footer>
 
-
-    <!-- JavaScript -->
 
     <script src="js/main.js"></script>
 
