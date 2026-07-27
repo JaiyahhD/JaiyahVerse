@@ -5,89 +5,174 @@
 
     <meta charset="UTF-8">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <meta
         name="description"
         content="Shop books, reader gifts, author merchandise, and exclusive items from Jaiyah Symone and the JaiyahVerse."
     >
 
-    <title>Shop | Jaiyah Symone</title>
+    <title>
+        Shop | Jaiyah Symone
+    </title>
 
+    <!-- Global CSS -->
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- Shop Page CSS -->
     <link rel="stylesheet" href="css/shop.css">
 
 </head>
 
-<body>
+
+<body class="shop-page">
+
 
     <!-- ========================= -->
-    <!-- Navigation -->
+    <!-- HEADER -->
     <!-- ========================= -->
 
-    <header>
+    <header class="site-header">
 
-        <nav>
+        <nav class="main-nav">
 
-            <div class="logo">
+            <a
+                href="index.html"
+                class="site-logo"
+                aria-label="Jaiyah Symone homepage"
+            >
 
-                <a href="index.html">
-                    Jaiyah Symone
+                <span class="logo-main">
+                    Jaiyah
+                </span>
+
+                <span class="logo-bottom">
+                    Symone
+                </span>
+
+                <span
+                    class="logo-butterfly"
+                    aria-hidden="true"
+                >
+                    🦋
+                </span>
+
+            </a>
+
+
+            <button
+                class="mobile-menu-button"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="main-navigation-links"
+            >
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+
+            <div
+                class="nav-menu"
+                id="main-navigation-links"
+            >
+
+                <ul class="nav-links">
+
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="books.html">
+                            Books
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="worlds.html">
+                            Worlds
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="blog.html">
+                            Blog
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="shop.html"
+                            class="active"
+                        >
+                            Shop
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+
+                <div class="nav-socials">
+
+                    <a
+                        href="https://www.tiktok.com/@jaiyahsymone"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Jaiyah Symone on TikTok"
+                    >
+                        TT
+                    </a>
+
+                    <a
+                        href="https://www.instagram.com/jaiyahsymone"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Jaiyah Symone on Instagram"
+                    >
+                        IG
+                    </a>
+
+                    <a
+                        href="https://discord.gg/2CKyCH4xKm"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Join the JaiyahVerse Discord"
+                    >
+                        DC
+                    </a>
+
+                </div>
+
+
+                <a
+                    href="#newsletter"
+                    class="nav-join-button"
+                >
+                    Join the JaiyahVerse
                 </a>
 
             </div>
-
-            <ul>
-
-                <li>
-                    <a href="index.html">
-                        Home
-                    </a>
-                </li>
-
-                <li>
-                    <a href="books.html">
-                        Books
-                    </a>
-                </li>
-
-                <li>
-                    <a href="worlds.html">
-                        Worlds
-                    </a>
-                </li>
-
-                <li>
-                    <a href="about.html">
-                        About
-                    </a>
-                </li>
-
-                <li>
-                    <a href="blog.html">
-                        Blog
-                    </a>
-                </li>
-
-                <li>
-                    <a href="shop.html" class="active">
-                        Shop
-                    </a>
-                </li>
-
-                <li>
-                    <a href="contact.html">
-                        Contact
-                    </a>
-                </li>
-
-            </ul>
-
-            <a href="contact.html" class="btn">
-                Join the Jaiyahverse
-            </a>
 
         </nav>
 
@@ -96,31 +181,139 @@
 
     <main>
 
+
         <!-- ========================= -->
-        <!-- Shop Hero -->
+        <!-- SHOP HERO -->
         <!-- ========================= -->
 
         <section id="shop-hero">
 
-            <div class="shop-hero-content">
+            <div class="shop-hero-glow"></div>
 
-                <p class="section-label">
-                    The JaiyahVerse Shop
-                </p>
+            <div class="shop-hero-inner">
 
-                <h1>
-                    Stories You Can Take With You
-                </h1>
 
-                <p class="shop-hero-description">
-                    Shop books, reader gifts, special editions,
-                    and exclusive items inspired by the worlds
-                    of Jaiyah Symone.
-                </p>
+                <div class="shop-hero-copy">
 
-                <a href="#shop-books" class="primary-btn">
-                    Start Shopping
-                </a>
+                    <p class="hero-script">
+                        Beyond the bookshelf
+                    </p>
+
+                    <p class="hero-eyebrow">
+                        The JaiyahVerse Shop
+                    </p>
+
+                    <h1>
+                        Stories You<br>
+                        Can Keep
+                    </h1>
+
+                    <p class="shop-hero-tagline">
+                        Books. Gifts. Collectibles. Reader magic.
+                    </p>
+
+                    <p class="shop-hero-description">
+                        Discover books, reader gifts, special collections,
+                        signed items, and merchandise inspired by Shadow
+                        District, the Enchanted Realm, and the growing
+                        worlds of Jaiyah Symone.
+                    </p>
+
+                    <div class="shop-hero-buttons">
+
+                        <a
+                            href="#shop-books"
+                            class="primary-shop-button"
+                        >
+                            Shop the Books
+                        </a>
+
+                        <a
+                            href="#shop-categories"
+                            class="secondary-shop-button"
+                        >
+                            Browse Collections
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Hero Product Display -->
+
+                <div class="shop-hero-art">
+
+                    <div class="hero-product-stack">
+
+
+                        <div class="hero-product-card product-card-back">
+
+                            <span>
+                                Reader Collection
+                            </span>
+
+                            <h2>
+                                Made for Book Lovers
+                            </h2>
+
+                        </div>
+
+
+                        <div class="hero-product-card product-card-middle">
+
+                            <span>
+                                The JaiyahVerse
+                            </span>
+
+                            <h2>
+                                Stories Beyond the Page
+                            </h2>
+
+                        </div>
+
+
+                        <div class="hero-product-card product-card-front">
+
+                            <img
+                                src="assets/bookcovers/BlackIvyCircleCover.png"
+                                alt="Black Ivy Circle by Jaiyah Symone"
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <span
+                        class="shop-butterfly shop-butterfly-one"
+                        aria-hidden="true"
+                    >
+                        🦋
+                    </span>
+
+                    <span
+                        class="shop-butterfly shop-butterfly-two"
+                        aria-hidden="true"
+                    >
+                        🦋
+                    </span>
+
+                    <span
+                        class="shop-sparkle shop-sparkle-one"
+                        aria-hidden="true"
+                    >
+                        ✦
+                    </span>
+
+                    <span
+                        class="shop-sparkle shop-sparkle-two"
+                        aria-hidden="true"
+                    >
+                        ✧
+                    </span>
+
+                </div>
 
             </div>
 
@@ -128,12 +321,51 @@
 
 
         <!-- ========================= -->
-        <!-- Shop Categories -->
+        <!-- SHOP INTRODUCTION -->
+        <!-- ========================= -->
+
+        <section id="shop-introduction">
+
+            <div
+                class="shop-ornament"
+                aria-hidden="true"
+            >
+
+                <span class="ornament-line"></span>
+
+                <span class="ornament-center">
+                    ♕
+                </span>
+
+                <span class="ornament-line"></span>
+
+            </div>
+
+            <p class="section-label">
+                Step Beyond the Story
+            </p>
+
+            <h2>
+                Bring the JaiyahVerse Home
+            </h2>
+
+            <p>
+                Whether you are collecting the books, finding something
+                special for another reader, or waiting for the next
+                exclusive release, this shop was created for readers
+                who want to carry the story beyond the final page.
+            </p>
+
+        </section>
+
+
+        <!-- ========================= -->
+        <!-- SHOP CATEGORIES -->
         <!-- ========================= -->
 
         <section id="shop-categories">
 
-            <div class="section-heading">
+            <div class="shop-section-heading">
 
                 <p class="section-label">
                     Browse the Shop
@@ -143,58 +375,108 @@
                     Choose Your Collection
                 </h2>
 
+                <p>
+                    Start with the stories or explore what is coming next.
+                </p>
+
             </div>
+
 
             <div class="shop-category-grid">
 
-                <a href="#shop-books" class="shop-category-card">
 
-                    <p class="category-number">
+                <!-- Books -->
+
+                <a
+                    href="#shop-books"
+                    class="shop-category-card books-category-card"
+                >
+
+                    <span class="category-number">
                         01
-                    </p>
+                    </span>
+
+                    <span class="category-icon">
+                        ❦
+                    </span>
 
                     <h3>
                         Books
                     </h3>
 
                     <p>
-                        Published stories and upcoming releases
-                        from across the JaiyahVerse.
+                        Published stories, upcoming releases,
+                        and future special editions from across
+                        the JaiyahVerse.
                     </p>
+
+                    <span class="category-link">
+                        Shop Books →
+                    </span>
 
                 </a>
 
-                <a href="#reader-gifts" class="shop-category-card">
 
-                    <p class="category-number">
+                <!-- Reader Gifts -->
+
+                <a
+                    href="#reader-gifts"
+                    class="shop-category-card gifts-category-card"
+                >
+
+                    <span class="category-number">
                         02
-                    </p>
+                    </span>
+
+                    <span class="category-icon">
+                        ✦
+                    </span>
 
                     <h3>
                         Reader Gifts
                     </h3>
 
                     <p>
-                        Bookmarks, stickers, reading accessories,
-                        and gifts made for book lovers.
+                        Bookmarks, stickers, journals,
+                        reading accessories, and gifts
+                        made for book lovers.
                     </p>
+
+                    <span class="category-link">
+                        Explore Gifts →
+                    </span>
 
                 </a>
 
-                <a href="#author-merch" class="shop-category-card">
 
-                    <p class="category-number">
+                <!-- Author Merch -->
+
+                <a
+                    href="#author-merch"
+                    class="shop-category-card merch-category-card"
+                >
+
+                    <span class="category-number">
                         03
-                    </p>
+                    </span>
+
+                    <span class="category-icon">
+                        🦋
+                    </span>
 
                     <h3>
-                        Author Merch
+                        JaiyahVerse Merch
                     </h3>
 
                     <p>
-                        Exclusive Jaiyah Symone and JaiyahVerse
-                        merchandise coming soon.
+                        Apparel, totes, stationery,
+                        collectibles, and items inspired
+                        by the worlds of Jaiyah Symone.
                     </p>
+
+                    <span class="category-link">
+                        Preview Merch →
+                    </span>
 
                 </a>
 
@@ -204,12 +486,12 @@
 
 
         <!-- ========================= -->
-        <!-- Featured Book -->
+        <!-- FEATURED BOOK -->
         <!-- ========================= -->
 
         <section id="shop-books">
 
-            <div class="section-heading">
+            <div class="shop-section-heading">
 
                 <p class="section-label">
                     Available Now
@@ -219,96 +501,157 @@
                     Shop the Books
                 </h2>
 
+                <p>
+                    Begin your journey through the JaiyahVerse.
+                </p>
+
             </div>
 
-            <div class="shop-product-grid">
 
-                <article class="product-card featured-product">
+            <article class="featured-shop-product">
 
-                    <div class="product-image-placeholder">
+
+                <div class="featured-product-image">
+
+                    <div class="featured-cover-glow"></div>
+
+                    <img
+                        src="assets/bookcovers/BlackIvyCircleCover.png"
+                        alt="Black Ivy Circle by Jaiyah Symone"
+                    >
+
+                    <span class="available-product-badge">
+                        Available Now
+                    </span>
+
+                </div>
+
+
+                <div class="featured-product-content">
+
+                    <p class="product-world">
+                        Shadow District
+                    </p>
+
+                    <p class="product-series">
+                        The Ivy Chronicles · Book One
+                    </p>
+
+                    <h2>
+                        Black Ivy Circle
+                    </h2>
+
+                    <p class="product-genre">
+                        Psychological Thriller
+                    </p>
+
+                    <div class="product-divider"></div>
+
+                    <p class="product-description">
+                        A reunion built on friendship becomes a dangerous
+                        unraveling of buried secrets, complicated loyalties,
+                        betrayal, and truths that were never meant to surface.
+                    </p>
+
+                    <p class="product-description">
+                        Enter a story where everyone has something to hide
+                        and every secret comes with a price.
+                    </p>
+
+
+                    <div class="product-formats">
 
                         <span>
-                            Black Ivy Circle Cover
+                            Paperback
+                        </span>
+
+                        <span>
+                            Hardcover
+                        </span>
+
+                        <span>
+                            eBook
                         </span>
 
                     </div>
 
-                    <div class="product-content">
 
-                        <p class="product-type">
-                            The Ivy Chronicles — Book One
-                        </p>
+                    <div class="product-actions">
 
-                        <h3>
-                            Black Ivy Circle
-                        </h3>
+                        <a
+                            href="https://a.co/d/0fAFGtAI" target="_blank"
+                            class="primary-shop-button"
+                        >
+                            Shop Black Ivy Circle
+                        </a>
 
-                        <p class="product-description">
-                            A psychological thriller filled with
-                            buried secrets, complicated friendships,
-                            betrayal, and a reunion no one will forget.
-                        </p>
-
-                        <p class="product-format">
-                            Available in paperback, hardcover,
-                            and eBook formats.
-                        </p>
-
-                        <div class="product-buttons">
-
-                            <a href="#" class="primary-btn">
-                                Shop Now
-                            </a>
-
-                            <a href="books.html" class="secondary-btn">
-                                View Details
-                            </a>
-
-                        </div>
+                        <a
+                            href="https://a.co/d/0fAFGtAI" target="_blank"
+                            class="secondary-shop-button"
+                        >
+                            View Book Details
+                        </a>
 
                     </div>
 
-                </article>
+                </div>
 
-            </div>
+            </article>
 
         </section>
 
 
         <!-- ========================= -->
-        <!-- Coming Soon Books -->
+        <!-- UPCOMING RELEASES -->
         <!-- ========================= -->
 
         <section id="upcoming-shop">
 
-            <div class="section-heading">
+            <div class="upcoming-shop-heading">
 
-                <p class="section-label">
-                    Coming to the Shop
-                </p>
+                <div>
 
-                <h2>
-                    Upcoming Releases
-                </h2>
+                    <p class="section-label">
+                        Coming to the Shop
+                    </p>
+
+                    <h2>
+                        Upcoming Releases
+                    </h2>
+
+                </div>
+
+                <a href="books.html">
+                    View All Books →
+                </a>
 
             </div>
 
+
             <div class="upcoming-product-grid">
+
+
+                <!-- Behind Closed Doors -->
 
                 <article class="upcoming-product-card">
 
-                    <div class="small-product-placeholder">
+                    <div class="upcoming-product-image">
 
-                        <span>
-                            Cover Coming Soon
+                        <img
+                            src="assets/bookcovers/BehindClosedDoorsCover.png"
+                            alt="Behind Closed Doors by Jaiyah Symone"
+                        >
+
+                        <span class="coming-soon-badge">
+                            Coming Soon
                         </span>
 
                     </div>
 
                     <div class="upcoming-product-content">
 
-                        <p class="product-type">
-                            The Ivy Chronicles — Book Two
+                        <p class="product-series">
+                            The Ivy Chronicles · Book Two
                         </p>
 
                         <h3>
@@ -319,37 +662,25 @@
                             Psychological Thriller
                         </p>
 
-                        <span class="coming-soon-badge">
-                            Coming Soon
-                        </span>
+                        <a href="books.html#behind-closed-doors">
+                            View Details →
+                        </a>
 
                     </div>
 
                 </article>
 
+
+                <!-- Diamond Body Count -->
+
                 <article class="upcoming-product-card">
 
-                    <div class="small-product-placeholder">
+                    <div class="upcoming-product-image">
 
-                        <span>
-                            Cover Coming Soon
-                        </span>
-
-                    </div>
-
-                    <div class="upcoming-product-content">
-
-                        <p class="product-type">
-                            Married to the Streets — Book One
-                        </p>
-
-                        <h3>
-                            Diamond Blood Count
-                        </h3>
-
-                        <p>
-                            Gritty Thriller
-                        </p>
+                        <img
+                            src="assets/bookcovers/DiamondBodyCountCover.png"
+                            alt="The Diamond Body Count by Jaiyah Symone"
+                        >
 
                         <span class="coming-soon-badge">
                             Coming Soon
@@ -357,35 +688,63 @@
 
                     </div>
 
+                    <div class="upcoming-product-content">
+
+                        <p class="product-series">
+                            Married to the Streets · Book One
+                        </p>
+
+                        <h3>
+                            The Diamond Body Count
+                        </h3>
+
+                        <p>
+                            Gritty Urban Thriller
+                        </p>
+
+                        <a href="books.html#diamond-body-count">
+                            View Details →
+                        </a>
+
+                    </div>
+
                 </article>
 
-                <article class="upcoming-product-card">
 
-                    <div class="small-product-placeholder">
+                <!-- Echoes of Sankora -->
 
-                        <span>
-                            Cover Coming Soon
+                <article class="upcoming-product-card fantasy-product-card">
+
+                    <div class="upcoming-product-image">
+
+                        <img
+                            src="assets/bookcovers/TheFirstPulseCover.png"
+                            alt="Echoes of Sankora by Jaiyah Symone"
+                        >
+
+                        <span class="coming-soon-badge fantasy-product-badge">
+                            Coming Soon
                         </span>
 
                     </div>
 
                     <div class="upcoming-product-content">
 
-                        <p class="product-type">
-                            A JaiyahVerse Fantasy
+                        <p class="product-series">
+                            Echoes of Sankora · Book One
                         </p>
 
                         <h3>
-                            Echoes of Sankora
+                            The First Pulse
                         </h3>
 
                         <p>
-                            Fantasy
+                            Magical Academy Fantasy
                         </p>
-
-                        <span class="coming-soon-badge fantasy-badge">
-                            Coming Soon
-                        </span>
+                        
+                        <a href="books.html#echoes-of-sankora">
+                            View Details →
+                        </a>
 
                     </div>
 
@@ -397,12 +756,56 @@
 
 
         <!-- ========================= -->
-        <!-- Reader Gifts -->
+        <!-- READER GIFTS -->
         <!-- ========================= -->
 
         <section id="reader-gifts">
 
             <div class="shop-feature-layout">
+
+
+                <div class="shop-feature-visual gifts-visual">
+
+                    <div class="gift-display-card gift-card-one">
+
+                        <span>
+                            ❦
+                        </span>
+
+                        <p>
+                            Reader Journals
+                        </p>
+
+                    </div>
+
+
+                    <div class="gift-display-card gift-card-two">
+
+                        <span>
+                            ✦
+                        </span>
+
+                        <p>
+                            Bookmarks
+                        </p>
+
+                    </div>
+
+
+                    <div class="gift-display-card gift-card-three">
+
+                        <span>
+                            🦋
+                        </span>
+
+                        <p>
+                            Bookish Extras
+                        </p>
+
+                    </div>
+
+                </div>
+
 
                 <div class="shop-feature-content">
 
@@ -414,24 +817,45 @@
                         Reader Gifts
                     </h2>
 
-                    <p>
-                        The JaiyahVerse shop will soon include
-                        bookmarks, stickers, bookish accessories,
-                        reading journals, and other gifts created
-                        for readers who love getting lost in a story.
+                    <p class="shop-feature-lead">
+                        Little things that make reading feel even more special.
                     </p>
 
-                    <a href="contact.html" class="secondary-btn">
-                        Join for Shop Updates
+                    <p>
+                        Future reader collections may include bookmarks,
+                        stickers, reading journals, annotation tools,
+                        bookish stationery, themed accessories, and gifts
+                        created for people who love getting lost in a story.
+                    </p>
+
+
+                    <div class="shop-feature-list">
+
+                        <span>
+                            Bookmarks
+                        </span>
+
+                        <span>
+                            Reading Journals
+                        </span>
+
+                        <span>
+                            Stickers
+                        </span>
+
+                        <span>
+                            Annotation Sets
+                        </span>
+
+                    </div>
+
+
+                    <a
+                        href="#newsletter"
+                        class="secondary-shop-button"
+                    >
+                        Get Gift Shop Updates
                     </a>
-
-                </div>
-
-                <div class="shop-feature-placeholder">
-
-                    <span>
-                        Reader Gift Collection Coming Soon
-                    </span>
 
                 </div>
 
@@ -441,24 +865,17 @@
 
 
         <!-- ========================= -->
-        <!-- Author Merchandise -->
+        <!-- AUTHOR MERCH -->
         <!-- ========================= -->
 
         <section id="author-merch">
 
-            <div class="shop-feature-layout reverse">
+            <div class="shop-feature-layout merch-feature-layout">
 
-                <div class="shop-feature-placeholder merch-placeholder">
-
-                    <span>
-                        JaiyahVerse Merchandise Coming Soon
-                    </span>
-
-                </div>
 
                 <div class="shop-feature-content">
 
-                    <p class="section-label">
+                    <p class="section-label fantasy-section-label">
                         Wear the Story
                     </p>
 
@@ -466,15 +883,89 @@
                         JaiyahVerse Merchandise
                     </h2>
 
-                    <p>
-                        Future collections may include shirts,
-                        hoodies, tote bags, mugs, stationery,
-                        and exclusive merchandise inspired by
-                        Shadow District and Enchanted Realm.
+                    <p class="shop-feature-lead">
+                        Carry your favorite world beyond the bookshelf.
                     </p>
 
-                    <a href="contact.html" class="secondary-btn">
-                        Get Merchandise Updates
+                    <p>
+                        Future merchandise collections may include shirts,
+                        hoodies, tote bags, mugs, stationery, collectible
+                        items, and exclusive designs inspired by Shadow
+                        District and the Enchanted Realm.
+                    </p>
+
+
+                    <div class="shop-feature-list fantasy-feature-list">
+
+                        <span>
+                            Apparel
+                        </span>
+
+                        <span>
+                            Tote Bags
+                        </span>
+
+                        <span>
+                            Drinkware
+                        </span>
+
+                        <span>
+                            Collectibles
+                        </span>
+
+                    </div>
+
+
+                    <a
+                        href="#newsletter"
+                        class="secondary-shop-button fantasy-shop-button"
+                    >
+                        Get Merch Updates
+                    </a>
+
+                </div>
+
+
+                <div class="shop-feature-visual merch-visual">
+
+
+                    <a
+                        href="shadow-district.html"
+                        class="merch-world-card shadow-merch-card"
+                    >
+
+                        <p>
+                            Shadow District Collection
+                        </p>
+
+                        <h3>
+                            Secrets Look Good on You
+                        </h3>
+
+                        <span>
+                            Coming Soon
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="enchanted-realm.html"
+                        class="merch-world-card enchanted-merch-card"
+                    >
+
+                        <p>
+                            Enchanted Realm Collection
+                        </p>
+
+                        <h3>
+                            Magic Remembers
+                        </h3>
+
+                        <span>
+                            Coming Soon
+                        </span>
+
                     </a>
 
                 </div>
@@ -485,12 +976,110 @@
 
 
         <!-- ========================= -->
-        <!-- Shop Notice -->
+        <!-- SHOP PROMISE -->
+        <!-- ========================= -->
+
+        <section id="shop-promise">
+
+            <div class="shop-promise-inner">
+
+
+                <div class="shop-promise-heading">
+
+                    <p class="section-label">
+                        Created With Readers in Mind
+                    </p>
+
+                    <h2>
+                        More Than Merchandise
+                    </h2>
+
+                    <p>
+                        Every future collection will be designed to feel
+                        connected to the stories, characters, and worlds
+                        readers already love.
+                    </p>
+
+                </div>
+
+
+                <div class="promise-grid">
+
+
+                    <article class="promise-card">
+
+                        <span>
+                            01
+                        </span>
+
+                        <h3>
+                            Story Inspired
+                        </h3>
+
+                        <p>
+                            Products and collections connected to
+                            the books and worlds of the JaiyahVerse.
+                        </p>
+
+                    </article>
+
+
+                    <article class="promise-card">
+
+                        <span>
+                            02
+                        </span>
+
+                        <h3>
+                            Reader Focused
+                        </h3>
+
+                        <p>
+                            Items designed for readers, collectors,
+                            book clubs, and the JaiyahVerse community.
+                        </p>
+
+                    </article>
+
+
+                    <article class="promise-card">
+
+                        <span>
+                            03
+                        </span>
+
+                        <h3>
+                            Made to Feel Special
+                        </h3>
+
+                        <p>
+                            Thoughtful products meant to feel like
+                            another piece of the story.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================= -->
+        <!-- SHOP NOTICE -->
         <!-- ========================= -->
 
         <section id="shop-notice">
 
             <div class="shop-notice-card">
+
+                <span
+                    class="shop-notice-symbol"
+                    aria-hidden="true"
+                >
+                    ✦
+                </span>
 
                 <p class="section-label">
                     More Is Coming
@@ -501,18 +1090,25 @@
                 </h2>
 
                 <p>
-                    New books, special collections, signed items,
-                    reader gifts, and exclusive merchandise will be
-                    added as the JaiyahVerse continues to grow.
+                    New books, signed items, special editions,
+                    reader gifts, world-inspired collections,
+                    and exclusive merchandise will be added
+                    as the JaiyahVerse continues to grow.
                 </p>
 
                 <div class="shop-notice-buttons">
 
-                    <a href="books.html" class="primary-btn">
+                    <a
+                        href="books.html"
+                        class="primary-shop-button"
+                    >
                         Browse the Books
                     </a>
 
-                    <a href="contact.html" class="secondary-btn">
+                    <a
+                        href="#newsletter"
+                        class="secondary-shop-button"
+                    >
                         Stay Updated
                     </a>
 
@@ -524,44 +1120,82 @@
 
 
         <!-- ========================= -->
-        <!-- Newsletter -->
+        <!-- SHOP QUOTE -->
+        <!-- ========================= -->
+
+        <section id="shop-quote">
+
+            <div class="shop-quote-content">
+
+                <span
+                    class="quote-symbol"
+                    aria-hidden="true"
+                >
+                    ❦
+                </span>
+
+                <blockquote>
+                    “Some stories belong on your shelf.<br>
+                    Others become part of your world.”
+                </blockquote>
+
+                <p>
+                    The JaiyahVerse Shop
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================= -->
+        <!-- NEWSLETTER -->
         <!-- ========================= -->
 
         <section id="newsletter">
 
-            <h2>
-                Be First to Shop
-            </h2>
+            <div class="newsletter-content">
 
-            <p>
-                Join the JaiyahVerse newsletter for new releases,
-                shop launches, exclusive merchandise,
-                special editions, and reader giveaways.
-            </p>
+                <p class="section-label">
+                    Be First to Shop
+                </p>
 
-            <form>
+                <h2>
+                    Join the JaiyahVerse
+                </h2>
 
-                <input
-                    type="email"
-                    name="email"
-                    placeholder="Enter your email"
-                    aria-label="Email address"
-                    required
-                >
+                <p>
+                    Receive new release news, shop launch updates,
+                    special edition announcements, merchandise previews,
+                    reader giveaways, and exclusive offers.
+                </p>
 
-                <button type="submit">
-                    Join the Jaiyahverse
-                </button>
+                <form class="newsletter-form">
 
-            </form>
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Enter your email address"
+                        aria-label="Email address"
+                        required
+                    >
+
+                    <button type="submit">
+                        Join Now
+                    </button>
+
+                </form>
+
+            </div>
 
         </section>
+
 
     </main>
 
 
     <!-- ========================= -->
-    <!-- Footer -->
+    <!-- FOOTER -->
     <!-- ========================= -->
 
     <footer>
@@ -588,6 +1222,14 @@
                 Worlds
             </a>
 
+            <a href="shadow-district.html">
+                Shadow District
+            </a>
+
+            <a href="enchanted-realm.html">
+                Enchanted Realm
+            </a>
+
             <a href="about.html">
                 About
             </a>
@@ -596,17 +1238,51 @@
                 Blog
             </a>
 
+            <a href="shop.html">
+                Shop
+            </a>
+
             <a href="contact.html">
                 Contact
             </a>
 
         </nav>
 
-        <p>
+
+        <div class="footer-socials">
+
+            <a
+                href="https://www.instagram.com/jaiyahsymone"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Instagram
+            </a>
+
+            <a
+                href="https://www.tiktok.com/@jaiyahsymone"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                TikTok
+            </a>
+
+            <a
+                href="https://discord.gg/2CKyCH4xKm"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Discord
+            </a>
+
+        </div>
+
+        <p class="copyright">
             © 2026 Jaiyah Symone. All Rights Reserved.
         </p>
 
     </footer>
+
 
     <script src="js/main.js"></script>
 

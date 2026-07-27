@@ -5,484 +5,1243 @@
 
     <meta charset="UTF-8">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <meta
         name="description"
-        content="Read the latest updates from author Jaiyah Symone including writing updates, book recommendations, world-building, and behind-the-scenes content."
+        content="Read the latest updates from author Jaiyah Symone, including writing updates, world-building, book news, behind-the-scenes content, and reader life."
     >
 
-    <title>Blog | Jaiyah Symone</title>
+    <title>
+        Blog | Jaiyah Symone
+    </title>
 
+    <!-- Global CSS -->
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- Blog Page CSS -->
     <link rel="stylesheet" href="css/blog.css">
 
 </head>
 
-<body>
 
-<header>
+<body class="blog-page">
 
-    <nav>
 
-        <div class="logo">
+    <!-- ========================= -->
+    <!-- HEADER -->
+    <!-- ========================= -->
 
-            <a href="index.html">
+    <header class="site-header">
 
-                Jaiyah Symone
+        <nav class="main-nav">
+
+            <a
+                href="index.html"
+                class="site-logo"
+                aria-label="Jaiyah Symone homepage"
+            >
+
+                <span class="logo-main">
+                    Jaiyah
+                </span>
+
+                <span class="logo-bottom">
+                    Symone
+                </span>
+
+                <span
+                    class="logo-butterfly"
+                    aria-hidden="true"
+                >
+                    🦋
+                </span>
 
             </a>
 
-        </div>
 
-        <ul>
+            <button
+                class="mobile-menu-button"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="main-navigation-links"
+            >
 
-            <li><a href="index.html">Home</a></li>
+                <span></span>
+                <span></span>
+                <span></span>
 
-            <li><a href="books.html">Books</a></li>
-
-            <li><a href="worlds.html">Worlds</a></li>
-
-            <li><a href="about.html">About</a></li>
-
-            <li><a href="blog.html" class="active">Blog</a></li>
-
-            <li><a href="shop.html">Shop</a></li>
-
-            <li><a href="contact.html">Contact</a></li>
-
-        </ul>
-
-        <a href="contact.html" class="btn">
-
-            Join the Jaiyahverse
-
-        </a>
-
-    </nav>
-
-</header>
-
-<main>
-
-<!-- ==================================== -->
-<!-- Hero -->
-<!-- ==================================== -->
-
-<section id="blog-hero">
-
-    <div class="blog-hero-content">
-
-        <p class="section-label">
-
-            Welcome to the Library
-
-        </p>
-
-        <h1>
-
-            The JaiyahVerse Journal
-
-        </h1>
-
-        <p class="blog-intro">
-
-            Behind every story is another story.
-            Follow along for writing updates,
-            world-building, reading life,
-            and everything happening inside the JaiyahVerse.
-
-        </p>
-
-    </div>
-
-</section>
+            </button>
 
 
-<!-- ==================================== -->
-<!-- Featured Post -->
-<!-- ==================================== -->
+            <div
+                class="nav-menu"
+                id="main-navigation-links"
+            >
 
-<section id="featured-post">
+                <ul class="nav-links">
 
-    <div class="featured-post-card">
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
 
-        <div class="featured-image">
+                    <li>
+                        <a href="books.html">
+                            Books
+                        </a>
+                    </li>
 
-            Featured Post Image
+                    <li>
+                        <a href="worlds.html">
+                            Worlds
+                        </a>
+                    </li>
 
-        </div>
+                    <li>
+                        <a href="about.html">
+                            About
+                        </a>
+                    </li>
 
-        <div class="featured-content">
+                    <li>
+                        <a
+                            href="blog.html"
+                            class="active"
+                        >
+                            Blog
+                        </a>
+                    </li>
 
-            <p class="post-category">
+                    <li>
+                        <a href="shop.html">
+                            Shop
+                        </a>
+                    </li>
 
-                Featured
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
 
+                </ul>
+
+
+                <div class="nav-socials">
+
+                    <a
+                        href="https://www.tiktok.com/@jaiyahsymone"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Jaiyah Symone on TikTok"
+                    >
+                        TT
+                    </a>
+
+                    <a
+                        href="https://www.instagram.com/jaiyahsymone"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Jaiyah Symone on Instagram"
+                    >
+                        IG
+                    </a>
+
+                    <a
+                        href="https://discord.gg/2CKyCH4xKm"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Join the JaiyahVerse Discord"
+                    >
+                        DC
+                    </a>
+
+                </div>
+
+
+                <a
+                    href="#newsletter"
+                    class="nav-join-button"
+                >
+                    Join the JaiyahVerse
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+
+        <!-- ========================= -->
+        <!-- BLOG HERO -->
+        <!-- ========================= -->
+
+        <section id="blog-hero">
+
+            <div class="blog-hero-glow"></div>
+
+            <div class="blog-hero-inner">
+
+
+                <div class="blog-hero-copy">
+
+                    <p class="hero-script">
+                        Beyond the pages
+                    </p>
+
+                    <p class="hero-eyebrow">
+                        Welcome to the Library
+                    </p>
+
+                    <h1>
+                        The JaiyahVerse<br>
+                        Journal
+                    </h1>
+
+                    <p class="blog-hero-tagline">
+                        Stories behind the stories.
+                    </p>
+
+                    <p class="blog-hero-description">
+                        Step inside my writing life for book updates,
+                        world-building notes, character spotlights,
+                        reading recommendations, behind-the-scenes moments,
+                        and everything happening across the JaiyahVerse.
+                    </p>
+
+                    <div class="blog-hero-buttons">
+
+                        <a
+                            href="#latest-posts"
+                            class="primary-blog-button"
+                        >
+                            Read the Latest
+                        </a>
+
+                        <a
+                            href="#blog-categories"
+                            class="secondary-blog-button"
+                        >
+                            Browse Categories
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="blog-hero-art">
+
+                    <div class="journal-stack">
+
+                        <article class="journal-card journal-card-back">
+
+                            <span>
+                                World Building
+                            </span>
+
+                            <h2>
+                                Notes From the Enchanted Realm
+                            </h2>
+
+                        </article>
+
+
+                        <article class="journal-card journal-card-middle">
+
+                            <span>
+                                Writing Life
+                            </span>
+
+                            <h2>
+                                Behind the Draft
+                            </h2>
+
+                        </article>
+
+
+                        <article class="journal-card journal-card-front">
+
+                            <p>
+                                The JaiyahVerse Journal
+                            </p>
+
+                            <h2>
+                                Stories Begin Before the First Chapter
+                            </h2>
+
+                            <span>
+                                Enter the Library
+                            </span>
+
+                        </article>
+
+                    </div>
+
+                    <span
+                        class="blog-butterfly blog-butterfly-one"
+                        aria-hidden="true"
+                    >
+                        🦋
+                    </span>
+
+                    <span
+                        class="blog-butterfly blog-butterfly-two"
+                        aria-hidden="true"
+                    >
+                        🦋
+                    </span>
+
+                    <span
+                        class="blog-sparkle blog-sparkle-one"
+                        aria-hidden="true"
+                    >
+                        ✦
+                    </span>
+
+                    <span
+                        class="blog-sparkle blog-sparkle-two"
+                        aria-hidden="true"
+                    >
+                        ✧
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================= -->
+        <!-- JOURNAL INTRODUCTION -->
+        <!-- ========================= -->
+
+        <section id="journal-introduction">
+
+            <div
+                class="blog-ornament"
+                aria-hidden="true"
+            >
+
+                <span class="ornament-line"></span>
+
+                <span class="ornament-center">
+                    ❦
+                </span>
+
+                <span class="ornament-line"></span>
+
+            </div>
+
+            <p class="section-label">
+                Inside the Journal
             </p>
 
             <h2>
-
-                Welcome to the JaiyahVerse
-
+                There Is Always More to the Story
             </h2>
 
             <p>
-
-                Every story has a beginning.
-                Here's a look into why I created the JaiyahVerse,
-                the worlds you'll discover,
-                and what's coming next.
-
+                The books are only one part of the journey.
+                This is where I share what happens before,
+                during, and after the words reach the page.
             </p>
 
-            <a href="#"
+        </section>
 
-               class="primary-btn">
 
-                Read Article
+        <!-- ========================= -->
+        <!-- FEATURED POST -->
+        <!-- ========================= -->
 
+        <section id="featured-post">
+
+            <div class="featured-post-card">
+
+
+                <div class="featured-post-image">
+
+                    <img
+                        src="assets/blog/WelcomeToTheJaiyahVerse.jpg"
+                        alt="Welcome to the JaiyahVerse featured article"
+                    >
+
+                    <span class="featured-badge">
+                        Featured Story
+                    </span>
+
+                </div>
+
+
+                <div class="featured-post-content">
+
+                    <p class="post-category">
+                        The JaiyahVerse
+                    </p>
+
+                    <p class="post-date">
+                        July 2026 · 5 Minute Read
+                    </p>
+
+                    <h2>
+                        Welcome to the JaiyahVerse
+                    </h2>
+
+                    <p class="featured-post-lead">
+                        Every world has a beginning, and this is mine.
+                    </p>
+
+                    <p>
+                        Discover why I created the JaiyahVerse,
+                        how Shadow District and the Enchanted Realm
+                        became two sides of the same creative universe,
+                        and what readers can expect as the worlds continue
+                        to grow.
+                    </p>
+
+                    <div class="featured-post-actions">
+
+                        <a
+                            href="#"
+                            class="primary-blog-button"
+                        >
+                            Read the Article
+                        </a>
+
+                        <span>
+                            World Building · Author Life
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================= -->
+        <!-- BLOG CATEGORIES -->
+        <!-- ========================= -->
+
+        <section id="blog-categories">
+
+            <div class="blog-section-heading">
+
+                <p class="section-label">
+                    Browse the Archives
+                </p>
+
+                <h2>
+                    Explore the Journal
+                </h2>
+
+                <p>
+                    Follow the parts of the JaiyahVerse that interest you most.
+                </p>
+
+            </div>
+
+
+            <div class="category-grid">
+
+
+                <a
+                    href="#latest-posts"
+                    class="category-card writing-category-card"
+                >
+
+                    <span class="category-number">
+                        01
+                    </span>
+
+                    <span class="category-icon">
+                        ✎
+                    </span>
+
+                    <h3>
+                        Writing Updates
+                    </h3>
+
+                    <p>
+                        Draft progress, current projects,
+                        writing goals, and release news.
+                    </p>
+
+                    <span class="category-link">
+                        Browse Articles →
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="#latest-posts"
+                    class="category-card behind-scenes-card"
+                >
+
+                    <span class="category-number">
+                        02
+                    </span>
+
+                    <span class="category-icon">
+                        ✦
+                    </span>
+
+                    <h3>
+                        Behind the Scenes
+                    </h3>
+
+                    <p>
+                        Cover development, creative decisions,
+                        research, and the work behind each story.
+                    </p>
+
+                    <span class="category-link">
+                        Browse Articles →
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="#latest-posts"
+                    class="category-card world-building-card"
+                >
+
+                    <span class="category-number">
+                        03
+                    </span>
+
+                    <span class="category-icon">
+                        ☾
+                    </span>
+
+                    <h3>
+                        World Building
+                    </h3>
+
+                    <p>
+                        Locations, magic systems, histories,
+                        hidden details, and lore from every world.
+                    </p>
+
+                    <span class="category-link">
+                        Browse Articles →
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="#latest-posts"
+                    class="category-card character-card"
+                >
+
+                    <span class="category-number">
+                        04
+                    </span>
+
+                    <span class="category-icon">
+                        ♕
+                    </span>
+
+                    <h3>
+                        Character Spotlights
+                    </h3>
+
+                    <p>
+                        Meet the characters, discover their secrets,
+                        and learn what shaped their stories.
+                    </p>
+
+                    <span class="category-link">
+                        Browse Articles →
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="#latest-posts"
+                    class="category-card recommendations-card"
+                >
+
+                    <span class="category-number">
+                        05
+                    </span>
+
+                    <span class="category-icon">
+                        ❦
+                    </span>
+
+                    <h3>
+                        Book Recommendations
+                    </h3>
+
+                    <p>
+                        Reviews, reading lists, favorites,
+                        and books worth adding to your shelf.
+                    </p>
+
+                    <span class="category-link">
+                        Browse Articles →
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="#latest-posts"
+                    class="category-card reader-life-card"
+                >
+
+                    <span class="category-number">
+                        06
+                    </span>
+
+                    <span class="category-icon">
+                        🦋
+                    </span>
+
+                    <h3>
+                        Reader Life
+                    </h3>
+
+                    <p>
+                        Reading challenges, community moments,
+                        events, bookish fun, and life beyond the draft.
+                    </p>
+
+                    <span class="category-link">
+                        Browse Articles →
+                    </span>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================= -->
+        <!-- LATEST POSTS -->
+        <!-- ========================= -->
+
+        <section id="latest-posts">
+
+            <div class="latest-posts-heading">
+
+                <div>
+
+                    <p class="section-label">
+                        Latest Articles
+                    </p>
+
+                    <h2>
+                        Recently Added
+                    </h2>
+
+                </div>
+
+                <a href="#">
+                    View the Full Archive →
+                </a>
+
+            </div>
+
+
+            <div class="post-grid">
+
+
+                <!-- Post One -->
+
+                <article class="post-card">
+
+                    <a href="#">
+
+                        <div class="post-image">
+
+                            <img
+                                src="assets/blog/BehindTheDraft.jpg"
+                                alt="Behind the draft writing update"
+                            >
+
+                            <span class="post-image-category">
+                                Writing Update
+                            </span>
+
+                        </div>
+
+
+                        <div class="post-content">
+
+                            <div class="post-meta">
+
+                                <span>
+                                    July 24, 2026
+                                </span>
+
+                                <span>
+                                    4 Minute Read
+                                </span>
+
+                            </div>
+
+                            <h3>
+                                Behind the Draft: Building My Next Story
+                            </h3>
+
+                            <p>
+                                A look at the ideas, characters,
+                                research, and messy first pages
+                                behind my newest work in progress.
+                            </p>
+
+                            <span class="read-more-link">
+                                Read More →
+                            </span>
+
+                        </div>
+
+                    </a>
+
+                </article>
+
+
+                <!-- Post Two -->
+
+                <article class="post-card fantasy-post-card">
+
+                    <a href="#">
+
+                        <div class="post-image">
+
+                            <img
+                                src="assets/blog/SankoraWorldBuilding.jpg"
+                                alt="Echoes of Sankora world-building article"
+                            >
+
+                            <span class="post-image-category">
+                                World Building
+                            </span>
+
+                        </div>
+
+
+                        <div class="post-content">
+
+                            <div class="post-meta">
+
+                                <span>
+                                    July 18, 2026
+                                </span>
+
+                                <span>
+                                    6 Minute Read
+                                </span>
+
+                            </div>
+
+                            <h3>
+                                Inside Sankora Academy
+                            </h3>
+
+                            <p>
+                                Explore the inspiration behind Sankora,
+                                its magical legacies, and the world
+                                waiting beyond the First Pulse.
+                            </p>
+
+                            <span class="read-more-link">
+                                Read More →
+                            </span>
+
+                        </div>
+
+                    </a>
+
+                </article>
+
+
+                <!-- Post Three -->
+
+                <article class="post-card shadow-post-card">
+
+                    <a href="#">
+
+                        <div class="post-image">
+
+                            <img
+                                src="assets/blog/ShadowDistrictSecrets.jpg"
+                                alt="Shadow District thriller article"
+                            >
+
+                            <span class="post-image-category">
+                                Shadow District
+                            </span>
+
+                        </div>
+
+
+                        <div class="post-content">
+
+                            <div class="post-meta">
+
+                                <span>
+                                    July 12, 2026
+                                </span>
+
+                                <span>
+                                    5 Minute Read
+                                </span>
+
+                            </div>
+
+                            <h3>
+                                Why Every Secret Needs a Price
+                            </h3>
+
+                            <p>
+                                The role of betrayal, hidden motives,
+                                consequences, and unreliable truth
+                                inside my darker stories.
+                            </p>
+
+                            <span class="read-more-link">
+                                Read More →
+                            </span>
+
+                        </div>
+
+                    </a>
+
+                </article>
+
+
+                <!-- Post Four -->
+
+                <article class="post-card">
+
+                    <a href="#">
+
+                        <div class="post-image">
+
+                            <img
+                                src="assets/blog/CharacterSpotlight.jpg"
+                                alt="Character spotlight article"
+                            >
+
+                            <span class="post-image-category">
+                                Character Spotlight
+                            </span>
+
+                        </div>
+
+
+                        <div class="post-content">
+
+                            <div class="post-meta">
+
+                                <span>
+                                    July 7, 2026
+                                </span>
+
+                                <span>
+                                    4 Minute Read
+                                </span>
+
+                            </div>
+
+                            <h3>
+                                Creating Characters Readers Remember
+                            </h3>
+
+                            <p>
+                                How flaws, secrets, loyalty,
+                                trauma, and desire help turn a name
+                                on the page into someone unforgettable.
+                            </p>
+
+                            <span class="read-more-link">
+                                Read More →
+                            </span>
+
+                        </div>
+
+                    </a>
+
+                </article>
+
+
+                <!-- Post Five -->
+
+                <article class="post-card fantasy-post-card">
+
+                    <a href="#">
+
+                        <div class="post-image">
+
+                            <img
+                                src="assets/blog/ReadingLife.jpg"
+                                alt="Book recommendations and reading life article"
+                            >
+
+                            <span class="post-image-category">
+                                Reader Life
+                            </span>
+
+                        </div>
+
+
+                        <div class="post-content">
+
+                            <div class="post-meta">
+
+                                <span>
+                                    June 30, 2026
+                                </span>
+
+                                <span>
+                                    3 Minute Read
+                                </span>
+
+                            </div>
+
+                            <h3>
+                                What Has Been on My Reading List
+                            </h3>
+
+                            <p>
+                                A few current reads, recent favorites,
+                                and stories that inspired me
+                                to keep turning the page.
+                            </p>
+
+                            <span class="read-more-link">
+                                Read More →
+                            </span>
+
+                        </div>
+
+                    </a>
+
+                </article>
+
+
+                <!-- Post Six -->
+
+                <article class="post-card shadow-post-card">
+
+                    <a href="#">
+
+                        <div class="post-image">
+
+                            <img
+                                src="assets/blog/BlackIvyCircleBehindTheScenes.jpg"
+                                alt="Black Ivy Circle behind-the-scenes article"
+                            >
+
+                            <span class="post-image-category">
+                                Behind the Scenes
+                            </span>
+
+                        </div>
+
+
+                        <div class="post-content">
+
+                            <div class="post-meta">
+
+                                <span>
+                                    June 22, 2026
+                                </span>
+
+                                <span>
+                                    5 Minute Read
+                                </span>
+
+                            </div>
+
+                            <h3>
+                                Revisiting Black Ivy Circle
+                            </h3>
+
+                            <p>
+                                Looking back at the story,
+                                the choices behind it,
+                                and what may come next.
+                            </p>
+
+                            <span class="read-more-link">
+                                Read More →
+                            </span>
+
+                        </div>
+
+                    </a>
+
+                </article>
+
+            </div>
+
+
+            <div class="load-more-wrap">
+
+                <button
+                    type="button"
+                    class="load-more-button"
+                >
+                    Load More Articles
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================= -->
+        <!-- FROM THE AUTHOR -->
+        <!-- ========================= -->
+
+        <section id="from-the-author">
+
+            <div class="from-author-inner">
+
+
+                <div class="from-author-portrait">
+
+                    <img
+                        src="assets/JaiyahAuthorPortrait.png"
+                        alt="Author Jaiyah Symone"
+                    >
+
+                </div>
+
+
+                <div class="from-author-copy">
+
+                    <p class="section-label">
+                        Notes From Jaiyah
+                    </p>
+
+                    <h2>
+                        A Journal for Readers, Writers, and Dreamers
+                    </h2>
+
+                    <p>
+                        I created this space to share more than announcements.
+                        I want the journal to feel like an open door into
+                        my creative process, my reading life, and the worlds
+                        taking shape behind every book.
+                    </p>
+
+                    <p>
+                        Some entries will be polished updates.
+                        Others may be honest thoughts from the middle of a draft.
+                        Either way, you are welcome inside.
+                    </p>
+
+                    <a
+                        href="about.html"
+                        class="secondary-blog-button"
+                    >
+                        More About Jaiyah
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================= -->
+        <!-- JOURNAL QUOTE -->
+        <!-- ========================= -->
+
+        <section id="journal-quote">
+
+            <div class="journal-quote-content">
+
+                <span
+                    class="quote-symbol"
+                    aria-hidden="true"
+                >
+                    ✦
+                </span>
+
+                <blockquote>
+                    “The story on the page is only the beginning.”
+                </blockquote>
+
+                <p>
+                    The JaiyahVerse Journal
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================= -->
+        <!-- NEWSLETTER -->
+        <!-- ========================= -->
+
+        <section id="newsletter">
+
+            <div class="newsletter-content">
+
+                <p class="section-label">
+                    Never Miss an Update
+                </p>
+
+                <h2>
+                    Join the JaiyahVerse
+                </h2>
+
+                <p>
+                    Receive new journal entries, book news,
+                    cover reveals, exclusive sneak peeks,
+                    giveaways, and reader updates.
+                </p>
+
+                <form class="newsletter-form">
+
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Enter your email address"
+                        aria-label="Email address"
+                        required
+                    >
+
+                    <button type="submit">
+                        Join Now
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- ========================= -->
+    <!-- FOOTER -->
+    <!-- ========================= -->
+
+    <footer>
+
+        <h3>
+            Jaiyah Symone
+        </h3>
+
+        <p>
+            Dark dreams. Dangerous secrets. Magic that remembers.
+        </p>
+
+        <nav>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="books.html">
+                Books
+            </a>
+
+            <a href="worlds.html">
+                Worlds
+            </a>
+
+            <a href="shadow-district.html">
+                Shadow District
+            </a>
+
+            <a href="enchanted-realm.html">
+                Enchanted Realm
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+            <a href="blog.html">
+                Blog
+            </a>
+
+            <a href="shop.html">
+                Shop
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+        </nav>
+
+
+        <div class="footer-socials">
+
+            <a
+                href="https://www.goodreads.com/author/show/54636770.Jaiyah_Symone"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Goodreads
+            </a>            
+            
+
+            <a
+                href="https://www.instagram.com/jaiyahsymone"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Instagram
+            </a>
+
+            <a
+                href="https://www.tiktok.com/@jaiyahsymone"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                TikTok
+            </a>
+
+            <a
+                href="https://discord.gg/2CKyCH4xKm"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Discord
             </a>
 
         </div>
 
-    </div>
-
-</section>
-
-
-<!-- ==================================== -->
-<!-- Categories -->
-<!-- ==================================== -->
-
-<section id="blog-categories">
-
-    <div class="section-heading">
-
-        <p class="section-label">
-
-            Browse
-
+        <p class="copyright">
+            © 2026 Jaiyah Symone. All Rights Reserved.
         </p>
 
-        <h2>
+    </footer>
 
-            Explore the Journal
 
-        </h2>
-
-    </div>
-
-    <div class="category-grid">
-
-        <article class="category-card">
-
-            <h3>
-
-                Writing Updates
-
-            </h3>
-
-        </article>
-
-        <article class="category-card">
-
-            <h3>
-
-                Behind the Scenes
-
-            </h3>
-
-        </article>
-
-        <article class="category-card">
-
-            <h3>
-
-                World Building
-
-            </h3>
-
-        </article>
-
-        <article class="category-card">
-
-            <h3>
-
-                Character Spotlights
-
-            </h3>
-
-        </article>
-
-        <article class="category-card">
-
-            <h3>
-
-                Book Recommendations
-
-            </h3>
-
-        </article>
-
-        <article class="category-card">
-
-            <h3>
-
-                Reader Life
-
-            </h3>
-
-        </article>
-
-    </div>
-
-</section>
-
-
-<!-- ==================================== -->
-<!-- Latest Posts -->
-<!-- ==================================== -->
-
-<section id="latest-posts">
-
-    <div class="section-heading">
-
-        <p class="section-label">
-
-            Latest Articles
-
-        </p>
-
-        <h2>
-
-            Recently Added
-
-        </h2>
-
-    </div>
-
-    <div class="post-grid">
-
-        <article class="post-card">
-
-            <div class="post-image">
-
-                Image
-
-            </div>
-
-            <div class="post-content">
-
-                <p class="post-category">
-
-                    Writing
-
-                </p>
-
-                <h3>
-
-                    Blog Post Title
-
-                </h3>
-
-                <p>
-
-                    Short description of your article goes here.
-
-                </p>
-
-                <a href="#">
-
-                    Read More →
-
-                </a>
-
-            </div>
-
-        </article>
-
-        <article class="post-card">
-
-            <div class="post-image">
-
-                Image
-
-            </div>
-
-            <div class="post-content">
-
-                <p class="post-category">
-
-                    Fantasy
-
-                </p>
-
-                <h3>
-
-                    Blog Post Title
-
-                </h3>
-
-                <p>
-
-                    Short description of your article goes here.
-
-                </p>
-
-                <a href="#">
-
-                    Read More →
-
-                </a>
-
-            </div>
-
-        </article>
-
-        <article class="post-card">
-
-            <div class="post-image">
-
-                Image
-
-            </div>
-
-            <div class="post-content">
-
-                <p class="post-category">
-
-                    Thriller
-
-                </p>
-
-                <h3>
-
-                    Blog Post Title
-
-                </h3>
-
-                <p>
-
-                    Short description of your article goes here.
-
-                </p>
-
-                <a href="#">
-
-                    Read More →
-
-                </a>
-
-            </div>
-
-        </article>
-
-    </div>
-
-</section>
-
-
-<!-- ==================================== -->
-<!-- Newsletter -->
-<!-- ==================================== -->
-
-<section id="newsletter">
-
-    <h2>
-
-        Never Miss an Update
-
-    </h2>
-
-    <p>
-
-        Join the JaiyahVerse newsletter for new articles,
-        book news, giveaways,
-        exclusive sneak peeks,
-        and more.
-
-    </p>
-
-    <form>
-
-        <input
-            type="email"
-            placeholder="Enter your email"
-            required>
-
-        <button type="submit">
-
-            Join the Jaiyahverse
-
-        </button>
-
-    </form>
-
-</section>
-
-</main>
-
-
-<footer>
-
-    <h3>
-
-        Jaiyah Symone
-
-    </h3>
-
-    <p>
-
-        Dark dreams. Dangerous secrets. Magic that remembers.
-
-    </p>
-
-    <nav>
-
-        <a href="index.html">
-
-            Home
-
-        </a>
-
-        <a href="books.html">
-
-            Books
-
-        </a>
-
-        <a href="worlds.html">
-
-            Worlds
-
-        </a>
-
-        <a href="about.html">
-
-            About
-
-        </a>
-
-        <a href="contact.html">
-
-            Contact
-
-        </a>
-
-    </nav>
-
-    <p>
-
-        © 2026 Jaiyah Symone. All Rights Reserved.
-
-    </p>
-
-</footer>
-
-<script src="js/main.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 
