@@ -2,431 +2,1632 @@
    WORLDS PAGE
 ========================================= */
 
+:root {
+    --world-black: #050505;
+    --world-soft-black: #090708;
+    --world-charcoal: #151216;
+
+    --world-white: #f8f3f4;
+    --world-muted: rgba(248, 243, 244, 0.68);
+
+    --world-rose: #c88d9e;
+    --world-light-rose: #e4b0bf;
+    --world-deep-rose: #8b465d;
+
+    --world-burgundy: #7b1e2b;
+    --world-deep-burgundy: #4f101b;
+
+    --world-purple: #7e6bf5;
+    --world-deep-purple: #47358d;
+    --world-light-purple: #b9a7ff;
+
+    --world-gold: #d6b36f;
+}
+
 
 /* =========================================
-   WORLDS HERO
+   PAGE BASICS
 ========================================= */
 
-#worlds-hero {
-    min-height: 68vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+body.worlds-page {
+    margin: 0;
+    overflow-x: hidden;
 
-    padding: 8rem 8%;
+    color: var(--world-white);
 
     background:
         radial-gradient(
-            circle at 20% 30%,
-            rgba(123, 30, 43, 0.2),
-            transparent 35%
+            circle at 50% 8%,
+            rgba(126, 107, 245, 0.06),
+            transparent 25%
         ),
-        radial-gradient(
-            circle at 80% 30%,
-            rgba(126, 107, 245, 0.2),
-            transparent 35%
-        ),
-        linear-gradient(
-            180deg,
-            #0d0d0d,
-            #121116,
-            #0d0d0d
-        );
+        #050505;
+}
 
-    position: relative;
+body.worlds-page * {
+    box-sizing: border-box;
+}
+
+body.worlds-page img {
+    max-width: 100%;
+}
+
+body.worlds-page main {
     overflow: hidden;
 }
 
-#worlds-hero::before,
-#worlds-hero::after {
-    content: "";
+
+/* =========================================
+   HEADER
+========================================= */
+
+.site-header {
+    position: relative;
+    z-index: 1000;
+
+    width: 100%;
+
+    background: rgba(3, 3, 3, 0.98);
+
+    border-bottom: 1px solid rgba(200, 141, 158, 0.2);
+}
+
+.main-nav {
+    width: min(1450px, 94%);
+    min-height: 96px;
+
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 2rem;
+}
+
+.site-logo {
+    position: relative;
+
+    min-width: 190px;
+
+    display: inline-flex;
+    flex-direction: column;
+
+    color: var(--world-light-rose);
+    text-decoration: none;
+
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+.logo-main {
+    font-size: 2.15rem;
+    line-height: 0.9;
+}
+
+.logo-bottom {
+    margin-left: 3.4rem;
+
+    color: var(--world-white);
+
+    font-size: 0.85rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.logo-butterfly {
     position: absolute;
-    width: 320px;
-    height: 320px;
+    top: 0.1rem;
+    right: 0;
+
+    font-size: 1.5rem;
+}
+
+.nav-menu {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    gap: 2rem;
+}
+
+.nav-links {
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+
+    gap: 2rem;
+
+    list-style: none;
+}
+
+.nav-links a {
+    position: relative;
+
+    display: inline-block;
+
+    padding: 0.5rem 0;
+
+    color: rgba(248, 243, 244, 0.82);
+    text-decoration: none;
+
+    font-size: 0.87rem;
+    font-weight: 600;
+
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    transition:
+        color 0.3s ease,
+        text-shadow 0.3s ease;
+}
+
+.nav-links a::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 1px;
+
+    background: var(--world-rose);
+
+    transform: scaleX(0);
+    transform-origin: right;
+
+    transition: transform 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--world-light-rose);
+
+    text-shadow:
+        0 0 18px rgba(200, 141, 158, 0.3);
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.nav-socials {
+    display: flex;
+    align-items: center;
+
+    gap: 0.65rem;
+}
+
+.nav-socials a {
+    width: 32px;
+    height: 32px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--world-white);
+    text-decoration: none;
+
+    background: rgba(255, 255, 255, 0.035);
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 50%;
-    filter: blur(80px);
-    opacity: 0.25;
-    pointer-events: none;
+
+    font-size: 0.65rem;
+    font-weight: 700;
+
+    transition:
+        color 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.nav-socials a:hover {
+    transform: translateY(-2px);
+
+    color: var(--world-light-rose);
+
+    border-color: rgba(200, 141, 158, 0.5);
+}
+
+.nav-join-button {
+    min-height: 50px;
+
+    padding: 0.8rem 1.5rem;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--world-white);
+    text-decoration: none;
+
+    background:
+        linear-gradient(
+            135deg,
+            #a25e73,
+            #784052
+        );
+
+    border: 1px solid rgba(228, 176, 191, 0.48);
+    border-radius: 3px;
+
+    font-size: 0.76rem;
+    font-weight: 700;
+
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.15),
+        0 10px 24px rgba(0, 0, 0, 0.28);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.nav-join-button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.15),
+        0 14px 34px rgba(139, 70, 93, 0.34);
+}
+
+.mobile-menu-button {
+    display: none;
+
+    width: 42px;
+    height: 42px;
+
+    padding: 8px;
+
+    background: transparent;
+
+    border: 1px solid rgba(200, 141, 158, 0.28);
+    border-radius: 4px;
+
+    cursor: pointer;
+}
+
+.mobile-menu-button span {
+    display: block;
+
+    width: 100%;
+    height: 2px;
+
+    margin: 5px 0;
+
+    background: var(--world-white);
+
+    transition:
+        transform 0.3s ease,
+        opacity 0.3s ease;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+#worlds-hero {
+    position: relative;
+
+    min-height: 720px;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 22% 38%,
+            rgba(123, 30, 43, 0.19),
+            transparent 33%
+        ),
+        radial-gradient(
+            circle at 77% 38%,
+            rgba(126, 107, 245, 0.18),
+            transparent 32%
+        ),
+        linear-gradient(
+            90deg,
+            #050303 0%,
+            #090708 48%,
+            #090812 100%
+        );
+
+    border-bottom: 1px solid rgba(200, 141, 158, 0.15);
 }
 
 #worlds-hero::before {
-    left: -120px;
-    bottom: -100px;
-    background-color: var(--burgundy);
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    pointer-events: none;
+
+    background-image:
+        radial-gradient(
+            circle,
+            rgba(228, 176, 191, 0.5) 1px,
+            transparent 1.6px
+        );
+
+    background-size: 120px 120px;
+
+    opacity: 0.055;
 }
 
 #worlds-hero::after {
-    right: -120px;
-    top: -100px;
-    background-color: var(--purple);
+    content: "";
+
+    position: absolute;
+    left: 50%;
+    top: 0;
+
+    width: 1px;
+    height: 100%;
+
+    background:
+        linear-gradient(
+            transparent,
+            rgba(228, 176, 191, 0.2),
+            rgba(185, 167, 255, 0.25),
+            transparent
+        );
+
+    opacity: 0.35;
 }
 
-#worlds-hero .hero-content {
-    width: min(850px, 100%);
+.worlds-hero-glow {
+    position: absolute;
+    inset: 0;
+
+    pointer-events: none;
+
+    background:
+        radial-gradient(
+            circle at 45% 40%,
+            rgba(200, 141, 158, 0.08),
+            transparent 27%
+        ),
+        radial-gradient(
+            circle at 72% 46%,
+            rgba(126, 107, 245, 0.08),
+            transparent 29%
+        );
+}
+
+.worlds-hero-inner {
     position: relative;
-    z-index: 1;
-}
+    z-index: 2;
 
-#worlds-hero h1 {
-    max-width: 800px;
+    width: min(1450px, 92%);
+    min-height: 720px;
+
     margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 0.88fr 1.12fr;
+    align-items: center;
+
+    gap: clamp(3rem, 6vw, 6rem);
 }
 
-.hero-description {
-    max-width: 700px;
-    margin: 1.5rem auto 0;
-    font-size: 1.1rem;
-    line-height: 1.9;
+.worlds-hero-copy {
+    position: relative;
+    z-index: 5;
+
+    padding: 5rem 0;
+}
+
+.hero-script {
+    width: max-content;
+
+    margin: 0 0 0.4rem;
+
+    color: var(--world-light-rose);
+
+    font-family:
+        "Brush Script MT",
+        "Segoe Script",
+        cursive;
+
+    font-size: clamp(2.7rem, 5vw, 4.8rem);
+    line-height: 1;
+
+    transform: rotate(-4deg);
+
+    text-shadow:
+        0 0 10px rgba(228, 176, 191, 0.5),
+        0 0 28px rgba(200, 141, 158, 0.28);
+}
+
+.hero-eyebrow {
+    margin: 0 0 0.8rem;
+
+    color: rgba(228, 176, 191, 0.7);
+
+    font-size: 0.77rem;
+    font-weight: 700;
+
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.worlds-hero-copy h1 {
+    margin: 0 0 1.5rem;
+
+    color: var(--world-white);
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(3.8rem, 6.5vw, 7rem);
+    font-weight: 400;
+    line-height: 0.94;
+
+    letter-spacing: -0.045em;
+    text-transform: uppercase;
+
+    text-shadow:
+        0 5px 30px rgba(0, 0, 0, 0.8),
+        0 0 25px rgba(200, 141, 158, 0.08);
+}
+
+.worlds-hero-tagline {
+    margin: 0 0 1rem;
+
+    color: rgba(248, 243, 244, 0.85);
+
+    font-size: clamp(0.95rem, 1.6vw, 1.15rem);
+    font-weight: 600;
+    line-height: 1.7;
+
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.worlds-hero-description {
+    max-width: 570px;
+
+    margin: 0 0 2rem;
+
+    color: var(--world-muted);
+
+    font-size: 1.03rem;
+    line-height: 1.82;
+}
+
+.worlds-hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 1rem;
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.shadow-button,
+.enchanted-button {
+    min-height: 53px;
+
+    padding: 0.9rem 1.6rem;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--world-white);
+    text-decoration: none;
+
+    border-radius: 3px;
+
+    font-size: 0.79rem;
+    font-weight: 700;
+
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.shadow-button {
+    background:
+        linear-gradient(
+            135deg,
+            #8d3448,
+            #55131f
+        );
+
+    border: 1px solid rgba(223, 155, 172, 0.45);
+
+    box-shadow:
+        0 12px 30px rgba(123, 30, 43, 0.25),
+        inset 0 1px 0 rgba(255, 255, 255, 0.11);
+}
+
+.enchanted-button {
+    background:
+        linear-gradient(
+            135deg,
+            #7560cf,
+            #3f317b
+        );
+
+    border: 1px solid rgba(185, 167, 255, 0.46);
+
+    box-shadow:
+        0 12px 30px rgba(71, 53, 141, 0.28),
+        inset 0 1px 0 rgba(255, 255, 255, 0.11);
+}
+
+.shadow-button:hover,
+.enchanted-button:hover {
+    transform: translateY(-3px);
+}
+
+.shadow-button:hover {
+    box-shadow:
+        0 16px 38px rgba(123, 30, 43, 0.4),
+        0 0 26px rgba(200, 141, 158, 0.12);
+}
+
+.enchanted-button:hover {
+    box-shadow:
+        0 16px 38px rgba(71, 53, 141, 0.45),
+        0 0 28px rgba(126, 107, 245, 0.16);
+}
+
+
+/* =========================================
+   HERO WORLD PANELS
+========================================= */
+
+.worlds-hero-art {
+    position: relative;
+
+    min-height: 590px;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 1.1rem;
+}
+
+.hero-world-panel {
+    position: relative;
+
+    min-width: 0;
+
+    overflow: hidden;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    box-shadow:
+        0 30px 70px rgba(0, 0, 0, 0.62);
+
+    transition:
+        transform 0.45s ease,
+        box-shadow 0.45s ease,
+        border-color 0.45s ease;
+}
+
+.shadow-hero-panel {
+    transform: translateY(38px);
+
+    border: 1px solid rgba(200, 90, 112, 0.26);
+}
+
+.enchanted-hero-panel {
+    transform: translateY(-18px);
+
+    border: 1px solid rgba(162, 139, 231, 0.3);
+}
+
+.hero-world-panel img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.7s ease,
+        filter 0.7s ease;
+}
+
+.hero-world-panel::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+
+    pointer-events: none;
+
+    background:
+        linear-gradient(
+            180deg,
+            transparent 30%,
+            rgba(0, 0, 0, 0.88) 100%
+        );
+}
+
+.shadow-hero-panel::after,
+.enchanted-hero-panel::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+
+    pointer-events: none;
+
+    opacity: 0;
+
+    transition: opacity 0.45s ease;
+}
+
+.shadow-hero-panel::after {
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(123, 30, 43, 0.17),
+            transparent 60%
+        );
+}
+
+.enchanted-hero-panel::after {
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(126, 107, 245, 0.17),
+            transparent 60%
+        );
+}
+
+.hero-world-panel:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 40px 85px rgba(0, 0, 0, 0.75);
+}
+
+.shadow-hero-panel:hover {
+    border-color: rgba(223, 155, 172, 0.5);
+}
+
+.enchanted-hero-panel:hover {
+    border-color: rgba(185, 167, 255, 0.55);
+}
+
+.hero-world-panel:hover img {
+    transform: scale(1.055);
+
+    filter: brightness(1.08);
+}
+
+.hero-world-panel:hover::after {
+    opacity: 1;
+}
+
+.hero-panel-overlay {
+    position: absolute;
+    left: 1.4rem;
+    right: 1.4rem;
+    bottom: 1.5rem;
+    z-index: 4;
+}
+
+.hero-panel-overlay p {
+    margin: 0 0 0.45rem;
+
+    color: rgba(228, 176, 191, 0.75);
+
+    font-size: 0.65rem;
+    font-weight: 700;
+
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.enchanted-hero-panel .hero-panel-overlay p {
+    color: rgba(185, 167, 255, 0.82);
+}
+
+.hero-panel-overlay h2 {
+    margin: 0;
+
+    color: var(--world-white);
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(1.7rem, 2.7vw, 3rem);
+    font-weight: 400;
+    line-height: 1.06;
+}
+
+
+/* =========================================
+   INTRODUCTION
+========================================= */
+
+#worlds-introduction {
+    padding: 5.5rem 1.5rem;
+
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(139, 70, 93, 0.1),
+            transparent 45%
+        ),
+        linear-gradient(
+            180deg,
+            #0b090a,
+            #070707
+        );
+}
+
+.worlds-ornament {
+    width: min(620px, 78%);
+
+    margin: 0 auto 1.6rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 1rem;
+}
+
+.ornament-line {
+    flex: 1;
+
+    height: 1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(200, 141, 158, 0.58)
+        );
+}
+
+.ornament-line:last-child {
+    background:
+        linear-gradient(
+            90deg,
+            rgba(200, 141, 158, 0.58),
+            transparent
+        );
+}
+
+.ornament-center {
+    width: 64px;
+    height: 64px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--world-light-rose);
+
+    border: 1px solid rgba(200, 141, 158, 0.5);
+    border-radius: 50%;
+
+    font-size: 2rem;
+
+    box-shadow:
+        0 0 24px rgba(200, 141, 158, 0.08),
+        inset 0 0 18px rgba(200, 141, 158, 0.05);
 }
 
 .section-label {
-    color: var(--rose);
-    font-size: 0.85rem;
+    margin: 0 0 0.8rem;
+
+    color: var(--world-light-rose);
+
+    font-size: 0.76rem;
+    font-weight: 700;
+
+    letter-spacing: 0.19em;
     text-transform: uppercase;
-    letter-spacing: 0.3em;
-    margin-bottom: 1rem;
 }
 
+#worlds-introduction h2 {
+    margin: 0 0 1.1rem;
 
-/* =========================================
-   SHARED WORLD LAYOUT
-========================================= */
+    color: var(--world-white);
 
-.world-layout {
-    width: min(1200px, 100%);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2.1rem, 4vw, 3.7rem);
+    font-weight: 400;
+}
+
+#worlds-introduction > p:last-child {
+    max-width: 760px;
+
     margin: 0 auto;
 
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 4rem;
-}
+    color: var(--world-muted);
 
-.world-layout.reverse {
-    grid-template-columns: 1fr 1fr;
-}
-
-.world-info h2 {
-    margin-bottom: 1rem;
-}
-
-.world-info > p:nth-of-type(2) {
-    color: var(--light-rose);
-    font-size: 1.15rem;
-    font-style: italic;
-    margin-bottom: 1rem;
-}
-
-.world-info > p:nth-of-type(3) {
-    max-width: 600px;
-    line-height: 1.9;
-    margin-bottom: 1.8rem;
-}
-
-.world-info ul {
-    display: grid;
-    gap: 0.7rem;
-    margin-bottom: 2rem;
-}
-
-.world-info li {
-    color: var(--light-gray);
-}
-
-.world-info .primary-btn {
-    margin-top: 0.5rem;
+    font-size: 1.06rem;
+    line-height: 1.8;
 }
 
 
 /* =========================================
-   SHADOW DISTRICT
+   FEATURED WORLD SECTIONS
 ========================================= */
 
-#shadow-district {
+.world-feature {
+    width: min(1400px, 92%);
+
+    margin: 7rem auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: center;
+
+    gap: clamp(3rem, 7vw, 7rem);
+}
+
+.world-feature-art {
+    position: relative;
+
+    min-height: 610px;
+
+    overflow: hidden;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 35px 80px rgba(0, 0, 0, 0.55);
+}
+
+.world-feature-art img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.7s ease,
+        filter 0.7s ease;
+}
+
+.world-feature-art:hover img {
+    transform: scale(1.04);
+
+    filter: brightness(1.06);
+}
+
+.shadow-feature .world-feature-art {
+    border: 1px solid rgba(200, 80, 105, 0.25);
+}
+
+.enchanted-feature .world-feature-art {
+    border: 1px solid rgba(162, 139, 231, 0.28);
+}
+
+.world-art-overlay {
+    position: absolute;
+    inset: 0;
+
+    pointer-events: none;
+
+    background:
+        linear-gradient(
+            180deg,
+            transparent 45%,
+            rgba(0, 0, 0, 0.66) 100%
+        );
+}
+
+.world-number {
+    position: absolute;
+    right: 1.5rem;
+    bottom: 1rem;
+
+    color: rgba(255, 255, 255, 0.2);
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(5rem, 9vw, 9rem);
+    line-height: 1;
+}
+
+.world-feature-content {
+    position: relative;
+
+    padding: 1rem 0;
+}
+
+.world-type {
+    margin: 0 0 1rem;
+
+    font-size: 0.72rem;
+    font-weight: 700;
+
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+.shadow-type {
+    color: #df9bac;
+}
+
+.enchanted-type {
+    color: var(--world-light-purple);
+}
+
+.world-feature-content h2 {
+    margin: 0 0 1rem;
+
+    color: var(--world-white);
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(3rem, 5vw, 5.5rem);
+    font-weight: 400;
+    line-height: 1;
+}
+
+.world-quote-line {
+    margin: 0;
+
+    color: rgba(248, 243, 244, 0.88);
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(1.15rem, 2vw, 1.55rem);
+    font-style: italic;
+    line-height: 1.6;
+}
+
+.world-divider {
+    width: min(390px, 75%);
+    height: 1px;
+
+    margin: 1.7rem 0;
+}
+
+.shadow-divider {
+    background:
+        linear-gradient(
+            90deg,
+            rgba(223, 155, 172, 0.7),
+            transparent
+        );
+}
+
+.enchanted-divider {
+    background:
+        linear-gradient(
+            90deg,
+            rgba(185, 167, 255, 0.72),
+            transparent
+        );
+}
+
+.world-feature-content > p:not(.world-type):not(.world-quote-line) {
+    max-width: 650px;
+
+    margin: 0 0 1.1rem;
+
+    color: var(--world-muted);
+
+    font-size: 1.02rem;
+    line-height: 1.82;
+}
+
+.world-tags {
+    margin: 1.8rem 0 2rem;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 0.75rem;
+}
+
+.world-tags span {
+    padding: 0.58rem 0.9rem;
+
+    color: rgba(248, 243, 244, 0.76);
+
+    background: rgba(123, 30, 43, 0.1);
+
+    border: 1px solid rgba(200, 80, 105, 0.2);
+    border-radius: 999px;
+
+    font-size: 0.7rem;
+    font-weight: 600;
+
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.fantasy-tags span {
+    background: rgba(126, 107, 245, 0.09);
+
+    border-color: rgba(162, 139, 231, 0.22);
+}
+
+.world-actions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 1.3rem;
+}
+
+.world-text-link {
+    display: inline-flex;
+
+    color: rgba(248, 243, 244, 0.72);
+    text-decoration: none;
+
+    font-size: 0.77rem;
+    font-weight: 700;
+
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    transition:
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.world-text-link:hover {
+    transform: translateX(4px);
+}
+
+.shadow-link:hover {
+    color: var(--world-light-rose);
+}
+
+.enchanted-link:hover {
+    color: var(--world-light-purple);
+}
+
+
+/* =========================================
+   WORLD BOOK PREVIEWS
+========================================= */
+
+.world-book-preview {
+    padding: 6.5rem max(5%, calc((100% - 1320px) / 2));
+
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.shadow-book-preview {
     background:
         radial-gradient(
             circle at left center,
             rgba(123, 30, 43, 0.17),
-            transparent 45%
+            transparent 35%
         ),
         linear-gradient(
             180deg,
-            #0d0d0d,
-            #120c0f
+            #0b0809,
+            #060606
         );
 }
 
-#shadow-district .section-label {
-    color: var(--light-rose);
-}
-
-#shadow-district h2 {
-    color: var(--white);
-}
-
-#shadow-district .world-placeholder {
-    border-color: rgba(123, 30, 43, 0.6);
-
-    background:
-        radial-gradient(
-            circle at center,
-            rgba(123, 30, 43, 0.28),
-            transparent 50%
-        ),
-        linear-gradient(
-            145deg,
-            rgba(255, 255, 255, 0.04),
-            rgba(123, 30, 43, 0.1)
-        );
-
-    box-shadow:
-        0 25px 70px rgba(0, 0, 0, 0.45),
-        0 0 45px rgba(123, 30, 43, 0.12);
-}
-
-#shadow-district .world-placeholder::before {
-    background:
-        linear-gradient(
-            135deg,
-            transparent,
-            rgba(200, 141, 158, 0.12),
-            transparent
-        );
-}
-
-#shadow-district .primary-btn {
-    background-color: var(--deep-rose);
-}
-
-#shadow-district .primary-btn:hover {
-    background-color: var(--light-rose);
-}
-
-
-/* =========================================
-   ENCHANTED REALM
-========================================= */
-
-#enchanted-realm {
+.enchanted-book-preview {
     background:
         radial-gradient(
             circle at right center,
-            rgba(126, 107, 245, 0.2),
-            transparent 45%
+            rgba(126, 107, 245, 0.16),
+            transparent 38%
         ),
         linear-gradient(
             180deg,
-            #120c0f,
-            #0f0e18
+            #080711,
+            #050506
         );
 }
 
-#enchanted-realm .section-label {
-    color: #a99cff;
-}
-
-#enchanted-realm .world-info > p:nth-of-type(2) {
-    color: #b9afff;
-}
-
-#enchanted-realm .world-placeholder {
-    border-color: rgba(126, 107, 245, 0.65);
-
-    background:
-        radial-gradient(
-            circle at center,
-            rgba(126, 107, 245, 0.3),
-            transparent 50%
-        ),
-        linear-gradient(
-            145deg,
-            rgba(255, 255, 255, 0.04),
-            rgba(126, 107, 245, 0.12)
-        );
-
-    box-shadow:
-        0 25px 70px rgba(0, 0, 0, 0.45),
-        0 0 50px rgba(126, 107, 245, 0.16);
-}
-
-#enchanted-realm .world-placeholder::before {
-    background:
-        linear-gradient(
-            135deg,
-            transparent,
-            rgba(169, 156, 255, 0.18),
-            transparent
-        );
-}
-
-#enchanted-realm .primary-btn {
-    background-color: var(--purple);
-    color: var(--white);
-}
-
-#enchanted-realm .primary-btn:hover {
-    background-color: #998cff;
-}
-
-
-/* =========================================
-   WORLD ARTWORK PLACEHOLDERS
-========================================= */
-
-.world-placeholder {
-    min-height: 470px;
-    padding: 2rem;
+.world-book-heading {
+    margin-bottom: 3rem;
 
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-end;
+    justify-content: space-between;
 
-    color: var(--muted-gray);
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 0.16em;
-
-    border: 1px solid var(--glass-border);
-    border-radius: 30px;
-
-    position: relative;
-    overflow: hidden;
-
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-}
-
-.world-placeholder::before {
-    content: "";
-    position: absolute;
-    inset: -50%;
-
-    transform: rotate(20deg);
-    animation: worldGlow 8s linear infinite;
-}
-
-.world-placeholder::after {
-    content: "";
-    position: absolute;
-    inset: 20px;
-
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 22px;
-
-    pointer-events: none;
-}
-
-@keyframes worldGlow {
-    from {
-        transform: translateX(-18%) rotate(20deg);
-    }
-
-    to {
-        transform: translateX(18%) rotate(20deg);
-    }
-}
-
-
-/* =========================================
-   STORIES ACROSS THE JAIYAHVERSE
-========================================= */
-
-#world-books {
-    text-align: center;
-
-    background:
-        radial-gradient(
-            circle at center,
-            rgba(200, 141, 158, 0.1),
-            transparent 50%
-        ),
-        #0d0d0d;
-}
-
-#world-books > h2 {
-    margin-bottom: 3rem;
-}
-
-.book-world-grid {
-    width: min(1050px, 100%);
-    margin: 0 auto;
-
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 2rem;
 }
 
-.collection-card {
-    min-height: 290px;
-    padding: 2.5rem;
+.world-book-heading h2 {
+    margin: 0;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    color: var(--world-white);
 
-    text-align: left;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2.1rem, 4vw, 3.6rem);
+    font-weight: 400;
+}
 
-    background: var(--glass-background);
-    border: 1px solid var(--glass-border);
-    border-radius: 28px;
+.world-book-heading > a {
+    color: rgba(248, 243, 244, 0.68);
+    text-decoration: none;
 
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
+    font-size: 0.76rem;
+    font-weight: 700;
+
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
 
     transition:
-        transform 0.35s ease,
-        border-color 0.35s ease,
-        box-shadow 0.35s ease;
+        color 0.3s ease,
+        transform 0.3s ease;
 }
 
-.collection-card:first-child {
-    border-top: 3px solid var(--burgundy);
+.world-book-heading > a:hover {
+    color: var(--world-light-rose);
+
+    transform: translateX(4px);
 }
 
-.collection-card:last-child {
-    border-top: 3px solid var(--purple);
+.fantasy-section-label {
+    color: var(--world-light-purple);
 }
 
-.collection-card:hover {
+.world-book-row {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 2rem;
+}
+
+.world-book-card {
+    min-width: 0;
+
+    transition: transform 0.35s ease;
+}
+
+.world-book-card:hover {
     transform: translateY(-8px);
 }
 
-.collection-card:first-child:hover {
-    border-color: rgba(200, 141, 158, 0.55);
-    box-shadow: 0 20px 45px rgba(123, 30, 43, 0.14);
+.world-book-card > a {
+    display: block;
+
+    color: inherit;
+    text-decoration: none;
 }
 
-.collection-card:last-child:hover {
-    border-color: rgba(126, 107, 245, 0.6);
-    box-shadow: 0 20px 45px rgba(126, 107, 245, 0.14);
+.world-book-cover {
+    position: relative;
+
+    width: min(100%, 290px);
+
+    margin: 0 auto 1.5rem;
+
+    overflow: hidden;
+
+    background: #080708;
+
+    border: 1px solid rgba(200, 141, 158, 0.19);
+    border-radius: 5px;
+
+    box-shadow:
+        0 28px 58px rgba(0, 0, 0, 0.65);
 }
 
-.collection-card h3 {
-    margin-bottom: 1.4rem;
+.fantasy-book-card .world-book-cover {
+    border-color: rgba(162, 139, 231, 0.23);
 }
 
-.collection-card:first-child h3 {
-    color: var(--light-rose);
+.world-book-cover img {
+    width: 100%;
+    aspect-ratio: 2 / 3;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.5s ease,
+        filter 0.5s ease;
 }
 
-.collection-card:last-child h3 {
-    color: #a99cff;
+.world-book-card:hover .world-book-cover img {
+    transform: scale(1.035);
+
+    filter: brightness(1.06);
 }
 
-.collection-card ul {
+.world-book-info {
+    text-align: center;
+}
+
+.world-book-info p {
+    margin: 0 0 0.5rem;
+
+    color: rgba(228, 176, 191, 0.65);
+
+    font-size: 0.68rem;
+    font-weight: 700;
+
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.fantasy-book-card .world-book-info p {
+    color: rgba(185, 167, 255, 0.72);
+}
+
+.world-book-info h3 {
+    margin: 0 0 0.8rem;
+
+    color: var(--world-white);
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(1.4rem, 2.5vw, 2rem);
+    font-weight: 400;
+}
+
+.world-book-info span {
+    display: inline-flex;
+
+    padding: 0.48rem 0.76rem;
+
+    color: var(--world-light-rose);
+
+    background: rgba(200, 141, 158, 0.07);
+
+    border: 1px solid rgba(200, 141, 158, 0.2);
+    border-radius: 999px;
+
+    font-size: 0.63rem;
+    font-weight: 700;
+
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+}
+
+.world-book-info .available-status {
+    color: #e3bf78;
+
+    border-color: rgba(214, 179, 111, 0.3);
+}
+
+.fantasy-book-card .world-book-info span {
+    color: var(--world-light-purple);
+
+    background: rgba(126, 107, 245, 0.08);
+
+    border-color: rgba(162, 139, 231, 0.24);
+}
+
+
+/* =========================================
+   FUTURE FANTASY COVER
+========================================= */
+
+.future-world-cover {
+    position: relative;
+
+    width: min(100%, 290px);
+    aspect-ratio: 2 / 3;
+
+    margin: 0 auto 1.5rem;
+    padding: 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(126, 107, 245, 0.18),
+            transparent 55%
+        ),
+        linear-gradient(
+            145deg,
+            #17132c,
+            #07070c
+        );
+
+    border: 1px solid rgba(162, 139, 231, 0.28);
+    border-radius: 5px;
+
+    box-shadow:
+        0 28px 58px rgba(0, 0, 0, 0.62);
+}
+
+.future-world-cover::before {
+    content: "";
+
+    position: absolute;
+    inset: 13px;
+
+    border: 1px solid rgba(185, 167, 255, 0.13);
+}
+
+.future-world-cover p {
+    position: relative;
+    z-index: 2;
+
+    margin: 0 0 0.45rem;
+
+    color: rgba(248, 243, 244, 0.65);
+
+    font-size: 0.72rem;
+    font-weight: 700;
+
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.future-world-cover h3 {
+    position: relative;
+    z-index: 2;
+
+    max-width: 230px;
+
+    margin: 0;
+
+    color: var(--world-light-purple);
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(1.7rem, 3vw, 2.7rem);
+    font-weight: 400;
+    line-height: 1.08;
+
+    text-shadow:
+        0 0 20px rgba(126, 107, 245, 0.2);
+}
+
+.future-magic-symbol {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+
+    color: rgba(185, 167, 255, 0.53);
+
+    font-size: 2rem;
+}
+
+.future-moon {
+    position: relative;
+    z-index: 2;
+
+    margin-top: 1.2rem;
+
+    color: var(--world-light-purple);
+
+    font-size: 2rem;
+
+    text-shadow:
+        0 0 15px rgba(126, 107, 245, 0.45);
+}
+
+
+/* =========================================
+   CHOOSE YOUR WORLD
+========================================= */
+
+#choose-your-world {
+    width: min(1320px, 90%);
+
+    margin: 0 auto;
+    padding: 7rem 0;
+}
+
+.choose-heading {
+    max-width: 760px;
+
+    margin: 0 auto 3.5rem;
+
+    text-align: center;
+}
+
+.choose-heading h2 {
+    margin: 0 0 1rem;
+
+    color: var(--world-white);
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2.2rem, 4vw, 3.8rem);
+    font-weight: 400;
+}
+
+.choose-heading > p:last-child {
+    margin: 0;
+
+    color: var(--world-muted);
+
+    font-size: 1.03rem;
+    line-height: 1.8;
+}
+
+.choice-grid {
     display: grid;
-    gap: 0.8rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 1.5rem;
 }
 
-.collection-card li {
-    color: var(--light-gray);
-    padding-bottom: 0.75rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+.choice-card {
+    position: relative;
+
+    min-height: 340px;
+
+    padding: clamp(2rem, 5vw, 4rem);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    overflow: hidden;
+
+    color: var(--world-white);
+    text-decoration: none;
+
+    border-radius: 18px;
+
+    transition:
+        transform 0.4s ease,
+        border-color 0.4s ease,
+        box-shadow 0.4s ease;
 }
 
-.collection-card li:last-child {
-    border-bottom: none;
+.shadow-choice {
+    background:
+        radial-gradient(
+            circle at top right,
+            rgba(200, 80, 105, 0.18),
+            transparent 40%
+        ),
+        linear-gradient(
+            145deg,
+            #241014,
+            #090607
+        );
+
+    border: 1px solid rgba(200, 80, 105, 0.25);
+}
+
+.enchanted-choice {
+    background:
+        radial-gradient(
+            circle at top right,
+            rgba(126, 107, 245, 0.21),
+            transparent 42%
+        ),
+        linear-gradient(
+            145deg,
+            #17132d,
+            #07070d
+        );
+
+    border: 1px solid rgba(162, 139, 231, 0.28);
+}
+
+.choice-card::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    pointer-events: none;
+
+    background-image:
+        radial-gradient(
+            circle,
+            rgba(255, 255, 255, 0.45) 1px,
+            transparent 1.6px
+        );
+
+    background-size: 80px 80px;
+
+    opacity: 0.045;
+}
+
+.choice-card:hover {
+    transform: translateY(-8px);
+}
+
+.shadow-choice:hover {
+    border-color: rgba(223, 155, 172, 0.5);
+
+    box-shadow:
+        0 30px 70px rgba(0, 0, 0, 0.5),
+        0 0 30px rgba(123, 30, 43, 0.12);
+}
+
+.enchanted-choice:hover {
+    border-color: rgba(185, 167, 255, 0.5);
+
+    box-shadow:
+        0 30px 70px rgba(0, 0, 0, 0.5),
+        0 0 30px rgba(126, 107, 245, 0.13);
+}
+
+.choice-number {
+    position: absolute;
+    top: 0.8rem;
+    right: 1.3rem;
+
+    color: rgba(255, 255, 255, 0.1);
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(5rem, 10vw, 8rem);
+    line-height: 1;
+}
+
+.choice-card p {
+    position: relative;
+    z-index: 2;
+
+    margin: 0 0 0.6rem;
+
+    color: rgba(248, 243, 244, 0.62);
+
+    font-size: 0.7rem;
+    font-weight: 700;
+
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.choice-card h3 {
+    position: relative;
+    z-index: 2;
+
+    max-width: 520px;
+
+    margin: 0 0 1.2rem;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2rem, 4vw, 3.6rem);
+    font-weight: 400;
+    line-height: 1.08;
+}
+
+.choice-link {
+    position: relative;
+    z-index: 2;
+
+    font-size: 0.74rem;
+    font-weight: 700;
+
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+}
+
+.shadow-choice .choice-link {
+    color: var(--world-light-rose);
+}
+
+.enchanted-choice .choice-link {
+    color: var(--world-light-purple);
 }
 
 
@@ -435,75 +1636,552 @@
 ========================================= */
 
 #world-quote {
-    min-height: 340px;
+    position: relative;
+
+    min-height: 420px;
+
+    padding: 5rem 1.5rem;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
+    overflow: hidden;
+
     text-align: center;
 
     background:
+        radial-gradient(
+            circle at 20% 50%,
+            rgba(123, 30, 43, 0.2),
+            transparent 34%
+        ),
+        radial-gradient(
+            circle at 80% 50%,
+            rgba(126, 107, 245, 0.2),
+            transparent 34%
+        ),
+        #080708;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+#world-quote::before {
+    content: "";
+
+    position: absolute;
+    left: 50%;
+    top: 0;
+
+    width: 1px;
+    height: 100%;
+
+    background:
         linear-gradient(
-            90deg,
-            rgba(123, 30, 43, 0.18),
-            rgba(13, 13, 13, 0.9),
-            rgba(126, 107, 245, 0.18)
+            transparent,
+            rgba(228, 176, 191, 0.18),
+            rgba(185, 167, 255, 0.2),
+            transparent
         );
 }
 
-#world-quote blockquote {
-    width: min(800px, 100%);
-
-    color: var(--blush);
-    font-size: clamp(1.7rem, 4vw, 3rem);
-    line-height: 1.45;
-    font-style: italic;
-
+.quote-content {
     position: relative;
+    z-index: 2;
 }
 
-#world-quote blockquote::before,
-#world-quote blockquote::after {
-    color: var(--rose);
-    font-size: 4rem;
-    line-height: 0;
-    opacity: 0.45;
+.quote-symbol {
+    display: inline-block;
+
+    margin-bottom: 1.3rem;
+
+    color: var(--world-light-rose);
+
+    font-size: 2rem;
+
+    text-shadow:
+        0 0 12px rgba(228, 176, 191, 0.6);
 }
 
-#world-quote blockquote::before {
-    content: "“";
-    margin-right: 0.2rem;
+#world-quote blockquote {
+    max-width: 900px;
+
+    margin: 0 auto 1.4rem;
+
+    color: var(--world-white);
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2rem, 4.5vw, 4rem);
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.4;
 }
 
-#world-quote blockquote::after {
-    content: "”";
-    margin-left: 0.2rem;
+#world-quote p {
+    margin: 0;
+
+    color: rgba(228, 176, 191, 0.65);
+
+    font-size: 0.72rem;
+    font-weight: 700;
+
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
 }
 
 
 /* =========================================
-   TABLET
+   NEWSLETTER
 ========================================= */
 
-@media screen and (max-width: 950px) {
-    .world-layout,
-    .world-layout.reverse {
-        grid-template-columns: 1fr;
-        gap: 2.5rem;
+#newsletter {
+    padding: 6rem 1.5rem;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(139, 70, 93, 0.16),
+            transparent 46%
+        ),
+        linear-gradient(
+            180deg,
+            #0a0809,
+            #060606
+        );
+}
+
+.newsletter-content {
+    width: min(850px, 92%);
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.newsletter-content h2 {
+    margin: 0 0 1rem;
+
+    color: var(--world-white);
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2.1rem, 4vw, 3.7rem);
+    font-weight: 400;
+}
+
+.newsletter-content > p:not(.section-label) {
+    max-width: 650px;
+
+    margin: 0 auto 2rem;
+
+    color: var(--world-muted);
+
+    line-height: 1.8;
+}
+
+.newsletter-form {
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    gap: 0.8rem;
+}
+
+.newsletter-form input {
+    flex: 1;
+    min-width: 0;
+    min-height: 54px;
+
+    padding: 0 1.2rem;
+
+    color: var(--world-white);
+
+    background: rgba(255, 255, 255, 0.035);
+
+    border: 1px solid rgba(200, 141, 158, 0.25);
+    border-radius: 3px;
+
+    outline: none;
+
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.newsletter-form input::placeholder {
+    color: rgba(248, 243, 244, 0.43);
+}
+
+.newsletter-form input:focus {
+    border-color: rgba(228, 176, 191, 0.58);
+
+    box-shadow:
+        0 0 20px rgba(200, 141, 158, 0.08);
+}
+
+.newsletter-form button {
+    min-height: 54px;
+
+    padding: 0 1.7rem;
+
+    color: var(--world-white);
+
+    background:
+        linear-gradient(
+            135deg,
+            #a65e75,
+            #7a3f54
+        );
+
+    border: 1px solid rgba(228, 176, 191, 0.48);
+    border-radius: 3px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 14px 30px rgba(139, 70, 93, 0.28);
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+body.worlds-page footer {
+    padding: 4rem 1.5rem;
+
+    text-align: center;
+
+    background: #030303;
+
+    border-top: 1px solid rgba(200, 141, 158, 0.14);
+}
+
+body.worlds-page footer h3 {
+    margin: 0 0 0.6rem;
+
+    color: var(--world-light-rose);
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+body.worlds-page footer > p {
+    color: rgba(248, 243, 244, 0.55);
+}
+
+body.worlds-page footer nav,
+.footer-socials {
+    margin: 1.5rem 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 1.2rem;
+}
+
+body.worlds-page footer a {
+    color: rgba(248, 243, 244, 0.68);
+    text-decoration: none;
+
+    font-size: 0.9rem;
+
+    transition: color 0.3s ease;
+}
+
+body.worlds-page footer a:hover {
+    color: var(--world-light-rose);
+}
+
+.copyright {
+    margin: 1.5rem 0 0;
+
+    color: rgba(248, 243, 244, 0.4) !important;
+
+    font-size: 0.86rem;
+}
+
+
+/* =========================================
+   LARGE TABLET
+========================================= */
+
+@media (max-width: 1180px) {
+
+    .main-nav {
+        width: min(96%, 1450px);
     }
 
-    #enchanted-realm .world-placeholder {
+    .nav-links {
+        gap: 1.2rem;
+    }
+
+    .nav-socials {
+        display: none;
+    }
+
+    .worlds-hero-inner {
+        grid-template-columns: 0.92fr 1.08fr;
+    }
+
+    .world-feature {
+        gap: 4rem;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE NAVIGATION
+========================================= */
+
+@media (max-width: 960px) {
+
+    .main-nav {
+        min-height: 78px;
+    }
+
+    .mobile-menu-button {
+        display: block;
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+
+        width: 100%;
+        max-height: 0;
+
+        padding: 0 1.5rem;
+
+        flex-direction: column;
+        align-items: stretch;
+
+        gap: 1.2rem;
+
+        overflow: hidden;
+
+        background: rgba(3, 3, 3, 0.98);
+
+        border-bottom: 1px solid rgba(200, 141, 158, 0.2);
+
+        opacity: 0;
+
+        transition:
+            max-height 0.4s ease,
+            opacity 0.3s ease,
+            padding 0.4s ease;
+    }
+
+    .nav-menu.open {
+        max-height: 650px;
+
+        padding-top: 1.5rem;
+        padding-bottom: 1.8rem;
+
+        opacity: 1;
+    }
+
+    .nav-links {
+        width: 100%;
+
+        flex-direction: column;
+        align-items: stretch;
+
+        gap: 0;
+    }
+
+    .nav-links li {
+        width: 100%;
+    }
+
+    .nav-links a {
+        width: 100%;
+
+        display: block;
+
+        padding: 0.9rem 0;
+
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .nav-join-button {
+        width: 100%;
+    }
+
+    .mobile-menu-button.open span:nth-child(1) {
+        transform:
+            translateY(7px)
+            rotate(45deg);
+    }
+
+    .mobile-menu-button.open span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .mobile-menu-button.open span:nth-child(3) {
+        transform:
+            translateY(-7px)
+            rotate(-45deg);
+    }
+
+    #worlds-hero {
+        min-height: auto;
+    }
+
+    #worlds-hero::after {
+        display: none;
+    }
+
+    .worlds-hero-inner {
+        min-height: auto;
+
+        grid-template-columns: 1fr;
+
+        text-align: center;
+    }
+
+    .worlds-hero-copy {
+        padding:
+            4rem
+            0
+            1rem;
+    }
+
+    .hero-script {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .worlds-hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .worlds-hero-buttons {
+        justify-content: center;
+    }
+
+    .worlds-hero-art {
+        min-height: 560px;
+
+        margin-bottom: 4rem;
+    }
+
+    .world-feature {
+        grid-template-columns: 1fr;
+
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+
+    .world-feature-art {
+        min-height: 520px;
+    }
+
+    .enchanted-feature .world-feature-content {
         order: 2;
     }
 
-    #enchanted-realm .world-info {
+    .enchanted-feature .world-feature-art {
         order: 1;
     }
 
-    .world-placeholder {
-        min-height: 390px;
+    .world-feature-content {
+        text-align: center;
     }
+
+    .world-divider {
+        margin-left: auto;
+        margin-right: auto;
+
+        background:
+            linear-gradient(
+                90deg,
+                transparent,
+                currentColor,
+                transparent
+            );
+    }
+
+    .shadow-divider {
+        color: rgba(223, 155, 172, 0.7);
+    }
+
+    .enchanted-divider {
+        color: rgba(185, 167, 255, 0.72);
+    }
+
+    .world-feature-content > p:not(.world-type):not(.world-quote-line) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .world-tags,
+    .world-actions {
+        justify-content: center;
+    }
+
+    .world-book-row {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+}
+
+
+/* =========================================
+   SMALL TABLET
+========================================= */
+
+@media (max-width: 760px) {
+
+    .worlds-hero-art {
+        min-height: 500px;
+    }
+
+    .hero-world-panel {
+        min-height: 460px;
+    }
+
+    .world-feature-art {
+        min-height: 440px;
+    }
+
+    .world-book-row {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .world-book-row > article:last-child {
+        grid-column: 1 / -1;
+
+        width: min(100%, 330px);
+
+        margin: 0 auto;
+    }
+
+    .choice-grid {
+        grid-template-columns: 1fr;
+    }
+
 }
 
 
@@ -511,47 +2189,189 @@
    MOBILE
 ========================================= */
 
-@media screen and (max-width: 700px) {
-    #worlds-hero {
-        min-height: 55vh;
-        padding: 6rem 6%;
+@media (max-width: 600px) {
+
+    .site-logo {
+        min-width: 155px;
     }
 
-    .hero-description {
-        font-size: 1rem;
+    .logo-main {
+        font-size: 1.8rem;
     }
 
-    .world-layout {
-        gap: 2rem;
+    .logo-bottom {
+        margin-left: 2.7rem;
+
+        font-size: 0.7rem;
     }
 
-    .world-info {
-        text-align: center;
+    .logo-butterfly {
+        right: 0.25rem;
+
+        font-size: 1.2rem;
     }
 
-    .world-info ul {
-        justify-items: center;
+    .worlds-hero-copy {
+        padding-top: 3rem;
     }
 
-    .world-placeholder {
-        min-height: 310px;
-        border-radius: 22px;
-        font-size: 0.8rem;
+    .hero-script {
+        font-size: 2.8rem;
     }
 
-    .book-world-grid {
+    .worlds-hero-copy h1 {
+        font-size: clamp(3.1rem, 16vw, 4.8rem);
+    }
+
+    .worlds-hero-tagline {
+        font-size: 0.82rem;
+    }
+
+    .worlds-hero-description {
+        font-size: 0.96rem;
+    }
+
+    .worlds-hero-buttons {
+        flex-direction: column;
+    }
+
+    .shadow-button,
+    .enchanted-button {
+        width: 100%;
+    }
+
+    .worlds-hero-art {
+        min-height: auto;
+
         grid-template-columns: 1fr;
+
+        gap: 1.2rem;
     }
 
-    .collection-card {
-        min-height: 250px;
-        padding: 2rem;
+    .hero-world-panel,
+    .shadow-hero-panel,
+    .enchanted-hero-panel {
+        min-height: 300px;
+
+        transform: none;
+    }
+
+    .hero-world-panel:hover {
+        transform: translateY(-5px);
+    }
+
+    .hero-panel-overlay {
+        left: 1rem;
+        right: 1rem;
+        bottom: 1rem;
+
         text-align: center;
+    }
+
+    #worlds-introduction {
+        padding: 4rem 1.3rem;
+    }
+
+    .worlds-ornament {
+        width: 95%;
+    }
+
+    .ornament-center {
+        width: 54px;
+        height: 54px;
+    }
+
+    .world-feature {
+        width: 92%;
+
+        margin: 4.5rem auto;
+
+        gap: 2.5rem;
+    }
+
+    .world-feature-art {
+        min-height: 330px;
+
+        border-radius: 13px;
+    }
+
+    .world-number {
+        font-size: 5.5rem;
+    }
+
+    .world-feature-content h2 {
+        font-size: clamp(2.7rem, 14vw, 4rem);
+    }
+
+    .world-actions {
+        flex-direction: column;
+    }
+
+    .world-actions .shadow-button,
+    .world-actions .enchanted-button {
+        width: 100%;
+    }
+
+    .world-book-preview {
+        padding:
+            4.5rem
+            5%;
+    }
+
+    .world-book-heading {
+        flex-direction: column;
+        align-items: center;
+
+        text-align: center;
+    }
+
+    .world-book-row {
+        grid-template-columns: 1fr;
+
+        gap: 3rem;
+    }
+
+    .world-book-row > article:last-child {
+        grid-column: auto;
+
+        width: 100%;
+    }
+
+    .world-book-cover,
+    .future-world-cover {
+        width: min(245px, 80%);
+    }
+
+    #choose-your-world {
+        width: 92%;
+
+        padding: 4.5rem 0;
+    }
+
+    .choice-card {
+        min-height: 310px;
+
+        padding: 2rem 1.5rem;
+    }
+
+    .choice-card h3 {
+        font-size: 2.2rem;
     }
 
     #world-quote {
-        min-height: 280px;
+        min-height: 340px;
+
+        padding: 4rem 1.3rem;
     }
+
+    .newsletter-form {
+        flex-direction: column;
+    }
+
+    .newsletter-form button {
+        width: 100%;
+    }
+
 }
 
 
@@ -560,7 +2380,16 @@
 ========================================= */
 
 @media (prefers-reduced-motion: reduce) {
-    .world-placeholder::before {
-        animation: none;
+
+    .hero-world-panel,
+    .hero-world-panel img,
+    .world-feature-art img,
+    .world-book-card,
+    .world-book-cover img,
+    .choice-card,
+    .shadow-button,
+    .enchanted-button {
+        transition: none;
     }
+
 }
