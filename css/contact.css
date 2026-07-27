@@ -548,3 +548,28 @@
         min-height: 165px;
     }
 }
+
+.social-card {
+    color: inherit;
+    text-decoration: none;
+}
+
+.social-link-text {
+    position: relative;
+    z-index: 1;
+
+    display: inline-block;
+    margin-top: 1.2rem;
+
+    color: var(--light-rose);
+
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 0.04em;
+
+    transition: color 0.3s ease;
+}
+
+.social-card:hover .social-link-text {
+    color: var(--white);
+}
