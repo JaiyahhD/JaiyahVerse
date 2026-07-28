@@ -2738,3 +2738,39 @@ body.enchanted-page footer a:hover {
     }
 
 }
+
+.sankora-book-cover {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+
+    margin-bottom: 1.5rem;
+
+    overflow: hidden;
+
+    border: 1px solid rgba(214, 179, 111, 0.25);
+    border-radius: 8px;
+
+    box-shadow:
+        0 18px 35px rgba(0, 0, 0, 0.45);
+}
+
+.sankora-book-cover img {
+    width: 100%;
+    aspect-ratio: 2 / 3;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.4s ease,
+        filter 0.4s ease;
+}
+
+.sankora-book-card:hover .sankora-book-cover img {
+    transform: scale(1.04);
+
+    filter: brightness(1.06);
+}
