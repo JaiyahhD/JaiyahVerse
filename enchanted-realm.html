@@ -12,15 +12,14 @@
 
     <meta
         name="description"
-        content="Enter the Enchanted Realm of the JaiyahVerse, where magic, legacy, destiny, powerful bloodlines, hidden worlds, and unforgettable fantasy adventures await."
+        content="Enter the Enchanted Realm of the JaiyahVerse, where ancestral magic, hidden academies, powerful legacies, forgotten histories, and destiny awaken."
     >
 
-    <title>Enchanted Realm | Jaiyah Symone</title>
+    <title>
+        Enchanted Realm | Jaiyah Symone
+    </title>
 
-    <!-- Global CSS -->
     <link rel="stylesheet" href="css/style.css">
-
-    <!-- Enchanted Realm CSS -->
     <link rel="stylesheet" href="css/enchanted-realm.css">
 
 </head>
@@ -30,69 +29,147 @@
 
 
     <!-- ========================= -->
-    <!-- NAVIGATION -->
+    <!-- HEADER -->
     <!-- ========================= -->
 
-    <header>
+    <header class="site-header">
 
-        <nav>
+        <nav class="main-nav">
 
-            <div class="logo">
+            <a
+                href="index.html"
+                class="site-logo"
+                aria-label="Jaiyah Symone homepage"
+            >
 
-                <a href="index.html">
-                    Jaiyah Symone
+                <span class="logo-main">
+                    Jaiyah
+                </span>
+
+                <span class="logo-bottom">
+                    Symone
+                </span>
+
+                <span
+                    class="logo-butterfly"
+                    aria-hidden="true"
+                >
+                    🦋
+                </span>
+
+            </a>
+
+
+            <button
+                class="mobile-menu-button"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="main-navigation-links"
+            >
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+
+            <div
+                class="nav-menu"
+                id="main-navigation-links"
+            >
+
+                <ul class="nav-links">
+
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="books.html">
+                            Books
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="worlds.html"
+                            class="active"
+                        >
+                            Worlds
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="blog.html">
+                            Blog
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="shop.html">
+                            Shop
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+
+                <div class="nav-socials">
+
+                    <a
+                        href="https://www.tiktok.com/@jaiyahsymone"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Jaiyah Symone on TikTok"
+                    >
+                        TT
+                    </a>
+
+                    <a
+                        href="https://www.instagram.com/jaiyahsymone"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Jaiyah Symone on Instagram"
+                    >
+                        IG
+                    </a>
+
+                    <a
+                        href="https://discord.gg/2CKyCH4xKm"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Join the JaiyahVerse Discord"
+                    >
+                        DC
+                    </a>
+
+                </div>
+
+
+                <a
+                    href="books.html"
+                    class="nav-join-button"
+                >
+                    Explore the Books
                 </a>
 
             </div>
-
-            <ul>
-
-                <li>
-                    <a href="index.html">
-                        Home
-                    </a>
-                </li>
-
-                <li>
-                    <a href="books.html">
-                        Books
-                    </a>
-                </li>
-
-                <li>
-                    <a href="shadow-district.html">
-                        Shadow District
-                    </a>
-                </li>
-
-                <li>
-                    <a
-                        href="enchanted-realm.html"
-                        class="active"
-                    >
-                        Enchanted Realm
-                    </a>
-                </li>
-
-                <li>
-                    <a href="about.html">
-                        About
-                    </a>
-                </li>
-
-                <li>
-                    <a href="blog.html">
-                        Blog
-                    </a>
-                </li>
-
-                <li>
-                    <a href="contact.html">
-                        Contact
-                    </a>
-                </li>
-
-            </ul>
 
         </nav>
 
@@ -106,386 +183,61 @@
         <!-- HERO BANNER -->
         <!-- ========================= -->
 
-        <section class="enchanted-hero">
+        <section class="enchanted-banner">
 
             <img
-                src="/assets/EnchantedRealm.png"
-                alt="Enchanted Realm fantasy banner with magical purple and gold artwork"
-                class="hero-banner"
+                src="assets/EnchantedRealm.png"
+                alt="Enchanted Realm fantasy banner"
+                class="enchanted-banner-image"
             >
 
         </section>
 
 
         <!-- ========================= -->
-        <!-- INTRODUCTION -->
+        <!-- WORLD INTRODUCTION -->
         <!-- ========================= -->
 
-        <section class="world-intro">
+        <section id="enchanted-introduction">
 
-            <p class="section-label">
-                Welcome to
-            </p>
+            <div class="enchanted-intro-inner">
 
-            <h1>
-                Enchanted Realm
-            </h1>
-
-            <p class="lead">
-                Magic remembers what history tries to forget.
-                Ancient bloodlines are awakening, hidden gifts are
-                calling, and destiny is never as simple as it seems.
-            </p>
-
-        </section>
-
-
-        <!-- ========================= -->
-        <!-- ABOUT THE WORLD -->
-        <!-- ========================= -->
-
-        <section class="world-description">
-
-            <p class="section-label">
-                Beyond the Veil
-            </p>
-
-            <h2>
-                What Is the Enchanted Realm?
-            </h2>
-
-            <p>
-                The Enchanted Realm is the magical side of the
-                JaiyahVerse. It is home to ancient legacies,
-                secret academies, powerful bloodlines, forgotten
-                histories, magical cities, and worlds hidden in
-                plain sight.
-            </p>
-
-            <p>
-                These stories explore identity, friendship,
-                courage, destiny, and the responsibility that
-                comes with extraordinary power.
-            </p>
-
-            <p>
-                Here, magic is more than a gift. It is an inheritance,
-                a memory, and sometimes a warning.
-            </p>
-
-        </section>
-
-
-        <!-- ========================= -->
-        <!-- FEATURED STORIES -->
-        <!-- ========================= -->
-
-        <section class="series-section">
-
-            <div class="section-heading">
+                <p class="enchanted-script">
+                    The magic remembers
+                </p>
 
                 <p class="section-label">
-                    Stories of Magic and Legacy
+                    Welcome to
                 </p>
 
-                <h2>
-                    Explore the Realm
-                </h2>
+                <h1>
+                    Enchanted Realm
+                </h1>
 
-            </div>
-
-            <div class="series-grid">
-
-
-                <!-- Echoes of Sankora -->
-
-                <article class="series-card">
-
-                    <div class="series-card-content">
-
-                        <p class="series-label">
-                            Upcoming Fantasy Series
-                        </p>
-
-                        <h3>
-                            Echoes of Sankora
-                        </h3>
-
-                        <p>
-                            Five young people from across the African
-                            diaspora are drawn into a hidden magical
-                            legacy that connects their powers, their
-                            ancestors, and their destinies.
-                        </p>
-
-                        <a href="books.html">
-                            Discover the Story →
-                        </a>
-
-                    </div>
-
-                </article>
-
-
-                <!-- Veil Academy -->
-
-                <article class="series-card">
-
-                    <div class="series-card-content">
-
-                        <p class="series-label">
-                            Magical Academy Fantasy
-                        </p>
-
-                        <h3>
-                            Veil Academy
-                        </h3>
-
-                        <p>
-                            A hidden academy exists within the streets
-                            of Kansas City, protected from those unable
-                            to see beyond the veil. Inside, students
-                            discover powers tied to legacy, choice,
-                            and the city itself.
-                        </p>
-
-                        <span class="coming-soon">
-                            Coming Soon
-                        </span>
-
-                    </div>
-
-                </article>
-
-
-                <!-- Future Realm -->
-
-                <article class="series-card">
-
-                    <div class="series-card-content">
-
-                        <p class="series-label">
-                            Future Stories
-                        </p>
-
-                        <h3>
-                            More Worlds Await
-                        </h3>
-
-                        <p>
-                            New kingdoms, magical communities,
-                            ancestral mysteries, hidden artifacts,
-                            and unforgettable heroes will continue
-                            expanding the Enchanted Realm.
-                        </p>
-
-                        <span class="coming-soon">
-                            The Realm Is Growing
-                        </span>
-
-                    </div>
-
-                </article>
-
-            </div>
-
-        </section>
-
-
-        <!-- ========================= -->
-        <!-- REALM ELEMENTS -->
-        <!-- ========================= -->
-
-        <section class="realm-elements">
-
-            <div class="section-heading">
-
-                <p class="section-label">
-                    Within the Magic
+                <p class="enchanted-intro-tagline">
+                    What history forgets, magic preserves.
                 </p>
 
-                <h2>
-                    Inside the Enchanted Realm
-                </h2>
-
-            </div>
-
-            <div class="element-grid">
-
-                <article class="element-card">
-
-                    <span class="element-icon">
-                        ✨
-                    </span>
-
-                    <h3>
-                        Ancestral Magic
-                    </h3>
-
-                    <p>
-                        Gifts passed through generations,
-                        carrying memories, power, and unfinished
-                        stories.
-                    </p>
-
-                </article>
-
-                <article class="element-card">
-
-                    <span class="element-icon">
-                        🦋
-                    </span>
-
-                    <h3>
-                        Hidden Worlds
-                    </h3>
-
-                    <p>
-                        Magical places existing beside the ordinary,
-                        visible only to those ready to enter.
-                    </p>
-
-                </article>
-
-                <article class="element-card">
-
-                    <span class="element-icon">
-                        🔮
-                    </span>
-
-                    <h3>
-                        Prophecy and Destiny
-                    </h3>
-
-                    <p>
-                        Visions may reveal the future, but every
-                        character must decide whether destiny can
-                        be rewritten.
-                    </p>
-
-                </article>
-
-                <article class="element-card">
-
-                    <span class="element-icon">
-                        📜
-                    </span>
-
-                    <h3>
-                        Forgotten History
-                    </h3>
-
-                    <p>
-                        Buried truths, ancient records, and stories
-                        erased from history hold the keys to the
-                        present.
-                    </p>
-
-                </article>
-
-                <article class="element-card">
-
-                    <span class="element-icon">
-                        🗝️
-                    </span>
-
-                    <h3>
-                        Magical Artifacts
-                    </h3>
-
-                    <p>
-                        Powerful objects choose their keepers,
-                        protect ancient secrets, and always carry
-                        a price.
-                    </p>
-
-                </article>
-
-                <article class="element-card">
-
-                    <span class="element-icon">
-                        🌙
-                    </span>
-
-                    <h3>
-                        Legacy and Identity
-                    </h3>
-
-                    <p>
-                        Every hero must discover who they are beyond
-                        the expectations placed upon them.
-                    </p>
-
-                </article>
-
-            </div>
-
-        </section>
-
-
-        <!-- ========================= -->
-        <!-- REALM QUOTE -->
-        <!-- ========================= -->
-
-        <section class="realm-quote">
-
-            <div class="quote-content">
-
-                <p class="section-label">
-                    A Message from the Realm
+                <p class="enchanted-intro-description">
+                    Ancient bloodlines are awakening, hidden gifts are
+                    calling, and the stories buried by time are waiting
+                    to be remembered.
                 </p>
 
-                <blockquote>
-                    “The magic was never lost. It was waiting
-                    for someone to remember.”
-                </blockquote>
-
-                <p class="quote-credit">
-                    The JaiyahVerse
-                </p>
-
-            </div>
-
-        </section>
-
-
-        <!-- ========================= -->
-        <!-- COMING SOON -->
-        <!-- ========================= -->
-
-        <section class="coming-soon-section">
-
-            <div class="coming-soon-content">
-
-                <p class="section-label">
-                    The Journey Is Beginning
-                </p>
-
-                <h2>
-                    More Magic Is Coming
-                </h2>
-
-                <p>
-                    The Enchanted Realm is still growing. Return
-                    for book announcements, character reveals,
-                    magical lore, maps, academy secrets, and
-                    behind-the-scenes updates from Jaiyah Symone.
-                </p>
-
-                <div class="buttons">
+                <div class="enchanted-intro-buttons">
 
                     <a
-                        href="books.html"
-                        class="primary-btn"
+                        href="#enchanted-stories"
+                        class="primary-enchanted-button"
                     >
-                        Explore the Books
+                        Explore the Stories
                     </a>
 
                     <a
-                        href="blog.html"
-                        class="secondary-btn"
+                        href="shadow-district.html"
+                        class="secondary-enchanted-button"
                     >
-                        Read the Latest Updates
+                        Visit Shadow District
                     </a>
 
                 </div>
@@ -496,39 +248,1092 @@
 
 
         <!-- ========================= -->
-        <!-- WORLD PORTAL CTA -->
+        <!-- ABOUT THE REALM -->
         <!-- ========================= -->
 
-        <section class="return-home">
+        <section id="about-enchanted">
 
-            <p class="section-label">
-                Choose Another Path
-            </p>
+            <div class="about-enchanted-layout">
 
-            <h2>
-                Looking for Something Darker?
-            </h2>
 
-            <p>
-                Leave the magic behind and enter a world of secrets,
-                betrayal, obsession, crime, and psychological suspense.
-            </p>
+                <div class="about-enchanted-copy">
 
-            <div class="buttons">
+                    <p class="section-label">
+                        Beyond the Ordinary
+                    </p>
+
+                    <h2>
+                        What Is the Enchanted Realm?
+                    </h2>
+
+                    <p class="about-enchanted-lead">
+                        A world where memory, ancestry, power,
+                        and destiny are deeply connected.
+                    </p>
+
+                    <p>
+                        The Enchanted Realm is the fantasy side of the
+                        JaiyahVerse. It is home to hidden academies,
+                        magical cities, ancient bloodlines, sacred
+                        artifacts, forgotten histories, and powers
+                        passed from one generation to the next.
+                    </p>
+
+                    <p>
+                        These stories explore identity, friendship,
+                        courage, family, culture, responsibility,
+                        and the difficult choices that come with
+                        extraordinary gifts.
+                    </p>
+
+                    <p>
+                        Here, magic is never just power. It is inheritance,
+                        memory, purpose, and sometimes a warning.
+                    </p>
+
+                </div>
+
+
+                <div class="enchanted-manifesto">
+
+                    <span class="manifesto-number">
+                        01
+                    </span>
+
+                    <p class="manifesto-label">
+                        Realm Truth
+                    </p>
+
+                    <blockquote>
+                        “The magic was never lost. It was waiting
+                        for someone to remember.”
+                    </blockquote>
+
+                    <span class="manifesto-signature">
+                        The Enchanted Realm
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================= -->
+        <!-- REALM ELEMENTS -->
+        <!-- ========================= -->
+
+        <section id="realm-elements">
+
+            <div class="enchanted-section-heading">
+
+                <p class="section-label">
+                    Within the Magic
+                </p>
+
+                <h2>
+                    What Lives in the Realm
+                </h2>
+
+                <p>
+                    Every story is shaped by legacy, memory,
+                    hidden worlds, difficult choices, and magic
+                    that carries a history of its own.
+                </p>
+
+            </div>
+
+
+            <div class="realm-elements-grid">
+
+
+                <article class="realm-element-card">
+
+                    <span class="element-number">
+                        01
+                    </span>
+
+                    <span class="element-icon">
+                        ✨
+                    </span>
+
+                    <h3>
+                        Ancestral Magic
+                    </h3>
+
+                    <p>
+                        Gifts passed through generations carry memories,
+                        responsibilities, unfinished stories, and powers
+                        rooted in those who came before.
+                    </p>
+
+                </article>
+
+
+                <article class="realm-element-card">
+
+                    <span class="element-number">
+                        02
+                    </span>
+
+                    <span class="element-icon">
+                        🦋
+                    </span>
+
+                    <h3>
+                        Hidden Worlds
+                    </h3>
+
+                    <p>
+                        Magical cities, academies, libraries, and realms
+                        exist beside the ordinary world, waiting for
+                        the right person to cross the threshold.
+                    </p>
+
+                </article>
+
+
+                <article class="realm-element-card">
+
+                    <span class="element-number">
+                        03
+                    </span>
+
+                    <span class="element-icon">
+                        🔮
+                    </span>
+
+                    <h3>
+                        Prophecy & Choice
+                    </h3>
+
+                    <p>
+                        Visions may reveal what could happen, but every
+                        character must decide whether destiny should
+                        be followed, challenged, or rewritten.
+                    </p>
+
+                </article>
+
+
+                <article class="realm-element-card">
+
+                    <span class="element-number">
+                        04
+                    </span>
+
+                    <span class="element-icon">
+                        📜
+                    </span>
+
+                    <h3>
+                        Forgotten History
+                    </h3>
+
+                    <p>
+                        Lost records, silenced voices, buried truths,
+                        and erased stories hold the keys to understanding
+                        the present.
+                    </p>
+
+                </article>
+
+
+                <article class="realm-element-card">
+
+                    <span class="element-number">
+                        05
+                    </span>
+
+                    <span class="element-icon">
+                        🗝️
+                    </span>
+
+                    <h3>
+                        Sacred Artifacts
+                    </h3>
+
+                    <p>
+                        Powerful objects choose their keepers,
+                        protect ancient secrets, and always carry
+                        a responsibility greater than their beauty.
+                    </p>
+
+                </article>
+
+
+                <article class="realm-element-card">
+
+                    <span class="element-number">
+                        06
+                    </span>
+
+                    <span class="element-icon">
+                        🌙
+                    </span>
+
+                    <h3>
+                        Legacy & Identity
+                    </h3>
+
+                    <p>
+                        Every hero must discover who they are beyond
+                        expectation, bloodline, prophecy, and the roles
+                        others have chosen for them.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================= -->
+        <!-- FEATURED SERIES -->
+        <!-- ========================= -->
+
+        <section id="enchanted-stories">
+
+            <div class="enchanted-section-heading">
+
+                <p class="section-label">
+                    Begin the Journey
+                </p>
+
+                <h2>
+                    Enter the Stories
+                </h2>
+
+                <p>
+                    Discover hidden academies, powerful Legacies,
+                    magical friendships, and worlds built from
+                    memory and destiny.
+                </p>
+
+            </div>
+
+
+            <article class="featured-enchanted-story">
+
+
+                <div class="featured-enchanted-cover">
+
+                    <div class="enchanted-cover-glow"></div>
+
+                    <img
+                        src="assets/bookcovers/EchoesOfSankora.jpg"
+                        alt="Echoes of Sankora by Jaiyah Symone"
+                    >
+
+                    <span class="upcoming-story-badge">
+                        Upcoming Fantasy Series
+                    </span>
+
+                </div>
+
+
+                <div class="featured-enchanted-content">
+
+                    <p class="story-world">
+                        Enchanted Realm
+                    </p>
+
+                    <p class="story-series">
+                        A Five-Book Fantasy Saga
+                    </p>
+
+                    <h2>
+                        Echoes of Sankora
+                    </h2>
+
+                    <p class="story-genre">
+                        Diaspora Fantasy · Magical Academy
+                    </p>
+
+                    <div class="story-divider"></div>
+
+                    <p>
+                        Sankora Academy exists to preserve every branch
+                        of the African magical diaspora.
+                    </p>
+
+                    <p>
+                        Five young people from across the world are drawn
+                        into an ancient legacy that connects their gifts,
+                        their ancestors, and the parts of history others
+                        tried to erase.
+                    </p>
+
+                    <p class="featured-story-quote">
+                        “No one lineage completes the story.
+                        Together, we remember what the world forgot.”
+                    </p>
+
+                    <div class="featured-enchanted-actions">
+
+                        <a
+                            href="books.html#echoes-of-sankora"
+                            class="primary-enchanted-button"
+                        >
+                            Discover the Series
+                        </a>
+
+                        <a
+                            href="#sankora-books"
+                            class="secondary-enchanted-button"
+                        >
+                            View the Five Books
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <!-- ========================= -->
+        <!-- ECHOES OF SANKORA BOOKS -->
+        <!-- ========================= -->
+
+        <section id="sankora-books">
+
+            <div class="sankora-heading">
+
+                <div>
+
+                    <p class="section-label">
+                        Echoes of Sankora
+                    </p>
+
+                    <h2>
+                        Five Stories. Five Voices. One Legacy.
+                    </h2>
+
+                </div>
+
+                <a href="books.html#echoes-of-sankora">
+                    Explore the Series →
+                </a>
+
+            </div>
+
+
+            <div class="sankora-book-grid">
+
+
+                <!-- Book One -->
+
+                <article class="sankora-book-card">
+
+                    <span class="sankora-book-number">
+                        I
+                    </span>
+
+                    <p class="sankora-book-label">
+                        Book One
+                    </p>
+
+                    <h3>
+                        The First Pulse
+                    </h3>
+
+                    <p class="sankora-character-origin">
+                        African American · United States
+                    </p>
+
+                    <p>
+                        The heart of the group enters Sankora with no
+                        knowledge of the magical world and discovers
+                        everything alongside the reader.
+                    </p>
+
+                    <span class="sankora-book-status">
+                        Coming Soon
+                    </span>
+
+                </article>
+
+
+                <!-- Book Two -->
+
+                <article class="sankora-book-card">
+
+                    <span class="sankora-book-number">
+                        II
+                    </span>
+
+                    <p class="sankora-book-label">
+                        Book Two
+                    </p>
+
+                    <h3>
+                        The Memory Library
+                    </h3>
+
+                    <p class="sankora-character-origin">
+                        Afro-Brazilian · Salvador
+                    </p>
+
+                    <p>
+                        Memory becomes both a guide and a danger as the
+                        academy’s records reveal truths that were never
+                        meant to be forgotten.
+                    </p>
+
+                    <span class="sankora-book-status">
+                        Coming Soon
+                    </span>
+
+                </article>
+
+
+                <!-- Book Three -->
+
+                <article class="sankora-book-card">
+
+                    <span class="sankora-book-number">
+                        III
+                    </span>
+
+                    <p class="sankora-book-label">
+                        Book Three
+                    </p>
+
+                    <h3>
+                        The Forgotten Wing
+                    </h3>
+
+                    <p class="sankora-character-origin">
+                        Afro-Dominican · Caribbean
+                    </p>
+
+                    <p>
+                        A sealed section of the academy holds erased
+                        stories, forbidden powers, and answers tied
+                        to a history someone wanted buried.
+                    </p>
+
+                    <span class="sankora-book-status">
+                        Coming Soon
+                    </span>
+
+                </article>
+
+
+                <!-- Book Four -->
+
+                <article class="sankora-book-card">
+
+                    <span class="sankora-book-number">
+                        IV
+                    </span>
+
+                    <p class="sankora-book-label">
+                        Book Four
+                    </p>
+
+                    <h3>
+                        The Great Trials
+                    </h3>
+
+                    <p class="sankora-character-origin">
+                        Ghanaian · West Africa
+                    </p>
+
+                    <p>
+                        The academy’s greatest tests force every student
+                        to face what they value, what they fear, and what
+                        they are willing to sacrifice.
+                    </p>
+
+                    <span class="sankora-book-status">
+                        Coming Soon
+                    </span>
+
+                </article>
+
+
+                <!-- Book Five -->
+
+                <article class="sankora-book-card">
+
+                    <span class="sankora-book-number">
+                        V
+                    </span>
+
+                    <p class="sankora-book-label">
+                        Book Five
+                    </p>
+
+                    <h3>
+                        The Last Echo
+                    </h3>
+
+                    <p class="sankora-character-origin">
+                        Haitian · Caribbean
+                    </p>
+
+                    <p>
+                        The final voice carries the last piece of the
+                        story as the five friends discover what Sankora
+                        was truly created to protect.
+                    </p>
+
+                    <span class="sankora-book-status">
+                        Coming Soon
+                    </span>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================= -->
+        <!-- SANKORA LEGACIES -->
+        <!-- ========================= -->
+
+        <section id="sankora-legacies">
+
+            <div class="enchanted-section-heading">
+
+                <p class="section-label">
+                    The First Pulse
+                </p>
+
+                <h2>
+                    Discover Your Legacy
+                </h2>
+
+                <p>
+                    Each morning at Sankora Academy, the First Pulse
+                    reveals the Legacy that shapes a student’s magic,
+                    instincts, and place within the academy.
+                </p>
+
+            </div>
+
+
+            <div class="legacy-grid">
+
+
+                <article class="legacy-card">
+
+                    <span class="legacy-symbol">
+                        ◈
+                    </span>
+
+                    <h3>
+                        Keepers
+                    </h3>
+
+                    <p>
+                        Protectors of knowledge, memory,
+                        tradition, and sacred truth.
+                    </p>
+
+                </article>
+
+
+                <article class="legacy-card">
+
+                    <span class="legacy-symbol">
+                        ✦
+                    </span>
+
+                    <h3>
+                        Forgers
+                    </h3>
+
+                    <p>
+                        Creators who shape magical tools,
+                        weapons, structures, and inventions.
+                    </p>
+
+                </article>
+
+
+                <article class="legacy-card">
+
+                    <span class="legacy-symbol">
+                        ≋
+                    </span>
+
+                    <h3>
+                        Tidewalkers
+                    </h3>
+
+                    <p>
+                        Magic connected to water, movement,
+                        currents, travel, and emotional depth.
+                    </p>
+
+                </article>
+
+
+                <article class="legacy-card">
+
+                    <span class="legacy-symbol">
+                        ☾
+                    </span>
+
+                    <h3>
+                        Dreamers
+                    </h3>
+
+                    <p>
+                        Seers who walk between dreams,
+                        visions, memory, and possibility.
+                    </p>
+
+                </article>
+
+
+                <article class="legacy-card">
+
+                    <span class="legacy-symbol">
+                        〰
+                    </span>
+
+                    <h3>
+                        Resonants
+                    </h3>
+
+                    <p>
+                        Wielders of sound, rhythm, vibration,
+                        voice, emotion, and frequency.
+                    </p>
+
+                </article>
+
+
+                <article class="legacy-card">
+
+                    <span class="legacy-symbol">
+                        📖
+                    </span>
+
+                    <h3>
+                        Archivists
+                    </h3>
+
+                    <p>
+                        Readers of magical records,
+                        ancestral memory, and hidden histories.
+                    </p>
+
+                </article>
+
+
+                <article class="legacy-card">
+
+                    <span class="legacy-symbol">
+                        ⛨
+                    </span>
+
+                    <h3>
+                        Wardens
+                    </h3>
+
+                    <p>
+                        Defenders who create barriers,
+                        protections, boundaries, and shields.
+                    </p>
+
+                </article>
+
+
+                <article class="legacy-card">
+
+                    <span class="legacy-symbol">
+                        ⟡
+                    </span>
+
+                    <h3>
+                        Weavers
+                    </h3>
+
+                    <p>
+                        Magic formed through connection,
+                        patterns, relationships, and binding.
+                    </p>
+
+                </article>
+
+
+                <article class="legacy-card">
+
+                    <span class="legacy-symbol">
+                        △
+                    </span>
+
+                    <h3>
+                        Shapers
+                    </h3>
+
+                    <p>
+                        Transformers of matter, form,
+                        environment, and physical reality.
+                    </p>
+
+                </article>
+
+
+                <article class="legacy-card">
+
+                    <span class="legacy-symbol">
+                        ✉
+                    </span>
+
+                    <h3>
+                        Messengers
+                    </h3>
+
+                    <p>
+                        Travelers who carry truth, warnings,
+                        language, and communication across boundaries.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================= -->
+        <!-- THE VEIL AWAKENS -->
+        <!-- ========================= -->
+
+        <section id="veil-awakens">
+
+            <div class="veil-awakens-layout">
+
+
+                <div class="veil-awakens-content">
+
+                    <p class="section-label">
+                        Another Realm Story
+                    </p>
+
+                    <p class="story-series">
+                        Young Adult Magical Academy Fantasy
+                    </p>
+
+                    <h2>
+                        The Veil Awakens
+                    </h2>
+
+                    <p class="veil-awakens-tagline">
+                        A hidden academy. A city divided by magic.
+                        A girl who was never meant to see beyond the veil.
+                    </p>
+
+                    <p>
+                        Within the streets of Kansas City exists a magical
+                        world hidden from ordinary sight. When Amara Nyx
+                        discovers the truth, she is pulled into an academy
+                        shaped by ancient guilds, powerful bloodlines,
+                        dangerous secrets, and forces already beginning
+                        to awaken.
+                    </p>
+
+                    <div class="guild-list">
+
+                        <span>
+                            Ashara Circle
+                        </span>
+
+                        <span>
+                            Obsidian Veil
+                        </span>
+
+                        <span>
+                            Verdant Kin
+                        </span>
+
+                        <span>
+                            Aetherion
+                        </span>
+
+                        <span>
+                            Crimson Pact
+                        </span>
+
+                    </div>
+
+                    <div class="veil-awakens-actions">
+
+                        <a
+                            href="books.html#the-veil-awakens"
+                            class="primary-enchanted-button"
+                        >
+                            Discover the Story
+                        </a>
+
+                        <span class="veil-status">
+                            In Development
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="veil-awakens-art">
+
+                    <div class="veil-orbit veil-orbit-one"></div>
+                    <div class="veil-orbit veil-orbit-two"></div>
+
+                    <span class="veil-symbol">
+                        ✦
+                    </span>
+
+                    <p>
+                        Beyond the Veil
+                    </p>
+
+                    <h3>
+                        Magic Has Been Watching
+                    </h3>
+
+                    <span class="veil-art-label">
+                        Kansas City · Hidden Academy · Ancient Guilds
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================= -->
+        <!-- REALM PROMISE -->
+        <!-- ========================= -->
+
+        <section id="enchanted-promise">
+
+            <div class="enchanted-promise-inner">
+
+
+                <div class="enchanted-promise-heading">
+
+                    <p class="section-label">
+                        What to Expect
+                    </p>
+
+                    <h2>
+                        Magic With Meaning
+                    </h2>
+
+                    <p>
+                        Enchanted Realm stories are created for readers
+                        who want beautiful worlds, meaningful magic,
+                        powerful friendships, and characters discovering
+                        who they were always meant to become.
+                    </p>
+
+                </div>
+
+
+                <div class="enchanted-promise-grid">
+
+
+                    <article class="enchanted-promise-card">
+
+                        <span>
+                            01
+                        </span>
+
+                        <h3>
+                            Rich Magical Worlds
+                        </h3>
+
+                        <p>
+                            Hidden academies, magical cities,
+                            living histories, sacred places,
+                            and cultures shaped by power.
+                        </p>
+
+                    </article>
+
+
+                    <article class="enchanted-promise-card">
+
+                        <span>
+                            02
+                        </span>
+
+                        <h3>
+                            Friendship & Found Family
+                        </h3>
+
+                        <p>
+                            Characters who learn that no one person
+                            carries the whole story and no one survives
+                            every battle alone.
+                        </p>
+
+                    </article>
+
+
+                    <article class="enchanted-promise-card">
+
+                        <span>
+                            03
+                        </span>
+
+                        <h3>
+                            Legacy With Consequences
+                        </h3>
+
+                        <p>
+                            Power comes with history, responsibility,
+                            difficult choices, and truths that cannot
+                            remain hidden forever.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================= -->
+        <!-- WORLD SWITCH -->
+        <!-- ========================= -->
+
+        <section id="enchanted-world-switch">
+
+            <div class="enchanted-world-switch-layout">
+
+
+                <div class="enchanted-switch-copy">
+
+                    <p class="section-label">
+                        Leave the Magic Behind
+                    </p>
+
+                    <h2>
+                        Looking for Something Darker?
+                    </h2>
+
+                    <p>
+                        Cross into Shadow District, where obsession,
+                        crime, dangerous love, buried secrets, betrayal,
+                        and revenge wait behind every closed door.
+                    </p>
+
+                    <a
+                        href="shadow-district.html"
+                        class="shadow-switch-button"
+                    >
+                        Enter Shadow District
+                    </a>
+
+                </div>
+
 
                 <a
                     href="shadow-district.html"
-                    class="primary-btn"
+                    class="shadow-preview-card"
                 >
-                    Enter Shadow District
+
+                    <p>
+                        The Darker Side of the JaiyahVerse
+                    </p>
+
+                    <h3>
+                        Shadow District
+                    </h3>
+
+                    <span>
+                        Enter the Darkness →
+                    </span>
+
                 </a>
 
-                <a
-                    href="index.html"
-                    class="secondary-btn"
+            </div>
+
+        </section>
+
+
+        <!-- ========================= -->
+        <!-- REALM QUOTE -->
+        <!-- ========================= -->
+
+        <section id="enchanted-quote">
+
+            <div class="enchanted-quote-content">
+
+                <span
+                    class="quote-symbol"
+                    aria-hidden="true"
                 >
-                    Return to the JaiyahVerse
-                </a>
+                    ✦
+                </span>
+
+                <blockquote>
+                    “No one lineage completes the story.
+                    Together, we remember what the world forgot.”
+                </blockquote>
+
+                <p>
+                    Sankora Academy
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================= -->
+        <!-- NEWSLETTER -->
+        <!-- ========================= -->
+
+        <section id="newsletter">
+
+            <div class="newsletter-content">
+
+                <p class="section-label">
+                    Follow the Magic
+                </p>
+
+                <h2>
+                    Join the JaiyahVerse
+                </h2>
+
+                <p>
+                    Receive fantasy updates, character reveals,
+                    magical lore, academy secrets, cover reveals,
+                    release news, giveaways, and exclusive excerpts.
+                </p>
+
+                <form class="newsletter-form">
+
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Enter your email address"
+                        aria-label="Email address"
+                        required
+                    >
+
+                    <button type="submit">
+                        Join Now
+                    </button>
+
+                </form>
 
             </div>
 
@@ -548,7 +1353,7 @@
             Jaiyah Symone
         </h3>
 
-        <p class="footer-tagline">
+        <p>
             Dark dreams. Dangerous secrets. Magic that remembers.
         </p>
 
@@ -560,6 +1365,10 @@
 
             <a href="books.html">
                 Books
+            </a>
+
+            <a href="worlds.html">
+                Worlds
             </a>
 
             <a href="shadow-district.html">
@@ -574,11 +1383,48 @@
                 About
             </a>
 
+            <a href="blog.html">
+                Blog
+            </a>
+
+            <a href="shop.html">
+                Shop
+            </a>
+
             <a href="contact.html">
                 Contact
             </a>
 
         </nav>
+
+
+        <div class="footer-socials">
+
+            <a
+                href="https://www.instagram.com/jaiyahsymone"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Instagram
+            </a>
+
+            <a
+                href="https://www.tiktok.com/@jaiyahsymone"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                TikTok
+            </a>
+
+            <a
+                href="https://discord.gg/2CKyCH4xKm"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Discord
+            </a>
+
+        </div>
 
         <p class="copyright">
             © 2026 Jaiyah Symone. All Rights Reserved.
@@ -586,8 +1432,6 @@
 
     </footer>
 
-
-    <!-- JavaScript -->
 
     <script src="js/main.js"></script>
 
