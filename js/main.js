@@ -132,41 +132,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     }
 
-
-    /* =====================================
-       NEWSLETTER PLACEHOLDER
-    ===================================== */
-
-    const newsletterForm = document.querySelector(
-        ".newsletter-form"
-    );
-
-    if (newsletterForm) {
-
-        newsletterForm.addEventListener("submit", (event) => {
-
-            event.preventDefault();
-
-            const emailInput = newsletterForm.querySelector(
-                'input[type="email"]'
-            );
-
-            if (!emailInput || !emailInput.value.trim()) {
-                return;
-            }
-
-            alert(
-                "Thank you for joining the JaiyahVerse!"
-            );
-
-            newsletterForm.reset();
-
-        });
-
-    }
-
-});
-
 // =========================
 // CONTACT FORM
 // =========================
