@@ -2535,3 +2535,24 @@ body.contact-page footer a:hover {
     }
 
 }
+
+.form-status {
+    margin-top: 18px;
+    min-height: 24px;
+    text-align: center;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.form-status.success {
+    color: #E4B0BF;
+}
+
+.form-status.error {
+    color: #ff8f8f;
+}
+
+.contact-submit-button:disabled {
+    opacity: 0.65;
+    cursor: wait;
+}

@@ -166,3 +166,78 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 });
+
+// =========================
+// CONTACT FORM
+// =========================
+
+const contactForm = document.querySelector(".official-contact-form");
+
+if (contactForm) {
+
+    const formStatus = contactForm.querySelector(".form-status");
+    const submitButton = contactForm.querySelector(".contact-submit-button");
+
+    contactForm.addEventListener("submit", async function (event) {
+
+        event.preventDefault();
+
+        const formData = new FormData(contactForm);
+
+        // Save original button text
+        const originalButtonText = submitButton.textContent;
+
+        // Loading state
+        submitButton.disabled = true;
+        submitButton.textContent = "Sending...";
+
+        formStatus.textContent = "";
+
+        try {
+
+            const response = await fetch(contactForm.action, {
+                method: contactForm.method,
+                body: formData,
+                headers: {
+                    "Accept": "application/json"
+                }
+            });
+
+            if (response.ok) {
+
+                formStatus.textContent =
+                    "Message received. 🦋 I’ll be in touch soon!";
+
+                formStatus.classList.remove("error");
+                formStatus.classList.add("success");
+
+                contactForm.reset();
+
+            } else {
+
+                formStatus.textContent =
+                    "Something went wrong. Please try again.";
+
+                formStatus.classList.remove("success");
+                formStatus.classList.add("error");
+
+            }
+
+        } catch (error) {
+
+            formStatus.textContent =
+                "Something went wrong. Please try again.";
+
+            formStatus.classList.remove("success");
+            formStatus.classList.add("error");
+
+        } finally {
+
+            submitButton.disabled = false;
+            submitButton.textContent = originalButtonText;
+
+        }
+
+    });
+
+}
