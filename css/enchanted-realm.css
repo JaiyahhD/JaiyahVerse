@@ -2774,3 +2774,354 @@ body.enchanted-page footer a:hover {
 
     filter: brightness(1.06);
 }
+
+/* =========================================
+   CURRENT ENCHANTED RELEASES
+========================================= */
+
+#enchanted-releases {
+    padding: 7rem 1.5rem;
+
+    background:
+        radial-gradient(
+            circle at 18% 35%,
+            rgba(126, 107, 245, 0.14),
+            transparent 32%
+        ),
+        radial-gradient(
+            circle at 82% 30%,
+            rgba(214, 179, 111, 0.09),
+            transparent 30%
+        ),
+        linear-gradient(
+            180deg,
+            #08070f,
+            #0b0815
+        );
+
+    border-top: 1px solid rgba(126, 107, 245, 0.1);
+    border-bottom: 1px solid rgba(126, 107, 245, 0.1);
+}
+
+
+/* Two Book Layout */
+
+.enchanted-release-grid {
+    width: min(1250px, 90%);
+
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 2rem;
+}
+
+
+/* Individual Book Card */
+
+.enchanted-release-card {
+    position: relative;
+
+    padding: clamp(2rem, 4vw, 3rem);
+
+    display: grid;
+    grid-template-columns: minmax(170px, 0.72fr) minmax(0, 1.28fr);
+    align-items: center;
+
+    gap: clamp(1.8rem, 3vw, 3rem);
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 15% 30%,
+            rgba(126, 107, 245, 0.2),
+            transparent 38%
+        ),
+        linear-gradient(
+            145deg,
+            rgba(25, 19, 45, 0.99),
+            rgba(8, 6, 14, 0.99)
+        );
+
+    border: 1px solid rgba(126, 107, 245, 0.22);
+    border-radius: 20px;
+
+    box-shadow:
+        0 28px 68px rgba(0, 0, 0, 0.46);
+
+    transition:
+        transform 0.4s ease,
+        border-color 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+.enchanted-release-card:hover {
+    transform: translateY(-8px);
+
+    border-color: rgba(200, 185, 255, 0.38);
+
+    box-shadow:
+        0 38px 82px rgba(0, 0, 0, 0.58),
+        0 0 34px rgba(126, 107, 245, 0.1);
+}
+
+
+/* Slightly warmer treatment for Waltz */
+
+.enchanted-release-card:nth-child(2) {
+    background:
+        radial-gradient(
+            circle at 15% 30%,
+            rgba(214, 179, 111, 0.13),
+            transparent 38%
+        ),
+        radial-gradient(
+            circle at 85% 18%,
+            rgba(123, 30, 43, 0.12),
+            transparent 34%
+        ),
+        linear-gradient(
+            145deg,
+            rgba(25, 19, 38, 0.99),
+            rgba(9, 7, 12, 0.99)
+        );
+
+    border-color: rgba(214, 179, 111, 0.2);
+}
+
+.enchanted-release-card:nth-child(2):hover {
+    border-color: rgba(214, 179, 111, 0.4);
+
+    box-shadow:
+        0 38px 82px rgba(0, 0, 0, 0.58),
+        0 0 32px rgba(214, 179, 111, 0.08);
+}
+
+
+/* Book Cover */
+
+.enchanted-release-cover {
+    position: relative;
+
+    width: 100%;
+    max-width: 250px;
+
+    margin: 0 auto;
+}
+
+.enchanted-release-cover::before {
+    content: "";
+
+    position: absolute;
+    inset: 9%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(126, 107, 245, 0.42),
+            transparent 68%
+        );
+
+    filter: blur(28px);
+
+    transform: scale(1.1);
+}
+
+.enchanted-release-card:nth-child(2)
+.enchanted-release-cover::before {
+    background:
+        radial-gradient(
+            circle,
+            rgba(214, 179, 111, 0.28),
+            transparent 68%
+        );
+}
+
+.enchanted-release-cover img {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+
+    display: block;
+
+    border: 1px solid rgba(214, 179, 111, 0.25);
+    border-radius: 4px;
+
+    box-shadow:
+        0 28px 55px rgba(0, 0, 0, 0.72),
+        0 0 28px rgba(126, 107, 245, 0.12);
+
+    transition:
+        transform 0.45s ease,
+        box-shadow 0.45s ease;
+}
+
+.enchanted-release-card:hover
+.enchanted-release-cover img {
+    transform:
+        translateY(-6px)
+        rotate(-0.5deg);
+
+    box-shadow:
+        0 38px 70px rgba(0, 0, 0, 0.8),
+        0 0 38px rgba(126, 107, 245, 0.16);
+}
+
+
+/* Preorder Badge */
+
+.enchanted-release-badge {
+    position: absolute;
+    left: 50%;
+    bottom: 0.9rem;
+    z-index: 4;
+
+    transform: translateX(-50%);
+
+    width: max-content;
+
+    padding: 0.52rem 0.8rem;
+
+    color: var(--enchanted-light-gold);
+
+    background: rgba(7, 6, 12, 0.9);
+
+    border: 1px solid rgba(214, 179, 111, 0.38);
+    border-radius: 999px;
+
+    font-size: 0.6rem;
+    font-weight: 700;
+
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+
+/* Book Content */
+
+.enchanted-release-content {
+    position: relative;
+    z-index: 3;
+}
+
+.enchanted-release-content h3 {
+    margin: 0 0 0.8rem;
+
+    color: var(--enchanted-white);
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(1.85rem, 2.8vw, 2.75rem);
+    font-weight: 400;
+    line-height: 1.08;
+}
+
+.enchanted-release-content > p:not(.story-world):not(.story-series):not(.enchanted-release-hook) {
+    margin: 0 0 1rem;
+
+    color: var(--enchanted-muted);
+
+    font-size: 0.94rem;
+    line-height: 1.75;
+}
+
+.enchanted-release-hook {
+    margin: 0 0 1rem;
+
+    color: rgba(251, 249, 255, 0.9);
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.06rem;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+.enchanted-release-hook strong {
+    color: var(--enchanted-light-gold);
+}
+
+
+/* Buttons */
+
+.enchanted-release-actions {
+    margin-top: 1.6rem;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 0.8rem;
+}
+
+.enchanted-release-actions
+.primary-enchanted-button,
+.enchanted-release-actions
+.secondary-enchanted-button {
+    min-height: 47px;
+
+    padding: 0.75rem 1.1rem;
+
+    font-size: 0.67rem;
+}
+
+
+/* Tablet */
+
+@media (max-width: 1100px) {
+
+    .enchanted-release-grid {
+        grid-template-columns: 1fr;
+        max-width: 850px;
+    }
+
+    .enchanted-release-card {
+        grid-template-columns: minmax(190px, 0.65fr) minmax(0, 1.35fr);
+    }
+
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    #enchanted-releases {
+        padding:
+            5rem
+            1rem;
+    }
+
+    .enchanted-release-grid {
+        width: 100%;
+
+        gap: 1.5rem;
+    }
+
+    .enchanted-release-card {
+        padding: 1.6rem;
+
+        grid-template-columns: 1fr;
+
+        text-align: center;
+    }
+
+    .enchanted-release-cover {
+        max-width: 230px;
+    }
+
+    .enchanted-release-content .story-world {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .enchanted-release-content .story-divider {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .enchanted-release-actions {
+        justify-content: center;
+    }
+
+}
