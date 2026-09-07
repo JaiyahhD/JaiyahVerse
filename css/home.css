@@ -2166,3 +2166,25 @@ body.home-page footer a:hover {
     }
 
 }
+
+@media (max-width: 960px) {
+
+    .site-header {
+        position: relative;
+        z-index: 9999;
+    }
+
+    .main-nav {
+        position: relative;
+    }
+
+    .mobile-menu-button {
+        position: relative;
+        z-index: 10001;
+    }
+
+    .nav-menu {
+        z-index: 10000;
+    }
+
+}

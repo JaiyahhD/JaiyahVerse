@@ -206,3 +206,56 @@ if (contactForm) {
     });
 
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const menuButton = document.querySelector(".mobile-menu-button");
+    const navMenu = document.querySelector(".nav-menu");
+
+    if (!menuButton || !navMenu) return;
+
+    menuButton.addEventListener("click", () => {
+
+        const isOpen = navMenu.classList.toggle("open");
+
+        menuButton.classList.toggle("open", isOpen);
+
+        menuButton.setAttribute(
+            "aria-expanded",
+            isOpen ? "true" : "false"
+        );
+
+        menuButton.setAttribute(
+            "aria-label",
+            isOpen
+                ? "Close navigation menu"
+                : "Open navigation menu"
+        );
+
+    });
+
+
+    /* Close menu after clicking a navigation link */
+
+    navMenu.querySelectorAll("a").forEach(link => {
+
+        link.addEventListener("click", () => {
+
+            navMenu.classList.remove("open");
+            menuButton.classList.remove("open");
+
+            menuButton.setAttribute(
+                "aria-expanded",
+                "false"
+            );
+
+            menuButton.setAttribute(
+                "aria-label",
+                "Open navigation menu"
+            );
+
+        });
+
+    });
+
+});
