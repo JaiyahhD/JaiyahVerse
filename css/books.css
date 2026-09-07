@@ -2223,3 +2223,77 @@ body.books-page footer a:hover {
     }
 
 }
+
+/* =========================================
+   MOBILE HERO FIX
+========================================= */
+
+@media (max-width: 600px) {
+
+    #books-hero {
+        overflow: hidden;
+    }
+
+    .books-hero-inner {
+        width: 100%;
+        max-width: 100%;
+        padding: 4.5rem 1.25rem 3.5rem;
+        box-sizing: border-box;
+    }
+
+    .books-hero-copy {
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .books-hero-copy h1 {
+        width: 100%;
+        max-width: 100%;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        font-size: clamp(3.1rem, 13vw, 4.2rem);
+        line-height: 0.95;
+        letter-spacing: -0.04em;
+
+        overflow-wrap: normal;
+    }
+
+    .books-hero-copy .hero-script {
+        width: auto;
+        max-width: 100%;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        font-size: 2.8rem;
+        text-align: center;
+    }
+
+    .books-hero-tagline,
+    .books-hero-description {
+        width: 100%;
+        max-width: 100%;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .books-hero-buttons {
+        width: 100%;
+
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .books-hero-buttons a {
+        width: 100%;
+    }
+
+}
+
+.books-hero-copy h1 span {
+    display: block;
+}

@@ -2100,3 +2100,69 @@ body.home-page footer a:hover {
     align-items: center;
     justify-content: center;
 }
+
+@media (max-width: 600px) {
+
+    #home-hero {
+        overflow: hidden;
+    }
+
+    .hero-inner {
+        width: 100%;
+        max-width: 100%;
+
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+
+        box-sizing: border-box;
+    }
+
+    .hero-copy {
+        width: 100%;
+        max-width: 100%;
+
+        text-align: center;
+    }
+
+    .hero-title-group {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .hero-title-group h1 {
+        width: 100%;
+
+        font-size: clamp(3.4rem, 14vw, 4.5rem);
+        line-height: 0.95;
+
+        letter-spacing: -0.05em;
+
+        white-space: normal;
+    }
+
+    .hero-script {
+        width: auto;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-tagline,
+    .hero-description {
+        max-width: 100%;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons {
+        width: 100%;
+
+        flex-direction: column;
+    }
+
+    .hero-buttons a {
+        width: 100%;
+    }
+
+}
