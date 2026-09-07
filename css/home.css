@@ -2058,3 +2058,45 @@ body.home-page footer a:hover {
     }
 
 }
+
+/* ========================= */
+/* PREORDER LINKS */
+/* ========================= */
+
+.preorder-info {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    text-align: center;
+}
+
+.carousel-book .preorder-button {
+    display: block;
+    width: 100%;
+
+    margin: 0;
+
+    color: var(--home-light-rose);
+    text-decoration: none;
+
+    font-size: 0.74rem;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    text-align: center;
+    text-transform: uppercase;
+
+    transition: color 0.3s ease;
+}
+
+.carousel-book .preorder-button:hover {
+    color: var(--home-white);
+}
+
+.carousel-book-info h3 {
+    min-height: 2.4em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
