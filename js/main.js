@@ -17,15 +17,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
             menuButton.setAttribute(
                 "aria-expanded",
-                String(isOpen)
+                isOpen ? "true" : "false"
+            );
+
+            menuButton.setAttribute(
+                "aria-label",
+                isOpen
+                    ? "Close navigation menu"
+                    : "Open navigation menu"
             );
 
         });
 
 
-        const navigationLinks = navMenu.querySelectorAll("a");
+        /* Close menu after clicking a link */
 
-        navigationLinks.forEach((link) => {
+        navMenu.querySelectorAll("a").forEach((link) => {
 
             link.addEventListener("click", () => {
 
@@ -35,6 +42,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 menuButton.setAttribute(
                     "aria-expanded",
                     "false"
+                );
+
+                menuButton.setAttribute(
+                    "aria-label",
+                    "Open navigation menu"
                 );
 
             });
@@ -73,9 +85,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 return 300;
             }
 
-            const carouselStyles = window.getComputedStyle(
-                carousel
-            );
+            const carouselStyles =
+                window.getComputedStyle(carousel);
 
             const gap = parseFloat(
                 carouselStyles.columnGap ||
@@ -132,130 +143,116 @@ document.addEventListener("DOMContentLoaded", () => {
 
     }
 
-// =========================
-// CONTACT FORM
-// =========================
 
-const contactForm = document.querySelector(".official-contact-form");
+    /* =====================================
+       CONTACT FORM
+    ===================================== */
 
-if (contactForm) {
+    const contactForm =
+        document.querySelector(".official-contact-form");
 
-    const formStatus = contactForm.querySelector(".form-status");
-    const submitButton = contactForm.querySelector(".contact-submit-button");
+    if (contactForm) {
 
-    contactForm.addEventListener("submit", async function (event) {
+        const formStatus =
+            contactForm.querySelector(".form-status");
 
-        event.preventDefault();
+        const submitButton =
+            contactForm.querySelector(
+                ".contact-submit-button"
+            );
 
-        const formData = new FormData(contactForm);
 
-        // Save original button text
-        const originalButtonText = submitButton.textContent;
+        contactForm.addEventListener(
+            "submit",
+            async function (event) {
 
-        // Loading state
-        submitButton.disabled = true;
-        submitButton.textContent = "Sending...";
+                event.preventDefault();
 
-        formStatus.textContent = "";
+                const formData =
+                    new FormData(contactForm);
 
-        try {
+                const originalButtonText =
+                    submitButton.textContent;
 
-            const response = await fetch(contactForm.action, {
-                method: contactForm.method,
-                body: formData,
-                headers: {
-                    "Accept": "application/json"
+
+                /* Loading State */
+
+                submitButton.disabled = true;
+                submitButton.textContent = "Sending...";
+
+                formStatus.textContent = "";
+
+
+                try {
+
+                    const response = await fetch(
+                        contactForm.action,
+                        {
+                            method: contactForm.method,
+                            body: formData,
+                            headers: {
+                                "Accept":
+                                    "application/json"
+                            }
+                        }
+                    );
+
+
+                    if (response.ok) {
+
+                        formStatus.textContent =
+                            "Message received. 🦋 I’ll be in touch soon!";
+
+                        formStatus.classList.remove(
+                            "error"
+                        );
+
+                        formStatus.classList.add(
+                            "success"
+                        );
+
+                        contactForm.reset();
+
+                    } else {
+
+                        formStatus.textContent =
+                            "Something went wrong. Please try again.";
+
+                        formStatus.classList.remove(
+                            "success"
+                        );
+
+                        formStatus.classList.add(
+                            "error"
+                        );
+
+                    }
+
+                } catch (error) {
+
+                    formStatus.textContent =
+                        "Something went wrong. Please try again.";
+
+                    formStatus.classList.remove(
+                        "success"
+                    );
+
+                    formStatus.classList.add(
+                        "error"
+                    );
+
+                } finally {
+
+                    submitButton.disabled = false;
+
+                    submitButton.textContent =
+                        originalButtonText;
+
                 }
-            });
-
-            if (response.ok) {
-
-                formStatus.textContent =
-                    "Message received. 🦋 I’ll be in touch soon!";
-
-                formStatus.classList.remove("error");
-                formStatus.classList.add("success");
-
-                contactForm.reset();
-
-            } else {
-
-                formStatus.textContent =
-                    "Something went wrong. Please try again.";
-
-                formStatus.classList.remove("success");
-                formStatus.classList.add("error");
 
             }
-
-        } catch (error) {
-
-            formStatus.textContent =
-                "Something went wrong. Please try again.";
-
-            formStatus.classList.remove("success");
-            formStatus.classList.add("error");
-
-        } finally {
-
-            submitButton.disabled = false;
-            submitButton.textContent = originalButtonText;
-
-        }
-
-    });
-
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-
-    const menuButton = document.querySelector(".mobile-menu-button");
-    const navMenu = document.querySelector(".nav-menu");
-
-    if (!menuButton || !navMenu) return;
-
-    menuButton.addEventListener("click", () => {
-
-        const isOpen = navMenu.classList.toggle("open");
-
-        menuButton.classList.toggle("open", isOpen);
-
-        menuButton.setAttribute(
-            "aria-expanded",
-            isOpen ? "true" : "false"
         );
 
-        menuButton.setAttribute(
-            "aria-label",
-            isOpen
-                ? "Close navigation menu"
-                : "Open navigation menu"
-        );
-
-    });
-
-
-    /* Close menu after clicking a navigation link */
-
-    navMenu.querySelectorAll("a").forEach(link => {
-
-        link.addEventListener("click", () => {
-
-            navMenu.classList.remove("open");
-            menuButton.classList.remove("open");
-
-            menuButton.setAttribute(
-                "aria-expanded",
-                "false"
-            );
-
-            menuButton.setAttribute(
-                "aria-label",
-                "Open navigation menu"
-            );
-
-        });
-
-    });
+    }
 
 });
